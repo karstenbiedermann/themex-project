@@ -189,13 +189,13 @@
   overflow: hidden;
 }
 
-.modal-body-background {
-  background: var(--background-modal-overlay);
+.modal-backdrop {
+  background: var(--background-modal-backdrop);
   content: "";
   display: block;
   height: 100%;
   left: 0;
-  opacity: var(--opacity-modal-background);
+  opacity: var(--opacity-modal-backdrop);
   position: absolute;
   right: 0;
   top: 0;

@@ -1,0 +1,23 @@
+{
+  "name": "the-themex-project",
+  "version": "1.0.2",
+  "description": "Themex aims to prevent a blank screen in your IDE and serves as a solid foundation for further development.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/karstenbiedermann/themex-project.git"
+  },
+  "keywords": [
+    "css",
+    "javascript"
+  ],
+  "author": "Karsten Biedermann",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/karstenbiedermann/themex-project/issues"
+  },
+  "homepage": "https://github.com/karstenbiedermann/themex-project#readme"
+}

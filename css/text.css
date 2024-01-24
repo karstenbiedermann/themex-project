@@ -1,5 +1,6 @@
 .text {
   position: relative;
+  text-align: var(--horizontal-alignment-text);
 }
 
 .text .text-inner {
@@ -29,6 +30,11 @@
 }
 
 .text .text-eyebrow {
+  background: var(--background-text-eyebrow);
+  border-radius: var(--border-radius-text-eyebrow);
+  border-style: solid;
+  border-width: var(--border-width-text-eyebrow);
+  margin-bottom: var(--space-y-block-small-breakpoint-text-eyebrow);
   padding: var(--space-y-small-breakpoint-text-eyebrow) var(--space-x-small-breakpoint-text-eyebrow);
 }
 
@@ -39,9 +45,6 @@
 .text .text-eyebrow h5,
 .text .text-eyebrow h6,
 .text .text-eyebrow span {
-  background: var(--background-text-eyebrow);
-  border-radius: var(--border-radius-text-eyebrow);
-  border-width: var(--border-width-text-eyebrow);
   color: var(--color-text-eyebrow);
   font-size: var(--size-small-breakpoint-text-eyebrow);
   font-weight: var(--weight-text-eyebrow);
@@ -112,6 +115,18 @@
   }
 }
 
+@media(min-width: 768px) {
+  .text .text-eyebrow {
+    margin-bottom: var(--space-y-block-medium-breakpoint-text-eyebrow);
+  }
+}
+
+@media(min-width: 1200px) {
+  .text .text-eyebrow {
+    margin-bottom: var(--space-y-block-large-breakpoint-text-eyebrow);
+  }
+}
+
 .text .text-headline h1,
 .text .text-headline h2,
 .text .text-headline h3,
@@ -179,22 +194,6 @@
   }
 }
 
-.text .text-eyebrow+.text-headline {
-  margin-bottom: var(--space-y-block-small-breakpoint-text-eyebrow);
-}
-
-@media(min-width: 768px) {
-  .text .text-eyebrow+.text-headline {
-    margin-bottom: var(--space-y-block-medium-breakpoint-text-eyebrow);
-  }
-}
-
-@media(min-width: 1200px) {
-  .text .text-eyebrow+.text-headline {
-    margin-bottom: var(--space-y-block-large-breakpoint-text-eyebrow);
-  }
-}
-
 .text .text-section p,
 .text .text-section li,
 .text .text-section a {
@@ -257,6 +256,7 @@
 }
 
 .text .text-section+.text-button {
+  justify-content: var(--horizontal-alignment-text);
   margin-top: var(--space-y-block-small-breakpoint-text-button);
 }
 

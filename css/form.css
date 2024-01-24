@@ -33,7 +33,9 @@
   --size-small-breakpoint-legend: var(--size-small-breakpoint-form-label);
   --space-y-block-legend: var(--space-y-block-form-label);
   --column-gap-form-grid: var(--gap);
-  --space-y-block-form-element: 1.25rem;
+  --space-y-block-large-breakpoint-form-element: 1.25rem;
+  --space-y-block-medium-breakpoint-form-element: 1.25rem;
+  --space-y-block-small-breakpoint-form-element: 1.25rem;
   --color-form-element-label-addon: var(--color-text);
   --size-large-breakpoint-form-element-label-addon: var(--size-large-breakpoint-form-label);
   --size-medium-breakpoint-form-element-label-addon: var(--size-medium-breakpoint-form-label);
@@ -45,13 +47,13 @@
   --size-small-breakpoint-form-element-label: var(--size-small-breakpoint-form-label);
   --weight-form-element-label: var(--weight-form-label);
   --space-y-block-legend-label: var(--space-y-block-form-label);
-  --background-form-element-icon: #ffffff;
   --width-large-breakpoint-form-element-icon: 60px;
   --width-medium-breakpoint-form-element-icon: 60px;
   --width-small-breakpoint-form-element-icon: 45px;
   --height-form-element-icon: calc(100% - 2px);
   --inset-form-element-icon: 1px;
-  --size-form-element-icon-element: 20px;
+  --size-form-element-icon: 20px;
+  --background-form-element-icon: $primary;
   --space-x-large-breakpoint-form-element-icon: 3.75rem;
   --space-x-medium-breakpoint-form-element-icon: 3.75rem;
   --space-x-small-breakpoint-form-element-icon: 3.125rem;
@@ -94,10 +96,10 @@
   --border-color-textarea-focus: var(--border-color-form-focus);
   --border-color-textarea-error: var(--border-form-error);
   --color-checkbox: var(--secondary);
-  --color-checkbox-label: var(--color-text);
-  --size-large-breakpoint-checkbox-label: 1rem;
-  --size-medium-breakpoint-checkbox-label: 1rem;
-  --size-small-breakpoint-checkbox-label: 1rem;
+  --color-checkbox-label: var(--color-form-label);
+  --size-large-breakpoint-checkbox-label: var(--size-large-breakpoint-form);
+  --size-medium-breakpoint-checkbox-label: var(--size-medium-breakpoint-form);
+  --size-small-breakpoint-checkbox-label: var(--size-small-breakpoint-form);
   --space-x-large-breakpoint-checkbox: 0.125rem;
   --space-x-medium-breakpoint-checkbox: 0.125rem;
   --space-x-small-breakpoint-checkbox: 0.125rem;
@@ -109,10 +111,10 @@
   --color-checkbox-icon-checked: var(--primary);
   --space-bottom-block-checkbox: 0.9375rem;
   --color-radio: var(--secondary);
-  --color-radio-label: var(--color-text);
-  --size-large-breakpoint-radio-label: 1rem;
-  --size-medium-breakpoint-radio-label: 1rem;
-  --size-small-breakpoint-radio-label: 1rem;
+  --color-radio-label: var(--color-form-label);
+  --size-large-breakpoint-radio-label: var(--size-large-breakpoint-form);
+  --size-medium-breakpoint-radio-label: var(--size-medium-breakpoint-form);
+  --size-small-breakpoint-radio-label: var(--size-small-breakpoint-form);
   --space-x-large-breakpoint-radio: 0.125rem;
   --space-x-medium-breakpoint-radio: 0.125rem;
   --space-x-small-breakpoint-radio: 0.125rem;
@@ -127,9 +129,9 @@
   --border-select-trigger: 1px solid var(--neutral-300);
   --border-radius-select-trigger: var(--border-radius-form);
   --color-select-trigger: var(--color-text);
-  --size-large-breakpoint-checkbox-trigger: 1rem;
-  --size-medium-breakpoint-checkbox-trigger: 1rem;
-  --size-small-breakpoint-checkbox-trigger: 1rem;
+  --size-large-breakpoint-select-trigger: var(--size-large-breakpoint-form);
+  --size-medium-breakpoint-select-trigger: var(--size-medium-breakpoint-form);
+  --size-small-breakpoint-select-trigger: var(--size-small-breakpoint-form);
   --space-x-large-breakpoint-select: var(--space-x-large-breakpoint-form);
   --space-x-medium-breakpoint-select: var(--space-x-medium-breakpoint-form);
   --space-x-small-breakpoint-select: var(--space-x-small-breakpoint-form);
@@ -142,6 +144,7 @@
   --color-select-trigger-icon: var(--neutral-500);
   --border-color-select-trigger-hover: var(--neutral-500);
   --size-select-trigger-icon: 15px;
+  --background-select-options: var(--background-form);
   --border-radius-select-options: var(--border-radius-form);
   --space-x-large-breakpoint-select-options: 0.75rem;
   --space-x-medium-breakpoint-select-options: 0.75rem;
@@ -279,8 +282,20 @@ fieldset legend {
 }
 
 .form-element {
-  margin-bottom: var(--space-y-block-form-element);
+  margin-bottom: var(--space-y-block-small-breakpoint-form-element);
   position: relative;
+}
+
+@media(min-width: 768px) {
+  .form-element {
+    margin-bottom: var(--space-y-block-medium-breakpoint-form-element);
+  }
+}
+
+@media(min-width: 1200px) {
+  .form-element {
+    margin-bottom: var(--space-y-block-large-breakpoint-form-element);
+  }
 }
 
 .form-element .form-element-label {
@@ -329,7 +344,6 @@ fieldset legend {
 
 .form-element .form-element-icon {
   align-items: center;
-  background: var(--background-form-element-icon);
   border-bottom-left-radius: var(--border-radius-form);
   border-top-left-radius: var(--border-radius-form);
   display: flex;
@@ -353,27 +367,27 @@ fieldset legend {
 }
 
 .form-element .form-element-icon i {
-  height: var(--size-form-element-icon-element);
-  width: var(--size-form-element-icon-element);
+  height: var(--size-form-element-icon);
+  width: var(--size-form-element-icon);
 }
 
 @media(max-width: 1199.98px) {
   .form-element .form-element-icon i {
-    height: var(--size-form-element-icon-element);
-    width: var(--size-form-element-icon-element);
+    height: var(--size-form-element-icon);
+    width: var(--size-form-element-icon);
   }
 }
 
 .form-element .form-element-icon i::after {
-  background: var(--primary);
-  height: var(--size-form-element-icon-element);
-  width: var(--size-form-element-icon-element);
+  background: var(--color-form-element-icon);
+  height: var(--size-form-element-icon);
+  width: var(--size-form-element-icon);
 }
 
 @media(max-width: 1199.98px) {
   .form-element .form-element-icon i::after {
-    height: var(--size-form-element-icon-element);
-    width: var(--size-form-element-icon-element);
+    height: var(--size-form-element-icon);
+    width: var(--size-form-element-icon);
   }
 }
 
@@ -733,7 +747,7 @@ fieldset legend {
   color: var(--color-select-trigger);
   cursor: pointer;
   display: flex;
-  font-size: var(--size-small-breakpoint-checkbox-trigger);
+  font-size: var(--size-small-breakpoint-select-trigger);
   height: 100%;
   padding: var(--space-y-small-breakpoint-select) var(--space-x-small-breakpoint-select);
   position: relative;
@@ -743,13 +757,13 @@ fieldset legend {
 
 @media(min-width: 768px) {
   .select .select-trigger {
-    font-size: var(--size-medium-breakpoint-checkbox-trigger);
+    font-size: var(--size-medium-breakpoint-select-trigger);
   }
 }
 
 @media(min-width: 1200px) {
   .select .select-trigger {
-    font-size: var(--size-large-breakpoint-checkbox-trigger);
+    font-size: var(--size-large-breakpoint-select-trigger);
   }
 }
 
@@ -800,7 +814,7 @@ fieldset legend {
 }
 
 .select .select-options {
-  background-color: #fff;
+  background: var(--background-select-options);
   border: var(--border-select-options);
   border-radius: var(--border-radius-select-options);
   box-shadow: none;
