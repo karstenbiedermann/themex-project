@@ -80,6 +80,10 @@
   width: fit-content;
 }
 
+.hero .hero-inner .hero-eyebrow a {
+  color: var(--color-hero-eyebrow-link);
+}
+
 .hero .hero-inner .hero-eyebrow h1,
 .hero .hero-inner .hero-eyebrow h2,
 .hero .hero-inner .hero-eyebrow h3,
