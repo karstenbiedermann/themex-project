@@ -162,8 +162,35 @@
   font-family: var(--font-text);
   font-size: var(--size-small-breakpoint-card-headline);
   font-weight: var(--weight-card-headline);
+  line-height: var(--line-height-small-breakpoint-card-headline);
   margin-bottom: var(--space-block-y-small-breakpoint-card-headline);
   transition: all .4s ease;
+}
+
+@media(min-width: 768px) {
+
+  .card .card-item .card-text .card-headline h1,
+  .card .card-item .card-text .card-headline h2,
+  .card .card-item .card-text .card-headline h3,
+  .card .card-item .card-text .card-headline h4,
+  .card .card-item .card-text .card-headline h5,
+  .card .card-item .card-text .card-headline h6,
+  .card .card-item .card-text .card-headline span {
+    line-height: var(--line-height-medium-breakpoint-card-headline);
+  }
+}
+
+@media(min-width: 1200px) {
+
+  .card .card-item .card-text .card-headline h1,
+  .card .card-item .card-text .card-headline h2,
+  .card .card-item .card-text .card-headline h3,
+  .card .card-item .card-text .card-headline h4,
+  .card .card-item .card-text .card-headline h5,
+  .card .card-item .card-text .card-headline h6,
+  .card .card-item .card-text .card-headline span {
+    line-height: var(--line-height-large-breakpoint-card-headline);
+  }
 }
 
 @media(min-width: 768px) {
@@ -228,20 +255,33 @@
 }
 
 .card .card-item .card-text .card-text {
-  color: var(--color-card-paragraph);
-  font-size: var(--size-small-breakpoint-card-paragraph);
-  font-weight: var(--weight-card-paragraph);
+  color: var(--color-card-text);
+  font-size: var(--size-small-breakpoint-card-text);
+  font-weight: var(--weight-card-text);
+  line-height: var(--line-height-small-breakpoint-card-text);
 }
 
 @media(min-width: 768px) {
   .card .card-item .card-text .card-text {
-    font-size: var(--size-medium-breakpoint-card-paragraph);
+    line-height: var(--line-height-medium-breakpoint-card-text);
   }
 }
 
 @media(min-width: 1200px) {
   .card .card-item .card-text .card-text {
-    font-size: var(--size-large-breakpoint-card-paragraph);
+    line-height: var(--line-height-large-breakpoint-card-text);
+  }
+}
+
+@media(min-width: 768px) {
+  .card .card-item .card-text .card-text {
+    font-size: var(--size-medium-breakpoint-card-text);
+  }
+}
+
+@media(min-width: 1200px) {
+  .card .card-item .card-text .card-text {
+    font-size: var(--size-large-breakpoint-card-text);
   }
 }
 
