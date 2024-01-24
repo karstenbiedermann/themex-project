@@ -1,50 +1,20 @@
 .form {
-  --color-form-label: var(--color-text);
+ /* These variables are currently not configured in the browser. */
   --size-large-breakpoint-form-label: 0.875rem;
   --size-medium-breakpoint-form-label: 0.875rem;
   --size-small-breakpoint-form-label: 0.875rem;
   --weight-form-label: var(--weight-bold);
   --space-y-block-form-label: 0.5rem;
-  --background-form: var(--white);
-  --border-width-form: 1px;
-  --border-color-form: var(--neutral-300);
-  --border-color-form-focus: var(--neutral-500);
-  --border-color-form-error: var(--red-700);
-  --border-radius-form: var(--border-radius);
-  --color-form-outline: var(--accent-200);
-  --color-form-outline-error: var(--red-300);
-  --size-form-outline: 4px;
-  --color-form: var(--neutral-900);
-  --color-form-placeholder: var(--color-text);
-  --color-form-error: var(--red-700);
-  --size-large-breakpoint-form: 1rem;
-  --size-medium-breakpoint-form: 1rem;
-  --size-small-breakpoint-form: 1rem;
-  --space-x-large-breakpoint-form: 0.75rem;
-  --space-x-medium-breakpoint-form: 0.75rem;
-  --space-x-small-breakpoint-form: 0.75rem;
-  --space-y-large-breakpoint-form: 0.75rem;
-  --space-y-medium-breakpoint-form: 0.75rem;
-  --space-y-small-breakpoint-form: 0.75rem;
   --color-legend: var(--color-form-label);
   --weight-legend: var(--weight-form-label);
-  --size-large-breakpoint-legend: var(--size-large-breakpoint-form-label);
-  --size-medium-breakpoint-legend: var(--size-medium-breakpoint-form-label);
-  --size-small-breakpoint-legend: var(--size-small-breakpoint-form-label);
   --space-y-block-legend: var(--space-y-block-form-label);
   --column-gap-form-grid: var(--gap);
-  --space-y-block-large-breakpoint-form-element: 1.25rem;
-  --space-y-block-medium-breakpoint-form-element: 1.25rem;
-  --space-y-block-small-breakpoint-form-element: 1.25rem;
   --color-form-element-label-addon: var(--color-text);
   --size-large-breakpoint-form-element-label-addon: var(--size-large-breakpoint-form-label);
   --size-medium-breakpoint-form-element-label-addon: var(--size-medium-breakpoint-form-label);
   --size-small-breakpoint-form-element-label-addon: var(--size-small-breakpoint-form-label);
   --space-y-block-legend-label-addon: var(--space-y-block-form-label);
   --color-form-element-label: var(--color-form-label);
-  --size-large-breakpoint-form-element-label: var(--size-large-breakpoint-form-label);
-  --size-medium-breakpoint-form-element-label: var(--size-medium-breakpoint-form-label);
-  --size-small-breakpoint-form-element-label: var(--size-small-breakpoint-form-label);
   --weight-form-element-label: var(--weight-form-label);
   --space-y-block-legend-label: var(--space-y-block-form-label);
   --width-large-breakpoint-form-element-icon: 60px;
@@ -52,8 +22,6 @@
   --width-small-breakpoint-form-element-icon: 45px;
   --height-form-element-icon: calc(100% - 2px);
   --inset-form-element-icon: 1px;
-  --size-form-element-icon: 20px;
-  --background-form-element-icon: $primary;
   --space-x-large-breakpoint-form-element-icon: 3.75rem;
   --space-x-medium-breakpoint-form-element-icon: 3.75rem;
   --space-x-small-breakpoint-form-element-icon: 3.125rem;
@@ -73,7 +41,7 @@
   --space-y-small-breakpoint-input: var(--space-y-small-breakpoint-form);
   --color-input-placeholder: var(--color-form-placeholder);
   --border-color-input-focus: var(--border-color-form-focus);
-  --border-color-input-error: var(--border-form-error);
+  --border-color-input-error: var(--border-color-form-error);
   --color-character-counter: var(--color-text);
   --size-character-counter: 0.75rem;
   --space-y-block-character-counter: 0.5rem;
@@ -94,7 +62,7 @@
   --space-y-small-breakpoint-textarea: var(--space-y-small-breakpoint-form);
   --color-textarea-placeholder: var(--color-form-placeholder);
   --border-color-textarea-focus: var(--border-color-form-focus);
-  --border-color-textarea-error: var(--border-form-error);
+  --border-color-textarea-error: var(--border-color-form-error);
   --color-checkbox: var(--secondary);
   --color-checkbox-label: var(--color-form-label);
   --size-large-breakpoint-checkbox-label: var(--size-large-breakpoint-form);
@@ -106,7 +74,6 @@
   --space-y-large-breakpoint-checkbox: 0.125rem;
   --space-y-medium-breakpoint-checkbox: 0.125rem;
   --space-y-small-breakpoint-checkbox: 0.125rem;
-  --size-checkbox-icon: 18px;
   --color-checkbox-icon: var(--neutral-500);
   --color-checkbox-icon-checked: var(--primary);
   --space-bottom-block-checkbox: 0.9375rem;
@@ -123,12 +90,9 @@
   --space-y-small-breakpoint-radio: 0.125rem;
   --color-radio-icon: var(--neutral-500);
   --color-radio-icon-active: var(--primary);
-  --size-radio-icon: 18px;
   --space-y-block-radio: 0.9375rem;
-  --background-select-trigger: #ffffff;
   --border-select-trigger: 1px solid var(--neutral-300);
   --border-radius-select-trigger: var(--border-radius-form);
-  --color-select-trigger: var(--color-text);
   --size-large-breakpoint-select-trigger: var(--size-large-breakpoint-form);
   --size-medium-breakpoint-select-trigger: var(--size-medium-breakpoint-form);
   --size-small-breakpoint-select-trigger: var(--size-small-breakpoint-form);
@@ -144,7 +108,6 @@
   --color-select-trigger-icon: var(--neutral-500);
   --border-color-select-trigger-hover: var(--neutral-500);
   --size-select-trigger-icon: 15px;
-  --background-select-options: var(--background-form);
   --border-radius-select-options: var(--border-radius-form);
   --space-x-large-breakpoint-select-options: 0.75rem;
   --space-x-medium-breakpoint-select-options: 0.75rem;
@@ -153,7 +116,6 @@
   --space-y-medium-breakpoint-select-options: 0.625rem;
   --space-y-small-breakpoint-select-options: 0.625rem;
   --border-select-options: 1px solid var(--neutral-200);
-  --color-select-option: var(--color-text);
   --background-select-option-hover: var(--neutral-100);
   --size-message: 0.75rem;
   --space-y-block-bottom-message: 0.5rem;
@@ -195,7 +157,6 @@
   --color-hover-datepicker-calendar-day: #ffffff;
   --background-hover-datepicker-calendar-day: var(--primary);
   --color-active-datepicker-calendar-day: #ffffff;
-  --background-active-datepicker-calendar-day: var(--primary);
   --border-datepicker-calendar-day: 1px solid var(--neutral-100);
   --space-x-multiselect-count: 0.4375rem;
   --space-y-multiselect-count: 0.1875rem;
@@ -381,6 +342,7 @@ fieldset legend {
 .form-element .form-element-icon i::after {
   background: var(--color-form-element-icon);
   height: var(--size-form-element-icon);
+  min-width: var(--size-form-element-icon);
   width: var(--size-form-element-icon);
 }
 
