@@ -1,7 +1,5 @@
-<p align="center"><a href="https://themexproject.com/"><img src="https://github.com/karstenbiedermann/themex-project/assets/114942316/ede74a0d-854c-47e0-8408-bcf17992e2fb">
+<p align="center"><a href="https://themexproject.com/"><img src="https://github.com/karstenbiedermann/themex-project/assets/114942316/97322e88-7ba0-4af8-883b-dacb8e5b288a">
  </a></p>
-
-
 
 
 As a front-end developer with over 15 years of experience in implementing websites, I have frequently experimented with new CSS frameworks. Frameworks like Bootstrap and Tailwind offer well-thought-out concepts that enable efficient and time-saving implementation of CSS declarations within the DOM. However, they haven't been efficient enough for me, especially in website development. Most websites today tend to follow a similar pattern and are not inherently complex. Typically, they involve fonts, colors, and other CSS properties that are defined globally and later passed on to child elements. The real challenge arises, especially when varying a web component, as it becomes confusing and difficult to replicate in other projects. The complexity further increases when a CMS is involved, leading to more intricate code in the DOM. This is why I created themex. It is primarily designed to ensure reproduction, clarity, and intuitiveness in all kinds of website projects. themex is built on **Vanilla JavaScript, CSS, and HTML.**
