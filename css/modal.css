@@ -167,21 +167,11 @@
   display: none;
 }
 
-@media(max-width: 767.98px) {
+@media(max-width: 575.98px) {
   .modal .modal-body {
     border-radius: 0;
     height: 100dvh;
-  }
-}
-
-.modal.modal--sm .modal-body {
-  margin: 0 auto;
-  min-width: 100%;
-}
-
-@media(min-width: 768px) {
-  .modal.modal--sm .modal-body {
-    min-width: 415px;
+    width: 100%;
   }
 }
 
