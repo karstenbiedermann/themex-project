@@ -5,9 +5,26 @@
 }
 
 .text .text-inner {
+  align-items: var(--horizontal-alignment-text);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   margin-left: var(--space-small-breakpoint-container);
   margin-right: var(--space-small-breakpoint-container);
+  padding: var(--space-y-small-breakpoint-text) var(--space-x-small-breakpoint-text);
   position: relative;
+}
+
+@media(min-width: 768px) {
+  .text .text-inner {
+    padding: var(--space-y-medium-breakpoint-text) var(--space-x-medium-breakpoint-text);
+  }
+}
+
+@media(min-width: 1200px) {
+  .text .text-inner {
+    padding: var(--space-y-large-breakpoint-text) var(--space-x-large-breakpoint-text);
+  }
 }
 
 @container (width >=768px) {
@@ -131,6 +148,11 @@
   }
 }
 
+.text .text-headline {
+  font-family: var(--font-text);
+  text-align: var(--horizontal-alignment-text);
+}
+
 .text .text-headline h1,
 .text .text-headline h2,
 .text .text-headline h3,
@@ -196,6 +218,10 @@
   .text .text-headline span {
     font-size: var(--size-large-breakpoint-text-headline);
   }
+}
+
+.text .text-section {
+  text-align: var(--horizontal-alignment-text);
 }
 
 .text .text-section p,
