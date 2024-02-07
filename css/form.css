@@ -1,29 +1,25 @@
 .form {
- /* These variables are currently not configured in the browser. */
-  --size-large-breakpoint-form-label: 0.875rem;
-  --size-medium-breakpoint-form-label: 0.875rem;
-  --size-small-breakpoint-form-label: 0.875rem;
-  --weight-form-label: var(--weight-bold);
-  --space-y-block-form-label: 0.5rem;
   --color-legend: var(--color-form-label);
   --weight-legend: var(--weight-form-label);
-  --space-y-block-legend: var(--space-y-block-form-label);
+  --size-large-breakpoint-legend: var(--size-large-breakpoint-form-element-label);
+  --size-medium-breakpoint-legend: var(--size-medium-breakpoint-form-element-label);
+  --size-small-breakpoint-legend: var(--size-small-breakpoint-form-element-label);
+  --space-y-block-large-breakpoint-legend: var(--space-y-block-large-breakpoint-form-element-label);
+  --space-y-block-medium-breakpoint-legend: var(--space-y-block-medium-breakpoint-form-element-label);
+  --space-y-block-small-breakpoint-legend: var(--space-y-block-small-breakpoint-form-element-label);
   --column-gap-form-grid: var(--gap);
-  --color-form-element-label-addon: var(--color-text);
-  --size-large-breakpoint-form-element-label-addon: var(--size-large-breakpoint-form-label);
-  --size-medium-breakpoint-form-element-label-addon: var(--size-medium-breakpoint-form-label);
-  --size-small-breakpoint-form-element-label-addon: var(--size-small-breakpoint-form-label);
   --space-y-block-legend-label-addon: var(--space-y-block-form-label);
   --color-form-element-label: var(--color-form-label);
+  --size-large-breakpoint-form-element-label: var(--size-large-breakpoint-form-label);
+  --size-medium-breakpoint-form-element-label: var(--size-medium-breakpoint-form-label);
+  --size-small-breakpoint-form-element-label: var(--size-small-breakpoint-form-label);
   --weight-form-element-label: var(--weight-form-label);
-  --space-y-block-legend-label: var(--space-y-block-form-label);
-  --width-large-breakpoint-form-element-icon: 60px;
-  --width-medium-breakpoint-form-element-icon: 60px;
-  --width-small-breakpoint-form-element-icon: 45px;
+  --width-large-breakpoint-form-element-icon: 50px;
+  --width-medium-breakpoint-form-element-icon: 50px;
+  --width-small-breakpoint-form-element-icon: 50px;
   --height-form-element-icon: calc(100% - 2px);
-  --inset-form-element-icon: 1px;
-  --space-x-large-breakpoint-form-element-icon: 3.75rem;
-  --space-x-medium-breakpoint-form-element-icon: 3.75rem;
+  --space-x-large-breakpoint-form-element-icon: 3.125rem;
+  --space-x-medium-breakpoint-form-element-icon: 3.125rem;
   --space-x-small-breakpoint-form-element-icon: 3.125rem;
   --background-input: var(--background-form);
   --border-width-input: var(--border-width-form);
@@ -41,19 +37,13 @@
   --space-y-small-breakpoint-input: var(--space-y-small-breakpoint-form);
   --color-input-placeholder: var(--color-form-placeholder);
   --border-color-input-focus: var(--border-color-form-focus);
+  --color-input-error: var(--color-form-error);
   --border-color-input-error: var(--border-color-form-error);
-  --color-character-counter: var(--color-text);
-  --size-character-counter: 0.75rem;
-  --space-y-block-character-counter: 0.5rem;
-  --color-error-character-counter: var(--red-500);
   --background-textarea: var(--background-form);
   --border-width-textarea: var(--border-width-form);
   --border-color-textarea: var(--border-color-form);
   --border-radius-textarea: var(--border-radius-form);
   --color-textarea: var(--color-form);
-  --min-height-large-breakpoint-textarea: 220px;
-  --min-height-medium-breakpoint-textarea: 220px;
-  --min-height-small-breakpoint-textarea: 220px;
   --space-x-large-breakpoint-textarea: var(--space-x-large-breakpoint-form);
   --space-x-medium-breakpoint-textarea: var(--space-x-medium-breakpoint-form);
   --space-x-small-breakpoint-textarea: var(--space-x-small-breakpoint-form);
@@ -63,77 +53,36 @@
   --color-textarea-placeholder: var(--color-form-placeholder);
   --border-color-textarea-focus: var(--border-color-form-focus);
   --border-color-textarea-error: var(--border-color-form-error);
-  --color-checkbox: var(--secondary);
-  --color-checkbox-label: var(--color-form-label);
   --size-large-breakpoint-checkbox-label: var(--size-large-breakpoint-form);
   --size-medium-breakpoint-checkbox-label: var(--size-medium-breakpoint-form);
   --size-small-breakpoint-checkbox-label: var(--size-small-breakpoint-form);
-  --space-x-large-breakpoint-checkbox: 0.125rem;
-  --space-x-medium-breakpoint-checkbox: 0.125rem;
-  --space-x-small-breakpoint-checkbox: 0.125rem;
-  --space-y-large-breakpoint-checkbox: 0.125rem;
-  --space-y-medium-breakpoint-checkbox: 0.125rem;
-  --space-y-small-breakpoint-checkbox: 0.125rem;
-  --color-checkbox-icon: var(--neutral-500);
-  --color-checkbox-icon-checked: var(--primary);
-  --space-bottom-block-checkbox: 0.9375rem;
-  --color-radio: var(--secondary);
-  --color-radio-label: var(--color-form-label);
   --size-large-breakpoint-radio-label: var(--size-large-breakpoint-form);
   --size-medium-breakpoint-radio-label: var(--size-medium-breakpoint-form);
   --size-small-breakpoint-radio-label: var(--size-small-breakpoint-form);
-  --space-x-large-breakpoint-radio: 0.125rem;
-  --space-x-medium-breakpoint-radio: 0.125rem;
-  --space-x-small-breakpoint-radio: 0.125rem;
-  --space-y-large-breakpoint-radio: 0.125rem;
-  --space-y-medium-breakpoint-radio: 0.125rem;
-  --space-y-small-breakpoint-radio: 0.125rem;
-  --color-radio-icon: var(--neutral-500);
-  --color-radio-icon-active: var(--primary);
-  --space-y-block-radio: 0.9375rem;
-  --border-select-trigger: 1px solid var(--neutral-300);
   --border-radius-select-trigger: var(--border-radius-form);
   --size-large-breakpoint-select-trigger: var(--size-large-breakpoint-form);
   --size-medium-breakpoint-select-trigger: var(--size-medium-breakpoint-form);
   --size-small-breakpoint-select-trigger: var(--size-small-breakpoint-form);
-  --space-x-large-breakpoint-select: var(--space-x-large-breakpoint-form);
-  --space-x-medium-breakpoint-select: var(--space-x-medium-breakpoint-form);
-  --space-x-small-breakpoint-select: var(--space-x-small-breakpoint-form);
-  --space-y-large-breakpoint-select: var(--space-y-large-breakpoint-form);
-  --space-y-medium-breakpoint-select: var(--space-y-large-breakpoint-form);
-  --space-y-small-breakpoint-select: var(--space-y-large-breakpoint-form);
-  --border-color-select-trigger-visible: var(--neutral-500);
   --border-radius-select-trigger-visible: var(--border-radius-form);
-  --color-select-trigger-selected: var(--color-text);
   --color-select-trigger-icon: var(--neutral-500);
   --border-color-select-trigger-hover: var(--neutral-500);
   --size-select-trigger-icon: 15px;
+  --background-select-options: var(--background-form);
   --border-radius-select-options: var(--border-radius-form);
-  --space-x-large-breakpoint-select-options: 0.75rem;
-  --space-x-medium-breakpoint-select-options: 0.75rem;
-  --space-x-small-breakpoint-select-options: 0.75rem;
-  --space-y-large-breakpoint-select-options: 0.625rem;
-  --space-y-medium-breakpoint-select-options: 0.625rem;
-  --space-y-small-breakpoint-select-options: 0.625rem;
-  --border-select-options: 1px solid var(--neutral-200);
-  --background-select-option-hover: var(--neutral-100);
+  --space-x-large-breakpoint-select-options: 0;
+  --space-x-medium-breakpoint-select-options: 0;
+  --space-x-small-breakpoint-select-options: 0;
+  --space-y-large-breakpoint-select-options: 0.3125rem;
+  --space-y-medium-breakpoint-select-options: 0.3125rem;
+  --space-y-small-breakpoint-select-options: 0.3125rem;
   --size-message: 0.75rem;
   --space-y-block-bottom-message: 0.5rem;
-  --color-message-error: var(--red-700);
-  --size-message-error-icon: 0.9375rem;
-  --size-info: 0.75rem;
-  --space-y-block-bottom-info: 0.5rem;
-  --color-message-info: var(--color-text);
-  --border-message-error-items: 1px solid var(--red-700);
+  --border-width-message-error-items: var(--border-width-form);
+  --border-color-message-error-items: var(--border-color-form-error);
   --border-radius-message-error-items: var(--border-radius-form);
-  --space-x-large-breakpoint-message-items: 0.625rem;
-  --space-x-medium-breakpoint-message-items: 0.625rem;
-  --space-x-small-breakpoint-message-items: 0.625rem;
-  --space-y-large-breakpoint-message-items: 0.625rem;
-  --space-y-medium-breakpoint-message-items: 0.625rem;
-  --space-y-small-breakpoint-message-items: 0.625rem;
   --background-datepicker: #ffffff;
-  --border-datepicker: 1px solid var(--neutral-200);
+  --border-width-datepicker: 1px;
+  --border-color-datepicker: var(--neutral-200);
   --border-radius-datepicker: var(--border-radius-form);
   --width-large-breakpoint-datepicker: 360px;
   --width-medium-breakpoint-datepicker: 360px;
@@ -142,21 +91,15 @@
   --size-datepicker-prev-next: 12px;
   --background-hover-datepicker-prev-next: var(--neutral-100);
   --border-color-datepicker-prev-next: var(--neutral-500);
-  --color-datepicker-month-dropdown: var(--neutral-500);
   --size-datepicker-month-dropdown: 12px;
   --border-bottom-datepicker-calendar-header: 1px solid var(--neutral-300);
   --space-y-block-datepicker-calendar-header: 0.625rem;
   --space-y-datepicker-calendar-header: 0.9375rem;
-  --color-datepicker-calendar-header-days: var(--neutral-500);
   --weight-datepicker-calendar-header-days: 700;
   --size-datepicker-calendar-header-days: 0.75rem;
-  --color-datepicker-calendar-day: var(--neutral-700);
   --size-datepicker-calendar-day: 0.75rem;
   --weight-datepicker-calendar-day: 700;
   --space-y-datepicker-calendar-day: 0.9375rem 0;
-  --color-hover-datepicker-calendar-day: #ffffff;
-  --background-hover-datepicker-calendar-day: var(--primary);
-  --color-active-datepicker-calendar-day: #ffffff;
   --border-datepicker-calendar-day: 1px solid var(--neutral-100);
   --space-x-multiselect-count: 0.4375rem;
   --space-y-multiselect-count: 0.1875rem;
@@ -173,28 +116,29 @@
   --space-y-small-breakpoint-multiselect: 0.625rem;
   --space-y-submit: 1.25rem;
 
+  container-type: inline-size;
   margin-left: var(--space-small-breakpoint-container);
   margin-right: var(--space-small-breakpoint-container);
   position: relative;
 }
 
-@media(min-width: 768px) {
+@container (width >=768px) {
   .form {
     margin: 0 var(--space-medium-breakpoint-container) 0 var(--space-medium-breakpoint-container);
   }
 }
 
-@media(min-width: 1200px) {
+@container (width >=1200px) {
   .form {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: var(--container-large-max-width);
+    margin-left: var(--space-large-breakpoint-container);
+    margin-right: var(--space-large-breakpoint-container);
+    max-width: var(--max-width-container-large);
   }
 }
 
-@media(min-width: 1400px) {
+@container (width >=1400px) {
   .form {
-    max-width: var(--container-extralarge-max-width);
+    max-width: var(--max-width-container-extralarge);
   }
 }
 
@@ -203,7 +147,7 @@ fieldset legend {
   display: block;
   font-size: var(--size-small-breakpoint-legend);
   font-weight: var(--weight-legend);
-  margin-bottom: var(--space-y-block-legend);
+  margin-bottom: var(--space-y-block-small-breakpoint-legend);
 }
 
 @media(min-width: 768px) {
@@ -215,6 +159,18 @@ fieldset legend {
 @media(min-width: 1200px) {
   fieldset legend {
     font-size: var(--size-large-breakpoint-legend);
+  }
+}
+
+@media(min-width: 768px) {
+  fieldset legend {
+    margin-bottom: var(--space-y-block-medium-breakpoint-legend);
+  }
+}
+
+@media(min-width: 1200px) {
+  fieldset legend {
+    margin-bottom: var(--space-y-block-large-breakpoint-legend);
   }
 }
 
@@ -288,7 +244,7 @@ fieldset legend {
   display: block;
   font-size: var(--size-small-breakpoint-form-element-label);
   font-weight: var(--weight-form-element-label);
-  margin-bottom: var(--space-y-block-legend-label);
+  margin-bottom: var(--space-y-block-small-breakpoint-form-element-label);
 }
 
 @media(min-width: 768px) {
@@ -300,6 +256,18 @@ fieldset legend {
 @media(min-width: 1200px) {
   .form-element .form-element-label label {
     font-size: var(--size-large-breakpoint-form-element-label);
+  }
+}
+
+@media(min-width: 768px) {
+  .form-element .form-element-label label {
+    margin-bottom: var(--space-y-block-medium-breakpoint-form-element-label);
+  }
+}
+
+@media(min-width: 1200px) {
+  .form-element .form-element-label label {
+    margin-bottom: var(--space-y-block-large-breakpoint-form-element-label);
   }
 }
 
@@ -328,28 +296,44 @@ fieldset legend {
 }
 
 .form-element .form-element-icon i {
-  height: var(--size-form-element-icon);
-  width: var(--size-form-element-icon);
+  height: var(--size-small-breakpoint-form-element-icon);
+  width: var(--size-small-breakpoint-form-element-icon);
 }
 
-@media(max-width: 1199.98px) {
+@media(min-width: 768px) {
   .form-element .form-element-icon i {
-    height: var(--size-form-element-icon);
-    width: var(--size-form-element-icon);
+    height: var(--size-medium-breakpoint-form-element-icon);
+    width: var(--size-medium-breakpoint-form-element-icon);
+  }
+}
+
+@media(min-width: 1200px) {
+  .form-element .form-element-icon i {
+    height: var(--size-large-breakpoint-form-element-icon);
+    width: var(--size-large-breakpoint-form-element-icon);
   }
 }
 
 .form-element .form-element-icon i::after {
   background: var(--color-form-element-icon);
-  height: var(--size-form-element-icon);
-  min-width: var(--size-form-element-icon);
-  width: var(--size-form-element-icon);
+  height: var(--size-small-breakpoint-form-element-icon);
+  min-width: var(--size-small-breakpoint-form-element-icon);
+  width: var(--size-small-breakpoint-form-element-icon);
 }
 
-@media(max-width: 1199.98px) {
+@media(min-width: 768px) {
   .form-element .form-element-icon i::after {
-    height: var(--size-form-element-icon);
-    width: var(--size-form-element-icon);
+    height: var(--size-medium-breakpoint-form-element-icon);
+    min-width: var(--size-medium-breakpoint-form-element-icon);
+    width: var(--size-medium-breakpoint-form-element-icon);
+  }
+}
+
+@media(min-width: 1200px) {
+  .form-element .form-element-icon i::after {
+    height: var(--size-large-breakpoint-form-element-icon);
+    min-width: var(--size-large-breakpoint-form-element-icon);
+    width: var(--size-large-breakpoint-form-element-icon);
   }
 }
 
@@ -426,18 +410,7 @@ fieldset legend {
 .form-element .input.input--error {
   border-color: var(--border-color-input-error);
   box-shadow: 0px 0px 0px var(--size-form-outline) var(--color-form-outline-error);
-}
-
-.form-element-character-counter {
-  color: var(--color-character-counter);
-  display: block;
-  font-size: var(--size-character-counter);
-  margin-bottom: var(--space-y-block-character-counter);
-  margin-left: auto;
-}
-
-.form-element-character-counter.form-element-character-counter--error {
-  color: var(--color-error-character-counter);
+  color: var(--color-input-error);
 }
 
 .textarea {
@@ -564,15 +537,31 @@ fieldset legend {
   background-color: var(--color-checkbox-icon);
   content: "";
   display: block;
-  height: var(--size-checkbox-icon);
+  height: var(--size-small-breakpoint-checkbox-icon);
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 18 18' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m14 18h-10c-2.21 0-4-1.79-4-4v-10c0-2.21 1.79-4 4-4h10c2.21 0 4 1.79 4 4v10c0 2.21-1.79 4-4 4zm-10-17c-1.65 0-3 1.35-3 3v10c0 1.65 1.35 3 3 3h10c1.65 0 3-1.35 3-3v-10c0-1.65-1.35-3-3-3z' fill='%23D2D6DB'/%3E%3C/svg%3E");
   mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 18 18' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m14 18h-10c-2.21 0-4-1.79-4-4v-10c0-2.21 1.79-4 4-4h10c2.21 0 4 1.79 4 4v10c0 2.21-1.79 4-4 4zm-10-17c-1.65 0-3 1.35-3 3v10c0 1.65 1.35 3 3 3h10c1.65 0 3-1.35 3-3v-10c0-1.65-1.35-3-3-3z' fill='%23D2D6DB'/%3E%3C/svg%3E");
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
   -webkit-mask-size: 100%;
   mask-size: 100%;
-  min-width: var(--size-checkbox-icon);
-  width: var(--size-checkbox-icon);
+  min-width: var(--size-small-breakpoint-checkbox-icon);
+  width: var(--size-small-breakpoint-checkbox-icon);
+}
+
+@media(min-width: 768px) {
+  .checkbox .checkbox-icon::after {
+    height: var(--size-medium-breakpoint-checkbox-icon);
+    min-width: var(--size-medium-breakpoint-checkbox-icon);
+    width: var(--size-medium-breakpoint-checkbox-icon);
+  }
+}
+
+@media(min-width: 1200px) {
+  .checkbox .checkbox-icon::after {
+    height: var(--size-large-breakpoint-checkbox-icon);
+    min-width: var(--size-large-breakpoint-checkbox-icon);
+    width: var(--size-large-breakpoint-checkbox-icon);
+  }
 }
 
 .checkbox input[type=checkbox] {
@@ -587,19 +576,47 @@ fieldset legend {
   background-color: var(--color-checkbox-icon-checked);
   content: "";
   display: block;
-  height: var(--size-checkbox-icon);
+  height: var(--size-small-breakpoint-checkbox-icon);
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 18 18' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m14 0h-10c-2.21 0-4 1.79-4 4v10c0 2.21 1.79 4 4 4h10c2.21 0 4-1.79 4-4v-10c0-2.21-1.79-4-4-4zm-11.04 8.29c.39-.39 1.02-.39 1.41 0l2.63 2.63 6.63-6.63c.39-.39 1.02-.39 1.41 0s.39 1.02 0 1.41l-7.33 7.33c-.2.2-.45.29-.71.29s-.51-.1-.71-.29l-3.33-3.33c-.39-.39-.39-1.02 0-1.41z' fill='%232E90FA'/%3E%3C/svg%3E");
   mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 18 18' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m14 0h-10c-2.21 0-4 1.79-4 4v10c0 2.21 1.79 4 4 4h10c2.21 0 4-1.79 4-4v-10c0-2.21-1.79-4-4-4zm-11.04 8.29c.39-.39 1.02-.39 1.41 0l2.63 2.63 6.63-6.63c.39-.39 1.02-.39 1.41 0s.39 1.02 0 1.41l-7.33 7.33c-.2.2-.45.29-.71.29s-.51-.1-.71-.29l-3.33-3.33c-.39-.39-.39-1.02 0-1.41z' fill='%232E90FA'/%3E%3C/svg%3E");
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
   -webkit-mask-size: 100%;
   mask-size: 100%;
-  min-width: var(--size-checkbox-icon);
-  width: var(--size-checkbox-icon);
+  min-width: var(--size-small-breakpoint-checkbox-icon);
+  width: var(--size-small-breakpoint-checkbox-icon);
+}
+
+@media(min-width: 768px) {
+  .checkbox input[type=checkbox]:checked+.checkbox-icon::after {
+    height: var(--size-medium-breakpoint-checkbox-icon);
+    min-width: var(--size-medium-breakpoint-checkbox-icon);
+    width: var(--size-medium-breakpoint-checkbox-icon);
+  }
+}
+
+@media(min-width: 1200px) {
+  .checkbox input[type=checkbox]:checked+.checkbox-icon::after {
+    height: var(--size-large-breakpoint-checkbox-icon);
+    min-width: var(--size-large-breakpoint-checkbox-icon);
+    width: var(--size-large-breakpoint-checkbox-icon);
+  }
 }
 
 .checkbox:not(:last-child) {
-  margin-bottom: var(--space-bottom-block-checkbox);
+  margin-bottom: var(--space-y-block-small-breakpoint-checkbox);
+}
+
+@media(min-width: 768px) {
+  .checkbox:not(:last-child) {
+    margin-bottom: var(--space-y-block-medium-breakpoint-checkbox);
+  }
+}
+
+@media(min-width: 1200px) {
+  .checkbox:not(:last-child) {
+    margin-bottom: var(--space-y-block-large-breakpoint-checkbox);
+  }
 }
 
 .radio {
@@ -653,15 +670,31 @@ fieldset legend {
   background-color: var(--color-radio-icon);
   content: "";
   display: block;
-  height: var(--size-radio-icon);
+  height: var(--size-small-breakpoint-radio-icon);
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='9' cy='9' r='8.5' stroke='%236C737F'/%3E%3C/svg%3E");
   mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='9' cy='9' r='8.5' stroke='%236C737F'/%3E%3C/svg%3E");
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
   -webkit-mask-size: 100%;
   mask-size: 100%;
-  min-width: var(--size-radio-icon);
-  width: var(--size-radio-icon);
+  min-width: var(--size-small-breakpoint-radio-icon);
+  width: var(--size-small-breakpoint-radio-icon);
+}
+
+@media(min-width: 768px) {
+  .radio .radio-icon::after {
+    height: var(--size-medium-breakpoint-radio-icon);
+    min-width: var(--size-medium-breakpoint-radio-icon);
+    width: var(--size-medium-breakpoint-radio-icon);
+  }
+}
+
+@media(min-width: 1200px) {
+  .radio .radio-icon::after {
+    height: var(--size-large-breakpoint-radio-icon);
+    min-width: var(--size-large-breakpoint-radio-icon);
+    width: var(--size-large-breakpoint-radio-icon);
+  }
 }
 
 .radio input[type=radio] {
@@ -676,19 +709,31 @@ fieldset legend {
   background-color: var(--color-radio-icon-active);
   content: "";
   display: block;
-  height: var(--size-radio-icon);
+  height: var(--size-small-breakpoint-radio-icon);
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 18 18' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%234b85c5'%3E%3Cpath d='m9 18c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9zm0-17c-4.41 0-8 3.59-8 8s3.59 8 8 8 8-3.59 8-8-3.59-8-8-8z'/%3E%3Ccircle cx='9' cy='9' r='4'/%3E%3C/g%3E%3C/svg%3E");
   mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 18 18' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%234b85c5'%3E%3Cpath d='m9 18c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9zm0-17c-4.41 0-8 3.59-8 8s3.59 8 8 8 8-3.59 8-8-3.59-8-8-8z'/%3E%3Ccircle cx='9' cy='9' r='4'/%3E%3C/g%3E%3C/svg%3E");
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
   -webkit-mask-size: 100%;
   mask-size: 100%;
-  min-width: var(--size-radio-icon);
-  width: var(--size-radio-icon);
+  min-width: var(--size-small-breakpoint-radio-icon);
+  width: var(--size-small-breakpoint-radio-icon);
 }
 
 .radio:not(:last-child) {
-  margin-bottom: var(--space-y-block-radio);
+  margin-bottom: var(--space-y-block-small-breakpoint-radio);
+}
+
+@media(min-width: 768px) {
+  .radio:not(:last-child) {
+    margin-bottom: var(--space-y-block-medium-breakpoint-radio);
+  }
+}
+
+@media(min-width: 1200px) {
+  .radio:not(:last-child) {
+    margin-bottom: var(--space-y-block-large-breakpoint-radio);
+  }
 }
 
 .select {
@@ -704,8 +749,10 @@ fieldset legend {
 .select .select-trigger {
   align-items: center;
   background: var(--background-select-trigger);
-  border: var(--border-select-trigger);
+  border-color: var(--border-color-select-trigger);
   border-radius: var(--border-radius-select-trigger);
+  border-style: solid;
+  border-width: var(--border-width-select-trigger);
   color: var(--color-select-trigger);
   cursor: pointer;
   display: flex;
@@ -777,8 +824,10 @@ fieldset legend {
 
 .select .select-options {
   background: var(--background-select-options);
-  border: var(--border-select-options);
+  border-color: var(--border-color-select-options);
   border-radius: var(--border-radius-select-options);
+  border-style: solid;
+  border-width: var(--border-width-select-options);
   box-shadow: none;
   display: none;
   left: 0;
@@ -810,20 +859,20 @@ fieldset legend {
   color: var(--color-select-option);
   cursor: pointer;
   font-weight: normal;
-  padding: var(--space-y-small-breakpoint-select-options) var(--space-x-small-breakpoint-select-options);
+  padding: var(--space-y-small-breakpoint-select-option) var(--space-x-small-breakpoint-select-option);
   position: relative;
   transition: all var(--transition-duration) ease-in-out;
 }
 
 @media(min-width: 768px) {
   .select .select-options .select-option {
-    padding: var(--space-y-medium-breakpoint-select-options) var(--space-x-medium-breakpoint-select-options);
+    padding: var(--space-y-medium-breakpoint-select-option) var(--space-x-medium-breakpoint-select-option);
   }
 }
 
 @media(min-width: 1200px) {
   .select .select-options .select-option {
-    padding: var(--space-y-large-breakpoint-select-options) var(--space-x-large-breakpoint-select-options);
+    padding: var(--space-y-large-breakpoint-select-option) var(--space-x-large-breakpoint-select-option);
   }
 }
 
@@ -850,44 +899,51 @@ fieldset legend {
 }
 
 .form-element-message.visible {
-  color: var(--color-message-error);
   font-size: var(--size-message);
   margin-top: var(--space-y-block-bottom-message);
   visibility: visible;
 }
 
-.form-element-message.form-element-message--error .form-element-message-icon {
+.form-element-message.form-element-message--error {
+  color: var(--color-message-error);
 }
 
 .form-element-message.form-element-message--error .form-element-message-icon::before {
   background-color: var(--color-message-error);
   content: "";
   display: block;
-  height: var(--size-message-error-icon);
-  -webkit-mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3CclipPath id='a'%3E%3Cpath d='m0 0h20v20h-20z'/%3E%3C/clipPath%3E%3Cg fill='none'%3E%3Cpath d='m10 19.08c-5.01 0-9.08-4.07-9.08-9.08s4.07-9.08 9.08-9.08 9.08 4.07 9.08 9.08-4.08 9.08-9.08 9.08zm0-16.67c-4.18 0-7.58 3.4-7.58 7.58s3.4 7.58 7.58 7.58 7.58-3.4 7.58-7.58-3.4-7.58-7.58-7.58zm0 11.67c-.41 0-.75-.34-.75-.75s.33-.75.75-.75c.41 0 .75.34.75.75s-.34.75-.75.75zm0-3.33c-.41 0-.75-.34-.75-.75v-3.33c0-.41.34-.75.75-.75s.75.34.75.75v3.33c0 .41-.34.75-.75.75z' fill='%23e8453a'/%3E%3C/g%3E%3C/svg%3E");
-  mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3CclipPath id='a'%3E%3Cpath d='m0 0h20v20h-20z'/%3E%3C/clipPath%3E%3Cg fill='none'%3E%3Cpath d='m10 19.08c-5.01 0-9.08-4.07-9.08-9.08s4.07-9.08 9.08-9.08 9.08 4.07 9.08 9.08-4.08 9.08-9.08 9.08zm0-16.67c-4.18 0-7.58 3.4-7.58 7.58s3.4 7.58 7.58 7.58 7.58-3.4 7.58-7.58-3.4-7.58-7.58-7.58zm0 11.67c-.41 0-.75-.34-.75-.75s.33-.75.75-.75c.41 0 .75.34.75.75s-.34.75-.75.75zm0-3.33c-.41 0-.75-.34-.75-.75v-3.33c0-.41.34-.75.75-.75s.75.34.75.75v3.33c0 .41-.34.75-.75.75z' fill='%23e8453a'/%3E%3C/g%3E%3C/svg%3E");
+  height: var(--size-small-breakpoint-message-error-icon);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20.61 19'%3E%3Cpath d='M9.5 19C4.26 19 0 14.74 0 9.5S4.26 0 9.5 0 19 4.26 19 9.5c0 1.04-.17 2.06-.5 3.04-.07.2-.11.32-.13.4.03.01.08.09.15.23l1.64 3.03c.31.57.51.94.43 1.44-.07.44-.33.83-.71 1.05-.43.26-.87.22-1.49.15l-5.13-.53c-.08 0-.13-.02-.17-.02-.01 0-.07.03-.15.06l-.39-.92.36.93c-1.09.42-2.24.63-3.41.63zm2.7-2.5l.36.93-.33-.95c.22-.08.34-.12.44-.15.13-.03.23-.04.38-.05.09 0 .21 0 .44.03l4.74.49-1.46-2.7c-.16-.29-.26-.48-.32-.73-.06-.22-.07-.41-.06-.64.02-.25.09-.46.22-.83a7.503 7.503 0 0 0-7.1-9.92c-4.14 0-7.5 3.36-7.5 7.5a7.503 7.503 0 0 0 10.2 7zm-2.7-3c-.55 0-1-.45-1-1s.44-1 1-1c.55 0 1 .45 1 1s-.45 1-1 1zm0-3.5c-.55 0-1-.45-1-1V5.5c0-.55.45-1 1-1s1 .45 1 1V9c0 .55-.45 1-1 1z'/%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20.61 19'%3E%3Cpath d='M9.5 19C4.26 19 0 14.74 0 9.5S4.26 0 9.5 0 19 4.26 19 9.5c0 1.04-.17 2.06-.5 3.04-.07.2-.11.32-.13.4.03.01.08.09.15.23l1.64 3.03c.31.57.51.94.43 1.44-.07.44-.33.83-.71 1.05-.43.26-.87.22-1.49.15l-5.13-.53c-.08 0-.13-.02-.17-.02-.01 0-.07.03-.15.06l-.39-.92.36.93c-1.09.42-2.24.63-3.41.63zm2.7-2.5l.36.93-.33-.95c.22-.08.34-.12.44-.15.13-.03.23-.04.38-.05.09 0 .21 0 .44.03l4.74.49-1.46-2.7c-.16-.29-.26-.48-.32-.73-.06-.22-.07-.41-.06-.64.02-.25.09-.46.22-.83a7.503 7.503 0 0 0-7.1-9.92c-4.14 0-7.5 3.36-7.5 7.5a7.503 7.503 0 0 0 10.2 7zm-2.7-3c-.55 0-1-.45-1-1s.44-1 1-1c.55 0 1 .45 1 1s-.45 1-1 1zm0-3.5c-.55 0-1-.45-1-1V5.5c0-.55.45-1 1-1s1 .45 1 1V9c0 .55-.45 1-1 1z'/%3E%3C/svg%3E");
   -webkit-mask-repeat: no-repeat;
   mask-repeat: no-repeat;
   -webkit-mask-size: 100%;
   mask-size: 100%;
-  min-width: var(--size-message-error-icon);
-  width: var(--size-message-error-icon);
+  min-width: var(--size-small-breakpoint-message-error-icon);
+  width: var(--size-small-breakpoint-message-error-icon);
 }
 
-.form-element-info {
-  color: var(--color-message-info);
-  font-size: var(--size-info);
-  margin-top: var(--space-y-block-bottom-info);
-  visibility: visible;
+@media(min-width: 768px) {
+  .form-element-message.form-element-message--error .form-element-message-icon::before {
+    height: var(--size-medium-breakpoint-message-error-icon);
+    min-width: var(--size-medium-breakpoint-message-error-icon);
+    width: var(--size-medium-breakpoint-message-error-icon);
+  }
 }
 
-.form-element-info.hidden {
-  display: none;
+@media(min-width: 1200px) {
+  .form-element-message.form-element-message--error .form-element-message-icon::before {
+    height: var(--size-large-breakpoint-message-error-icon);
+    min-width: var(--size-large-breakpoint-message-error-icon);
+    width: var(--size-large-breakpoint-message-error-icon);
+  }
 }
 
 .form-element-error .form-element-items {
-  border: var(--border-message-error-items);
+  border-color: var(--border-color-message-error-items);
   border-radius: var(--border-radius-message-error-items);
+  border-style: solid;
+  border-width: var(--border-width-message-error-items);
   box-shadow: 0px 0px 0px var(--size-form-outline) var(--color-form-outline-error);
   padding: var(--space-y-small-breakpoint-message-items) var(--space-x-small-breakpoint-message-items);
 }
@@ -910,8 +966,10 @@ fieldset legend {
 
 .datepicker .datepicker-calendar {
   background: var(--background-datepicker);
-  border: var(--border-datepicker);
+  border-color: var(--border-color-datepicker);
   border-radius: var(--border-radius-datepicker);
+  border-style: solid;
+  border-width: var(--border-width-datepicker);
   display: none;
   left: 0;
   position: absolute;
@@ -945,6 +1003,7 @@ fieldset legend {
 }
 
 .datepicker .datepicker-calendar .datepicker-calendar-navigation .datepicker-month .datepicker-month-dropdown {
+  color: var(--color-datepicker-month-dropdown);
   font-weight: 700;
 }
 
@@ -1082,19 +1141,19 @@ fieldset legend {
 }
 
 .datepicker .datepicker-calendar .datepicker-calendar-day:hover {
-  color: var(--color-hover-datepicker-calendar-day);
+  color: var(--color-datepicker-calendar-day-hover);
 }
 
 .datepicker .datepicker-calendar .datepicker-calendar-day:hover::before {
-  background: var(--background-hover-datepicker-calendar-day);
+  background: var(--background-datepicker-calendar-day-hover);
 }
 
 .datepicker .datepicker-calendar .datepicker-calendar-day.visible {
-  color: var(--color-active-datepicker-calendar-day);
+  color: var(--color-datepicker-calendar-day-active);
 }
 
 .datepicker .datepicker-calendar .datepicker-calendar-day.visible::before {
-  background: var(--background-active-datepicker-calendar-day);
+  background: var(--background-datepicker-calendar-day-active);
 }
 
 .datepicker .datepicker-calendar .datepicker-calendar-day:not(.datepicker-calendar-day-29, .datepicker-calendar-day-30, .datepicker-calendar-day-31, .datepicker-calendar-day-28:last-child) {
