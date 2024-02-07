@@ -64,7 +64,9 @@
 
 .modal .modal-header .modal-close {
   cursor: pointer;
+  height: var(--size-modal-close);
   margin-left: auto;
+  width: var(--size-modal-close);
 }
 
 .modal .modal-header .modal-close::after {
