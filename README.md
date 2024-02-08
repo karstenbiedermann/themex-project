@@ -1,36 +1,20 @@
 <p align="center"><a href="https://themexproject.com/"><img src="https://github.com/karstenbiedermann/themex-project/assets/114942316/97322e88-7ba0-4af8-883b-dacb8e5b288a">
  </a></p>
 
+## Introducing Themex
 
-As a front-end developer with over 15 years of experience in implementing websites, I have frequently experimented with new CSS frameworks. Frameworks like Bootstrap and Tailwind offer well-thought-out concepts that enable efficient and time-saving implementation of CSS declarations within the DOM. However, they haven't been efficient enough for me, especially in website development. Most websites today tend to follow a similar pattern and are not inherently complex. Typically, they involve fonts, colors, and other CSS properties that are defined globally and later passed on to child elements. The real challenge arises, especially when varying a web component, as it becomes confusing and difficult to replicate in other projects. The complexity further increases when a CMS is involved, leading to more intricate code in the DOM. This is why I created themex. It is primarily designed to ensure reproduction, clarity, and intuitiveness in all kinds of website projects. themex is built on **Vanilla JavaScript, CSS, and HTML.**
+Your bridge from visual design to fully functional code. With Themex, you can directly translate your project's layout into code right in the browser, setting a solid foundation for your web development. Themex is equipped with all the necessary JavaScript functionalities for implementing plain **HTML** components, providing a robust foundation for web development. For those working with **React** or **Vue.js**, Themex offers prepared code structures on component pages, ready for you to use and customize.
 
-## What is themex?
+## How it works?
 
-**themex is not another CSS framework!** It's much more. themex aims to prevent a blank screen in your IDE and serves as a solid foundation for further development. It **provides a DOM and CSS variables structure as well as CSS Declarations.**
+👉 https://app.themexproject.com/
 
-## How to use it?
-
-**Step 1:** Define your theme in the browser (https://themexproject.com/) and download it, along with all the required assets, by clicking **'Generate Theme'**. Only your CSS variables exist, and there is no overridden default value.
-
-**Step 2:** Copy the downloaded files into your project folder. Or use NPM to install themex.
+In Themex, CSS variables serve as powerful helpers, enabling a more nuanced and flexible approach to styling. By leveraging these variables, developers can create a system of modular and component-specific classes that offer the same level of reusability as global modifiers but with much greater adaptability. This approach allows for individual properties to be adjusted without the need for cumbersome overrides or the risk of cascading style conflicts.
 
 ```shell
 npm i the-themex-project
 ```
 
-**Step 3:** Link the CSS and JavaScript files.
+## How to include the css
 
-**Step 4:** Add the HTML structure to your project.
-
-**Step 5:** [Support the project by giving it a star on GitHub](https://github.com/karstenbiedermann/themex-project). ❤️
-
-## What's next?
-
-Themex is still in the prototype phase.
-
-More features will be added soon:
-
-- More components
-- Switching between themes
-- More documentation
-- More examples
+To unlock the full potential of Themex, it is recommended to directly reference the CSS files. This approach allows developers to efficiently integrate Themex predefined style templates into their projects while retaining the flexibility to make necessary adjustments. Creating separate CSS files for further development is a recommended approach to enhance your project. This strategy not only offers the flexibility to customize your theme beyond the default Themex styles but also simplifies maintenance and scalability.
