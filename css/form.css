@@ -5,7 +5,9 @@
   --size-medium-breakpoint-legend: var(--size-medium-breakpoint-form-element-label);
   --size-small-breakpoint-legend: var(--size-small-breakpoint-form-element-label);
   --space-y-block-large-breakpoint-legend: var(--space-y-block-large-breakpoint-form-element-label);
-  --space-y-block-medium-breakpoint-legend: var(--space-y-block-medium-breakpoint-form-element-label);
+  --space-y-block-medium-breakpoint-legend: var(
+    --space-y-block-medium-breakpoint-form-element-label
+  );
   --space-y-block-small-breakpoint-legend: var(--space-y-block-small-breakpoint-form-element-label);
   --column-gap-form-grid: var(--gap);
   --space-y-block-legend-label-addon: var(--space-y-block-form-label);
@@ -149,25 +151,25 @@ fieldset legend {
   margin-bottom: var(--space-y-block-small-breakpoint-legend);
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   fieldset legend {
     font-size: var(--size-medium-breakpoint-legend);
   }
 }
 
-@media(min-width: 1200px) {
+@media (min-width: 1200px) {
   fieldset legend {
     font-size: var(--size-large-breakpoint-legend);
   }
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   fieldset legend {
     margin-bottom: var(--space-y-block-medium-breakpoint-legend);
   }
 }
 
-@media(min-width: 1200px) {
+@media (min-width: 1200px) {
   fieldset legend {
     margin-bottom: var(--space-y-block-large-breakpoint-legend);
   }
@@ -179,7 +181,7 @@ fieldset legend {
   width: 100%;
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .form-grid .form-row {
     column-gap: var(--column-gap-form-grid);
   }
@@ -189,10 +191,10 @@ fieldset legend {
   width: 100%;
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .form-grid .form-row .form-element {
     flex: 1 0 calc(50% - var(--gap));
-    max-width: calc(50% - var(--gap)/2*1);
+    max-width: calc(50% - var(--gap) / 2 * 1);
     width: auto;
   }
 }
@@ -202,13 +204,13 @@ fieldset legend {
   position: relative;
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .form-element {
     margin-bottom: var(--space-y-block-medium-breakpoint-form-element);
   }
 }
 
-@media(min-width: 1200px) {
+@media (min-width: 1200px) {
   .form-element {
     margin-bottom: var(--space-y-block-large-breakpoint-form-element);
   }
@@ -226,13 +228,13 @@ fieldset legend {
   margin-left: auto;
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .form-element .form-element-label .form-element-label-addon {
     font-size: var(--size-medium-breakpoint-form-element-label-addon);
   }
 }
 
-@media(min-width: 1200px) {
+@media (min-width: 1200px) {
   .form-element .form-element-label .form-element-label-addon {
     font-size: var(--size-large-breakpoint-form-element-label-addon);
   }
@@ -246,25 +248,25 @@ fieldset legend {
   margin-bottom: var(--space-y-block-small-breakpoint-form-element-label);
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .form-element .form-element-label label {
     font-size: var(--size-medium-breakpoint-form-element-label);
   }
 }
 
-@media(min-width: 1200px) {
+@media (min-width: 1200px) {
   .form-element .form-element-label label {
     font-size: var(--size-large-breakpoint-form-element-label);
   }
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .form-element .form-element-label label {
     margin-bottom: var(--space-y-block-medium-breakpoint-form-element-label);
   }
 }
 
-@media(min-width: 1200px) {
+@media (min-width: 1200px) {
   .form-element .form-element-label label {
     margin-bottom: var(--space-y-block-large-breakpoint-form-element-label);
   }
@@ -282,13 +284,13 @@ fieldset legend {
   width: var(--width-small-breakpoint-form-element-icon);
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .form-element .form-element-icon {
     width: var(--width-medium-breakpoint-form-element-icon);
   }
 }
 
-@media(min-width: 1200px) {
+@media (min-width: 1200px) {
   .form-element .form-element-icon {
     width: var(--width-large-breakpoint-form-element-icon);
   }
@@ -299,14 +301,14 @@ fieldset legend {
   width: var(--size-small-breakpoint-form-element-icon);
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .form-element .form-element-icon i {
     height: var(--size-medium-breakpoint-form-element-icon);
     width: var(--size-medium-breakpoint-form-element-icon);
   }
 }
 
-@media(min-width: 1200px) {
+@media (min-width: 1200px) {
   .form-element .form-element-icon i {
     height: var(--size-large-breakpoint-form-element-icon);
     width: var(--size-large-breakpoint-form-element-icon);
@@ -320,7 +322,7 @@ fieldset legend {
   width: var(--size-small-breakpoint-form-element-icon);
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .form-element .form-element-icon i::after {
     height: var(--size-medium-breakpoint-form-element-icon);
     min-width: var(--size-medium-breakpoint-form-element-icon);
@@ -328,7 +330,7 @@ fieldset legend {
   }
 }
 
-@media(min-width: 1200px) {
+@media (min-width: 1200px) {
   .form-element .form-element-icon i::after {
     height: var(--size-large-breakpoint-form-element-icon);
     min-width: var(--size-large-breakpoint-form-element-icon);
@@ -336,18 +338,18 @@ fieldset legend {
   }
 }
 
-.form-element .form-element-icon+.input {
+.form-element .form-element-icon + .input {
   padding-left: var(--space-x-small-breakpoint-form-element-icon);
 }
 
-@media(min-width: 768px) {
-  .form-element .form-element-icon+.input {
+@media (min-width: 768px) {
+  .form-element .form-element-icon + .input {
     padding-left: var(--space-x-medium-breakpoint-form-element-icon);
   }
 }
 
-@media(min-width: 1200px) {
-  .form-element .form-element-icon+.input {
+@media (min-width: 1200px) {
+  .form-element .form-element-icon + .input {
     padding-left: var(--space-x-large-breakpoint-form-element-icon);
   }
 }
@@ -368,29 +370,29 @@ fieldset legend {
   font-size: var(--size-small-breakpoint-input);
   margin-bottom: 0;
   padding: var(--space-y-small-breakpoint-input) var(--space-x-small-breakpoint-input);
-  transition: all .3s;
+  transition: all 0.3s;
   width: 100%;
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .form-element .input {
     font-size: var(--size-medium-breakpoint-input);
   }
 }
 
-@media(min-width: 1200px) {
+@media (min-width: 1200px) {
   .form-element .input {
     font-size: var(--size-large-breakpoint-input);
   }
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .form-element .input {
     padding: var(--space-y-medium-breakpoint-input) var(--space-x-medium-breakpoint-input);
   }
 }
 
-@media(min-width: 1200px) {
+@media (min-width: 1200px) {
   .form-element .input {
     padding: var(--space-y-large-breakpoint-input) var(--space-x-large-breakpoint-input);
   }
@@ -398,6 +400,7 @@ fieldset legend {
 
 .form-element .input::placeholder {
   color: var(--color-input-placeholder);
+  opacity: 1;
 }
 
 .form-element .input:focus {
@@ -426,41 +429,41 @@ fieldset legend {
   margin-bottom: 0;
   min-height: var(--min-height-small-breakpoint-textarea);
   padding: var(--space-y-small-breakpoint-textarea) var(--space-x-small-breakpoint-textarea);
-  transition: all .3s;
+  transition: all 0.3s;
   width: 100%;
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .textarea {
     min-height: var(--min-height-medium-breakpoint-textarea);
   }
 }
 
-@media(min-width: 1200px) {
+@media (min-width: 1200px) {
   .textarea {
     min-height: var(--min-height-large-breakpoint-textarea);
   }
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .textarea {
     font-size: var(--size-medium-breakpoint-input);
   }
 }
 
-@media(min-width: 1200px) {
+@media (min-width: 1200px) {
   .textarea {
     font-size: var(--size-large-breakpoint-input);
   }
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .textarea {
     padding: var(--space-y-medium-breakpoint-textarea) var(--space-x-medium-breakpoint-textarea);
   }
 }
 
-@media(min-width: 1200px) {
+@media (min-width: 1200px) {
   .textarea {
     padding: var(--space-y-large-breakpoint-textarea) var(--space-x-large-breakpoint-textarea);
   }
@@ -468,7 +471,7 @@ fieldset legend {
 
 .textarea::placeholder {
   color: var(--color-textarea-placeholder);
-  opacity: .7;
+  opacity: 1;
 }
 
 .textarea:focus {
@@ -485,7 +488,7 @@ fieldset legend {
 .checkbox {
   color: var(--color-checkbox);
   position: relative;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .checkbox label {
@@ -502,25 +505,25 @@ fieldset legend {
   padding: var(--space-y-small-breakpoint-checkbox) var(--space-x-small-breakpoint-checkbox);
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .checkbox .checkbox-label {
     font-size: var(--size-medium-breakpoint-checkbox-label);
   }
 }
 
-@media(min-width: 1200px) {
+@media (min-width: 1200px) {
   .checkbox .checkbox-label {
     font-size: var(--size-large-breakpoint-checkbox-label);
   }
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .checkbox .checkbox-label {
     padding: var(--space-y-medium-breakpoint-checkbox) var(--space-x-medium-breakpoint-checkbox);
   }
 }
 
-@media(min-width: 1200px) {
+@media (min-width: 1200px) {
   .checkbox .checkbox-label {
     padding: var(--space-y-large-breakpoint-checkbox) var(--space-x-large-breakpoint-checkbox);
   }
@@ -534,7 +537,7 @@ fieldset legend {
 
 .checkbox .checkbox-icon::after {
   background-color: var(--color-checkbox-icon);
-  content: "";
+  content: '';
   display: block;
   height: var(--size-small-breakpoint-checkbox-icon);
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 18 18' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m14 18h-10c-2.21 0-4-1.79-4-4v-10c0-2.21 1.79-4 4-4h10c2.21 0 4 1.79 4 4v10c0 2.21-1.79 4-4 4zm-10-17c-1.65 0-3 1.35-3 3v10c0 1.65 1.35 3 3 3h10c1.65 0 3-1.35 3-3v-10c0-1.65-1.35-3-3-3z' fill='%23D2D6DB'/%3E%3C/svg%3E");
@@ -547,7 +550,7 @@ fieldset legend {
   width: var(--size-small-breakpoint-checkbox-icon);
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .checkbox .checkbox-icon::after {
     height: var(--size-medium-breakpoint-checkbox-icon);
     min-width: var(--size-medium-breakpoint-checkbox-icon);
@@ -555,7 +558,7 @@ fieldset legend {
   }
 }
 
-@media(min-width: 1200px) {
+@media (min-width: 1200px) {
   .checkbox .checkbox-icon::after {
     height: var(--size-large-breakpoint-checkbox-icon);
     min-width: var(--size-large-breakpoint-checkbox-icon);
@@ -563,7 +566,7 @@ fieldset legend {
   }
 }
 
-.checkbox input[type=checkbox] {
+.checkbox input[type='checkbox'] {
   cursor: pointer;
   left: 5px;
   opacity: 0;
@@ -571,9 +574,9 @@ fieldset legend {
   top: 5px;
 }
 
-.checkbox input[type=checkbox]:checked+.checkbox-icon::after {
+.checkbox input[type='checkbox']:checked + .checkbox-icon::after {
   background-color: var(--color-checkbox-icon-checked);
-  content: "";
+  content: '';
   display: block;
   height: var(--size-small-breakpoint-checkbox-icon);
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 18 18' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m14 0h-10c-2.21 0-4 1.79-4 4v10c0 2.21 1.79 4 4 4h10c2.21 0 4-1.79 4-4v-10c0-2.21-1.79-4-4-4zm-11.04 8.29c.39-.39 1.02-.39 1.41 0l2.63 2.63 6.63-6.63c.39-.39 1.02-.39 1.41 0s.39 1.02 0 1.41l-7.33 7.33c-.2.2-.45.29-.71.29s-.51-.1-.71-.29l-3.33-3.33c-.39-.39-.39-1.02 0-1.41z' fill='%232E90FA'/%3E%3C/svg%3E");
@@ -586,16 +589,16 @@ fieldset legend {
   width: var(--size-small-breakpoint-checkbox-icon);
 }
 
-@media(min-width: 768px) {
-  .checkbox input[type=checkbox]:checked+.checkbox-icon::after {
+@media (min-width: 768px) {
+  .checkbox input[type='checkbox']:checked + .checkbox-icon::after {
     height: var(--size-medium-breakpoint-checkbox-icon);
     min-width: var(--size-medium-breakpoint-checkbox-icon);
     width: var(--size-medium-breakpoint-checkbox-icon);
   }
 }
 
-@media(min-width: 1200px) {
-  .checkbox input[type=checkbox]:checked+.checkbox-icon::after {
+@media (min-width: 1200px) {
+  .checkbox input[type='checkbox']:checked + .checkbox-icon::after {
     height: var(--size-large-breakpoint-checkbox-icon);
     min-width: var(--size-large-breakpoint-checkbox-icon);
     width: var(--size-large-breakpoint-checkbox-icon);
@@ -606,13 +609,13 @@ fieldset legend {
   margin-bottom: var(--space-y-block-small-breakpoint-checkbox);
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .checkbox:not(:last-child) {
     margin-bottom: var(--space-y-block-medium-breakpoint-checkbox);
   }
 }
 
-@media(min-width: 1200px) {
+@media (min-width: 1200px) {
   .checkbox:not(:last-child) {
     margin-bottom: var(--space-y-block-large-breakpoint-checkbox);
   }
@@ -621,7 +624,7 @@ fieldset legend {
 .radio {
   color: var(--color-radio);
   position: relative;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .radio label {
@@ -637,25 +640,25 @@ fieldset legend {
   padding: var(--space-y-small-breakpoint-radio) var(--space-x-small-breakpoint-radio);
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .radio .radio-label {
     font-size: var(--size-medium-breakpoint-radio-label);
   }
 }
 
-@media(min-width: 1200px) {
+@media (min-width: 1200px) {
   .radio .radio-label {
     font-size: var(--size-large-breakpoint-radio-label);
   }
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .radio .radio-label {
     padding: var(--space-y-medium-breakpoint-radio) var(--space-x-medium-breakpoint-radio);
   }
 }
 
-@media(min-width: 1200px) {
+@media (min-width: 1200px) {
   .radio .radio-label {
     padding: var(--space-y-large-breakpoint-radio) var(--space-x-large-breakpoint-radio);
   }
@@ -667,7 +670,7 @@ fieldset legend {
 
 .radio .radio-icon::after {
   background-color: var(--color-radio-icon);
-  content: "";
+  content: '';
   display: block;
   height: var(--size-small-breakpoint-radio-icon);
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 18 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='9' cy='9' r='8.5' stroke='%236C737F'/%3E%3C/svg%3E");
@@ -680,7 +683,7 @@ fieldset legend {
   width: var(--size-small-breakpoint-radio-icon);
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .radio .radio-icon::after {
     height: var(--size-medium-breakpoint-radio-icon);
     min-width: var(--size-medium-breakpoint-radio-icon);
@@ -688,7 +691,7 @@ fieldset legend {
   }
 }
 
-@media(min-width: 1200px) {
+@media (min-width: 1200px) {
   .radio .radio-icon::after {
     height: var(--size-large-breakpoint-radio-icon);
     min-width: var(--size-large-breakpoint-radio-icon);
@@ -696,17 +699,17 @@ fieldset legend {
   }
 }
 
-.radio input[type=radio] {
+.radio input[type='radio'] {
   cursor: pointer;
-  left: .3125rem;
+  left: 0.3125rem;
   opacity: 0;
   position: absolute;
-  top: .3125rem;
+  top: 0.3125rem;
 }
 
-.radio input[type=radio]:checked+.radio-icon::after {
+.radio input[type='radio']:checked + .radio-icon::after {
   background-color: var(--color-radio-icon-active);
-  content: "";
+  content: '';
   display: block;
   height: var(--size-small-breakpoint-radio-icon);
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 18 18' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%234b85c5'%3E%3Cpath d='m9 18c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9zm0-17c-4.41 0-8 3.59-8 8s3.59 8 8 8 8-3.59 8-8-3.59-8-8-8z'/%3E%3Ccircle cx='9' cy='9' r='4'/%3E%3C/g%3E%3C/svg%3E");
@@ -723,13 +726,13 @@ fieldset legend {
   margin-bottom: var(--space-y-block-small-breakpoint-radio);
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .radio:not(:last-child) {
     margin-bottom: var(--space-y-block-medium-breakpoint-radio);
   }
 }
 
-@media(min-width: 1200px) {
+@media (min-width: 1200px) {
   .radio:not(:last-child) {
     margin-bottom: var(--space-y-block-large-breakpoint-radio);
   }
@@ -763,25 +766,25 @@ fieldset legend {
   width: 100%;
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .select .select-trigger {
     font-size: var(--size-medium-breakpoint-select-trigger);
   }
 }
 
-@media(min-width: 1200px) {
+@media (min-width: 1200px) {
   .select .select-trigger {
     font-size: var(--size-large-breakpoint-select-trigger);
   }
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .select .select-trigger {
     padding: var(--space-y-medium-breakpoint-select) var(--space-x-medium-breakpoint-select);
   }
 }
 
-@media(min-width: 1200px) {
+@media (min-width: 1200px) {
   .select .select-trigger {
     padding: var(--space-y-large-breakpoint-select) var(--space-x-large-breakpoint-select);
   }
@@ -803,7 +806,7 @@ fieldset legend {
 
 .select .select-trigger::after {
   background-color: var(--color-select-trigger-icon);
-  content: "";
+  content: '';
   display: block;
   height: var(--size-select-trigger-icon);
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg viewBox='-1.5 -4.5 16.5 16.5' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m7 8c-.26 0-.51-.1-.71-.29l-6-6c-.39-.39-.39-1.03 0-1.42s1.03-.39 1.42 0l5.29 5.3 5.29-5.3c.39-.39 1.02-.39 1.41 0s.39 1.02 0 1.41l-5.99 6.01c-.2.2-.45.29-.71.29z' fill='%236c737f'/%3E%3C/svg%3E");
@@ -817,7 +820,7 @@ fieldset legend {
   right: 20px;
   top: auto;
   transform: rotate(0);
-  transition: all .1s;
+  transition: all 0.1s;
   width: var(--size-select-trigger-icon);
 }
 
@@ -830,7 +833,8 @@ fieldset legend {
   box-shadow: none;
   display: none;
   left: 0;
-  padding: var(--space-y-small-breakpoint-select-options) var(--space-x-small-breakpoint-select-options);
+  padding: var(--space-y-small-breakpoint-select-options)
+    var(--space-x-small-breakpoint-select-options);
   position: absolute;
   top: 55.5px;
   transition: all var(--transition-duration) ease-in-out;
@@ -838,15 +842,17 @@ fieldset legend {
   z-index: 1;
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .select .select-options {
-    padding: var(--space-y-medium-breakpoint-select-options) var(--space-x-medium-breakpoint-select-options);
+    padding: var(--space-y-medium-breakpoint-select-options)
+      var(--space-x-medium-breakpoint-select-options);
   }
 }
 
-@media(min-width: 1200px) {
+@media (min-width: 1200px) {
   .select .select-options {
-    padding: var(--space-y-large-breakpoint-select-options) var(--space-x-large-breakpoint-select-options);
+    padding: var(--space-y-large-breakpoint-select-options)
+      var(--space-x-large-breakpoint-select-options);
   }
 }
 
@@ -858,26 +864,29 @@ fieldset legend {
   color: var(--color-select-option);
   cursor: pointer;
   font-weight: normal;
-  padding: var(--space-y-small-breakpoint-select-option) var(--space-x-small-breakpoint-select-option);
+  padding: var(--space-y-small-breakpoint-select-option)
+    var(--space-x-small-breakpoint-select-option);
   position: relative;
   transition: all var(--transition-duration) ease-in-out;
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .select .select-options .select-option {
-    padding: var(--space-y-medium-breakpoint-select-option) var(--space-x-medium-breakpoint-select-option);
+    padding: var(--space-y-medium-breakpoint-select-option)
+      var(--space-x-medium-breakpoint-select-option);
   }
 }
 
-@media(min-width: 1200px) {
+@media (min-width: 1200px) {
   .select .select-options .select-option {
-    padding: var(--space-y-large-breakpoint-select-option) var(--space-x-large-breakpoint-select-option);
+    padding: var(--space-y-large-breakpoint-select-option)
+      var(--space-x-large-breakpoint-select-option);
   }
 }
 
 .select .select-options .select-option:not(:last-of-type)::after {
   bottom: 0;
-  content: "";
+  content: '';
   left: 0;
   position: absolute;
   width: 100%;
@@ -909,7 +918,7 @@ fieldset legend {
 
 .form-element-message.form-element-message--error .form-element-message-icon::before {
   background-color: var(--color-message-error);
-  content: "";
+  content: '';
   display: block;
   height: var(--size-small-breakpoint-message-error-icon);
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 7.00008V11.0001M10 15.0001H10.01M1 6.94153V15.0586C1 15.4013 1 15.5726 1.05048 15.7254C1.09515 15.8606 1.16816 15.9847 1.26463 16.0893C1.37369 16.2077 1.52345 16.2909 1.82297 16.4573L9.22297 20.5684C9.50658 20.726 9.64838 20.8047 9.79855 20.8356C9.93146 20.863 10.0685 20.863 10.2015 20.8356C10.3516 20.8047 10.4934 20.726 10.777 20.5684L18.177 16.4573C18.4766 16.2909 18.6263 16.2077 18.7354 16.0893C18.8318 15.9847 18.9049 15.8606 18.9495 15.7254C19 15.5726 19 15.4013 19 15.0586V6.94153C19 6.59889 19 6.42756 18.9495 6.27477C18.9049 6.13959 18.8318 6.01551 18.7354 5.91082C18.6263 5.79248 18.4766 5.70928 18.177 5.54288L10.777 1.43177C10.4934 1.27421 10.3516 1.19543 10.2015 1.16454C10.0685 1.13721 9.93146 1.13721 9.79855 1.16454C9.64838 1.19543 9.50658 1.27421 9.22297 1.43177L1.82297 5.54288C1.52345 5.70928 1.37369 5.79248 1.26463 5.91082C1.16816 6.01551 1.09515 6.13959 1.05048 6.27477C1 6.42756 1 6.59889 1 6.94153Z' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
@@ -922,7 +931,7 @@ fieldset legend {
   width: var(--size-small-breakpoint-message-error-icon);
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .form-element-message.form-element-message--error .form-element-message-icon::before {
     height: var(--size-medium-breakpoint-message-error-icon);
     min-width: var(--size-medium-breakpoint-message-error-icon);
@@ -930,7 +939,7 @@ fieldset legend {
   }
 }
 
-@media(min-width: 1200px) {
+@media (min-width: 1200px) {
   .form-element-message.form-element-message--error .form-element-message-icon::before {
     height: var(--size-large-breakpoint-message-error-icon);
     min-width: var(--size-large-breakpoint-message-error-icon);
@@ -944,18 +953,21 @@ fieldset legend {
   border-style: solid;
   border-width: var(--border-width-message-error-items);
   box-shadow: 0px 0px 0px var(--size-form-outline) var(--color-form-outline-error);
-  padding: var(--space-y-small-breakpoint-message-items) var(--space-x-small-breakpoint-message-items);
+  padding: var(--space-y-small-breakpoint-message-items)
+    var(--space-x-small-breakpoint-message-items);
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .form-element-error .form-element-items {
-    padding: var(--space-y-medium-breakpoint-message-items) var(--space-x-medium-breakpoint-message-items);
+    padding: var(--space-y-medium-breakpoint-message-items)
+      var(--space-x-medium-breakpoint-message-items);
   }
 }
 
-@media(min-width: 1200px) {
+@media (min-width: 1200px) {
   .form-element-error .form-element-items {
-    padding: var(--space-y-large-breakpoint-message-items) var(--space-x-large-breakpoint-message-items);
+    padding: var(--space-y-large-breakpoint-message-items)
+      var(--space-x-large-breakpoint-message-items);
   }
 }
 
@@ -977,13 +989,13 @@ fieldset legend {
   z-index: 3;
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .datepicker .datepicker-calendar {
     width: var(--width-medium-breakpoint-datepicker);
   }
 }
 
-@media(min-width: 1200px) {
+@media (min-width: 1200px) {
   .datepicker .datepicker-calendar {
     width: var(--width-large-breakpoint-datepicker);
   }
@@ -1001,14 +1013,18 @@ fieldset legend {
   margin-right: auto;
 }
 
-.datepicker .datepicker-calendar .datepicker-calendar-navigation .datepicker-month .datepicker-month-dropdown {
+.datepicker
+  .datepicker-calendar
+  .datepicker-calendar-navigation
+  .datepicker-month
+  .datepicker-month-dropdown {
   color: var(--color-datepicker-month-dropdown);
   font-weight: 700;
 }
 
 .datepicker .datepicker-calendar .datepicker-calendar-navigation .datepicker-month::after {
   background-color: var(--color-datepicker-month-dropdown);
-  content: "";
+  content: '';
   display: block;
   height: var(--size-datepicker-month-dropdown);
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg viewBox='-1.5 -4.5 16.5 16.5' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m7 8c-.26 0-.51-.1-.71-.29l-6-6c-.39-.39-.39-1.03 0-1.42s1.03-.39 1.42 0l5.29 5.3 5.29-5.3c.39-.39 1.02-.39 1.41 0s.39 1.02 0 1.41l-5.99 6.01c-.2.2-.45.29-.71.29z' fill='%236c737f'/%3E%3C/svg%3E");
@@ -1023,12 +1039,12 @@ fieldset legend {
 
 .datepicker .datepicker-calendar .datepicker-calendar-navigation .datepicker-button--prev {
   font-size: 0;
-  margin-right: .5rem;
+  margin-right: 0.5rem;
 }
 
 .datepicker .datepicker-calendar .datepicker-calendar-navigation .datepicker-button--prev::after {
   background-color: var(--color-datepicker-prev-next);
-  content: "";
+  content: '';
   display: block;
   height: var(--size-datepicker-prev-next);
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg viewBox='-2 -0.1 12 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m5.75 11.5c-.19 0-.38-.07-.53-.22l-5-5c-.14-.14-.22-.33-.22-.53s.08-.39.22-.53l5-5c.29-.29.77-.29 1.06 0s.29.77 0 1.06l-4.47 4.47 4.47 4.47c.29.29.29.77 0 1.06-.15.15-.34.22-.53.22z' fill='%236c7380'/%3E%3C/svg%3E");
@@ -1043,12 +1059,12 @@ fieldset legend {
 
 .datepicker .datepicker-calendar .datepicker-calendar-navigation .datepicker-button--next {
   font-size: 0;
-  margin-left: .5rem;
+  margin-left: 0.5rem;
 }
 
 .datepicker .datepicker-calendar .datepicker-calendar-navigation .datepicker-button--next::after {
   background-color: var(--color-datepicker-prev-next);
-  content: "";
+  content: '';
   display: block;
   height: var(--size-datepicker-prev-next);
   -webkit-mask-image: url("data:image/svg+xml,%3Csvg viewBox='-3 -0.2 12 12' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m.75 11.5c-.19 0-.38-.07-.53-.22-.29-.29-.29-.77 0-1.06l4.47-4.47-4.47-4.47c-.29-.29-.29-.77 0-1.06s.77-.29 1.06 0l5 5c.29.29.29.77 0 1.06l-5 5c-.15.15-.34.22-.53.22z' fill='%236c7380'/%3E%3C/svg%3E");
@@ -1078,14 +1094,23 @@ fieldset legend {
   background: none;
 }
 
-.datepicker .datepicker-calendar .datepicker-calendar-navigation .datepicker-button:not(.deactivated):hover,
-.datepicker .datepicker-calendar .datepicker-calendar-navigation .datepicker-button:not(.deactivated):focus {
+.datepicker
+  .datepicker-calendar
+  .datepicker-calendar-navigation
+  .datepicker-button:not(.deactivated):hover,
+.datepicker
+  .datepicker-calendar
+  .datepicker-calendar-navigation
+  .datepicker-button:not(.deactivated):focus {
   background: var(--background-hover-datepicker-prev-next);
   border: 1px solid var(--background-hover-datepicker-prev-next);
   border-radius: 20px;
 }
 
-.datepicker .datepicker-calendar .datepicker-calendar-navigation .datepicker-button:not(.deactivated):focus {
+.datepicker
+  .datepicker-calendar
+  .datepicker-calendar-navigation
+  .datepicker-button:not(.deactivated):focus {
   border: 1px solid var(--border-color-datepicker-prev-next);
 }
 
@@ -1128,7 +1153,7 @@ fieldset legend {
 .datepicker .datepicker-calendar .datepicker-calendar-day::before {
   background: var(--background-calendar);
   border-radius: 32px;
-  content: "";
+  content: '';
   display: block;
   height: 32px;
   left: auto;
@@ -1155,7 +1180,9 @@ fieldset legend {
   background: var(--background-datepicker-calendar-day-active);
 }
 
-.datepicker .datepicker-calendar .datepicker-calendar-day:not(.datepicker-calendar-day-29, .datepicker-calendar-day-30, .datepicker-calendar-day-31, .datepicker-calendar-day-28:last-child) {
+.datepicker
+  .datepicker-calendar
+  .datepicker-calendar-day:not(.datepicker-calendar-day-29, .datepicker-calendar-day-30, .datepicker-calendar-day-31, .datepicker-calendar-day-28:last-child) {
   border-bottom: var(--border-datepicker-calendar-day);
 }
 
@@ -1189,13 +1216,14 @@ fieldset legend {
   padding: var(--space-y-small-breakpoint-multiselect) var(--space-x-small-breakpoint-multiselect);
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .select-multiselect {
-    padding: var(--space-y-medium-breakpoint-multiselect) var(--space-x-medium-breakpoint-multiselect);
+    padding: var(--space-y-medium-breakpoint-multiselect)
+      var(--space-x-medium-breakpoint-multiselect);
   }
 }
 
-@media(min-width: 1200px) {
+@media (min-width: 1200px) {
   .select-multiselect {
     padding: var(--space-y-large-breakpoint-multiselect) var(--space-x-large-breakpoint-multiselect);
   }
