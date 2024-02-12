@@ -30,18 +30,21 @@
 
 .card .card-inner .card-item {
   background: var(--background-card);
+  border-color: var(--border-color-card);
   border-radius: var(--border-radius-card);
+  border-style: solid;
+  border-width: var(--border-width-card);
   padding: var(--space-y-small-breakpoint-card) var(--space-x-small-breakpoint-card);
   position: relative;
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .card .card-inner .card-item {
     padding: var(--space-y-medium-breakpoint-card) var(--space-x-medium-breakpoint-card);
   }
 }
 
-@media(min-width: 1200px) {
+@media (min-width: 1200px) {
   .card .card-inner .card-item {
     padding: var(--space-y-large-breakpoint-card) var(--space-x-large-breakpoint-card);
   }
@@ -55,25 +58,25 @@
   padding: var(--space-y-small-breakpoint-card-icon) var(--space-x-small-breakpoint-card-icon);
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .card .card-inner .card-item .card-icon {
     margin-bottom: var(--space-block-y-medium-breakpoint-card-icon);
   }
 }
 
-@media(min-width: 1200px) {
+@media (min-width: 1200px) {
   .card .card-inner .card-item .card-icon {
     margin-bottom: var(--space-block-y-large-breakpoint-card-icon);
   }
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .card .card-inner .card-item .card-icon {
     padding: var(--space-y-medium-breakpoint-card-icon) var(--space-x-medium-breakpoint-card-icon);
   }
 }
 
-@media(min-width: 1200px) {
+@media (min-width: 1200px) {
   .card .card-inner .card-item .card-icon {
     padding: var(--space-y-large-breakpoint-card-icon) var(--space-x-large-breakpoint-card-icon);
   }
@@ -106,51 +109,53 @@
   padding: var(--space-y-small-breakpoint-card-eyebrow) var(--space-x-small-breakpoint-card-eyebrow);
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .card .card-inner .card-item .card-text .card-eyebrow {
     margin-bottom: var(--space-block-y-medium-breakpoint-card-eyebrow);
   }
 }
 
-@media(min-width: 1200px) {
+@media (min-width: 1200px) {
   .card .card-inner .card-item .card-text .card-eyebrow {
     margin-bottom: var(--space-block-y-large-breakpoint-card-eyebrow);
   }
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .card .card-inner .card-item .card-text .card-eyebrow {
     line-height: var(--line-height-medium-breakpoint-card-eyebrow);
   }
 }
 
-@media(min-width: 1200px) {
+@media (min-width: 1200px) {
   .card .card-inner .card-item .card-text .card-eyebrow {
     line-height: var(--line-height-large-breakpoint-card-eyebrow);
   }
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .card .card-inner .card-item .card-text .card-eyebrow {
     font-size: var(--size-medium-breakpoint-card-eyebrow);
   }
 }
 
-@media(min-width: 1200px) {
+@media (min-width: 1200px) {
   .card .card-inner .card-item .card-text .card-eyebrow {
     font-size: var(--size-large-breakpoint-card-eyebrow);
   }
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .card .card-inner .card-item .card-text .card-eyebrow {
-    padding: var(--space-y-medium-breakpoint-card-eyebrow) var(--space-x-medium-breakpoint-card-eyebrow);
+    padding: var(--space-y-medium-breakpoint-card-eyebrow)
+      var(--space-x-medium-breakpoint-card-eyebrow);
   }
 }
 
-@media(min-width: 1200px) {
+@media (min-width: 1200px) {
   .card .card-inner .card-item .card-text .card-eyebrow {
-    padding: var(--space-y-large-breakpoint-card-eyebrow) var(--space-x-large-breakpoint-card-eyebrow);
+    padding: var(--space-y-large-breakpoint-card-eyebrow)
+      var(--space-x-large-breakpoint-card-eyebrow);
   }
 }
 
@@ -168,11 +173,10 @@
   font-weight: var(--weight-card-headline);
   line-height: var(--line-height-small-breakpoint-card-headline);
   margin-bottom: var(--space-block-y-small-breakpoint-card-headline);
-  transition: all .4s ease;
+  transition: all 0.4s ease;
 }
 
-@media(min-width: 768px) {
-
+@media (min-width: 768px) {
   .card .card-inner .card-item .card-text .card-headline h1,
   .card .card-inner .card-item .card-text .card-headline h2,
   .card .card-inner .card-item .card-text .card-headline h3,
@@ -184,8 +188,7 @@
   }
 }
 
-@media(min-width: 1200px) {
-
+@media (min-width: 1200px) {
   .card .card-inner .card-item .card-text .card-headline h1,
   .card .card-inner .card-item .card-text .card-headline h2,
   .card .card-inner .card-item .card-text .card-headline h3,
@@ -197,8 +200,7 @@
   }
 }
 
-@media(min-width: 768px) {
-
+@media (min-width: 768px) {
   .card .card-inner .card-item .card-text .card-headline h1,
   .card .card-inner .card-item .card-text .card-headline h2,
   .card .card-inner .card-item .card-text .card-headline h3,
@@ -210,8 +212,7 @@
   }
 }
 
-@media(min-width: 1200px) {
-
+@media (min-width: 1200px) {
   .card .card-inner .card-item .card-text .card-headline h1,
   .card .card-inner .card-item .card-text .card-headline h2,
   .card .card-inner .card-item .card-text .card-headline h3,
@@ -223,8 +224,7 @@
   }
 }
 
-@media(min-width: 768px) {
-
+@media (min-width: 768px) {
   .card .card-inner .card-item .card-text .card-headline h1,
   .card .card-inner .card-item .card-text .card-headline h2,
   .card .card-inner .card-item .card-text .card-headline h3,
@@ -236,8 +236,7 @@
   }
 }
 
-@media(min-width: 1200px) {
-
+@media (min-width: 1200px) {
   .card .card-inner .card-item .card-text .card-headline h1,
   .card .card-inner .card-item .card-text .card-headline h2,
   .card .card-inner .card-item .card-text .card-headline h3,
@@ -258,34 +257,34 @@
   width: 100%;
 }
 
-.card .card-inner .card-item .card-text .card-text {
-  color: var(--color-card-text);
-  font-size: var(--size-small-breakpoint-card-text);
-  font-weight: var(--weight-card-text);
-  line-height: var(--line-height-small-breakpoint-card-text);
+.card .card-inner .card-item .card-text .card-paragraph {
+  color: var(--color-card-paragraph);
+  font-size: var(--size-small-breakpoint-card-paragraph);
+  font-weight: var(--weight-card-paragraph);
+  line-height: var(--line-height-small-breakpoint-card-paragraph);
 }
 
-@media(min-width: 768px) {
-  .card .card-inner .card-item .card-text .card-text {
-    line-height: var(--line-height-medium-breakpoint-card-text);
+@media (min-width: 768px) {
+  .card .card-inner .card-item .card-text .card-paragraph {
+    line-height: var(--line-height-medium-breakpoint-card-paragraph);
   }
 }
 
-@media(min-width: 1200px) {
-  .card .card-inner .card-item .card-text .card-text {
-    line-height: var(--line-height-large-breakpoint-card-text);
+@media (min-width: 1200px) {
+  .card .card-inner .card-item .card-text .card-paragraph {
+    line-height: var(--line-height-large-breakpoint-card-paragraph);
   }
 }
 
-@media(min-width: 768px) {
-  .card .card-inner .card-item .card-text .card-text {
-    font-size: var(--size-medium-breakpoint-card-text);
+@media (min-width: 768px) {
+  .card .card-inner .card-item .card-text .card-paragraph {
+    font-size: var(--size-medium-breakpoint-card-paragraph);
   }
 }
 
-@media(min-width: 1200px) {
-  .card .card-inner .card-item .card-text .card-text {
-    font-size: var(--size-large-breakpoint-card-text);
+@media (min-width: 1200px) {
+  .card .card-inner .card-item .card-text .card-paragraph {
+    font-size: var(--size-large-breakpoint-card-paragraph);
   }
 }
 
@@ -297,17 +296,17 @@
   z-index: 2;
 }
 
-@media(min-width: 1200px) {
+@media (min-width: 1200px) {
   .card-grid {
     flex-direction: row;
     gap: var(--gap-card-grid);
   }
 }
 
-@media(min-width: 1200px) {
+@media (min-width: 1200px) {
   .card-grid .card-item {
     flex: 1 0 calc(33.3333333333% - var(--gap-card-grid));
-    max-width: calc(33.3333333333% - var(--gap-card-grid)/3*2);
+    max-width: calc(33.3333333333% - var(--gap-card-grid) / 3 * 2);
     width: auto;
   }
 }
@@ -320,38 +319,38 @@
   margin-bottom: var(--space-block-y-small-breakpoint-card-grid-item);
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .card-grid .card-item:not(:last-child) {
     margin-bottom: var(--space-block-y-medium-breakpoint-card-grid-item);
   }
 }
 
-@media(min-width: 1200px) {
+@media (min-width: 1200px) {
   .card-grid .card-item:not(:last-child) {
     margin-bottom: var(--space-block-y-large-breakpoint-card-grid-item);
   }
 }
 
-@media(min-width: 1200px) {
+@media (min-width: 1200px) {
   .card-grid.card--grid-2 .card-item {
     flex: 1 0 calc(50% - var(--gap-card-grid));
-    max-width: calc(50% - var(--gap-card-grid)/2*1);
+    max-width: calc(50% - var(--gap-card-grid) / 2 * 1);
     width: auto;
   }
 }
 
-@media(min-width: 1200px) {
+@media (min-width: 1200px) {
   .card-grid.card--grid-3 .card-item {
     flex: 1 0 calc(33.3333333333% - var(--gap-card-grid));
-    max-width: calc(33.3333333333% - var(--gap-card-grid)/3*2);
+    max-width: calc(33.3333333333% - var(--gap-card-grid) / 3 * 2);
     width: auto;
   }
 }
 
-@media(min-width: 1200px) {
+@media (min-width: 1200px) {
   .card-grid.card--grid-4 .card-item {
     flex: 1 0 calc(25% - var(--gap-card-grid));
-    max-width: calc(25% - var(--gap-card-grid)/4*3);
+    max-width: calc(25% - var(--gap-card-grid) / 4 * 3);
     width: auto;
   }
 }
