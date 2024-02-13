@@ -1,4 +1,9 @@
 .text {
+  background: var(--background-text);
+  border-color: var(--border-color-text);
+  border-radius: var(--border-radius-text);
+  border-style: solid;
+  border-width: var(--border-width-text);
   container-type: inline-size;
   position: relative;
   text-align: var(--horizontal-alignment-text);
@@ -6,10 +11,6 @@
 
 .text .text-inner {
   align-items: var(--horizontal-alignment-text);
-  border-color: var(--border-color-text);
-  border-radius: var(--border-radius-text);
-  border-style: solid;
-  border-width: var(--border-width-text);
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
