@@ -4,24 +4,36 @@
   border-radius: var(--border-radius-hero);
   border-style: solid;
   border-width: var(--border-width-hero);
-  container-type: inline-size;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   height: 100%;
   justify-content: center;
+  margin-left: var(--space-small-breakpoint-container);
+  margin-right: var(--space-small-breakpoint-container);
   min-height: var(--min-height-small-breakpoint-hero);
+  position: relative;
 }
 
-@media(min-width: 768px) {
+@media (width >=768px) {
   .hero {
+    margin: 0 var(--space-medium-breakpoint-container) 0 var(--space-medium-breakpoint-container);
     min-height: var(--min-height-medium-breakpoint-hero);
   }
 }
 
-@media(min-width: 1200px) {
+@media (width >=1200px) {
   .hero {
+    margin-left: var(--space-large-breakpoint-container);
+    margin-right: var(--space-large-breakpoint-container);
+    max-width: var(--max-width-container-large);
     min-height: var(--min-height-large-breakpoint-hero);
+  }
+}
+
+@media (width >=1400px) {
+  .hero {
+    max-width: var(--max-width-container-extralarge);
   }
 }
 
@@ -31,39 +43,16 @@
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-  margin-left: var(--space-small-breakpoint-container);
-  margin-right: var(--space-small-breakpoint-container);
   padding: var(--space-y-small-breakpoint-hero) var(--space-x-small-breakpoint-hero);
-  position: relative;
 }
 
-@container (width >=768px) {
-  .hero .hero-inner {
-    margin: 0 var(--space-medium-breakpoint-container) 0 var(--space-medium-breakpoint-container);
-  }
-}
-
-@container (width >=1200px) {
-  .hero .hero-inner {
-    margin-left: var(--space-large-breakpoint-container);
-    margin-right: var(--space-large-breakpoint-container);
-    max-width: var(--max-width-container-large);
-  }
-}
-
-@container (width >=1400px) {
-  .hero .hero-inner {
-    max-width: var(--max-width-container-extralarge);
-  }
-}
-
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .hero .hero-inner {
     padding: var(--space-y-medium-breakpoint-hero) var(--space-x-medium-breakpoint-hero);
   }
 }
 
-@media(min-width: 1200px) {
+@media (min-width: 1200px) {
   .hero .hero-inner {
     padding: var(--space-y-large-breakpoint-hero) var(--space-x-large-breakpoint-hero);
   }
@@ -98,8 +87,7 @@
   line-height: var(--line-height-small-breakpoint-hero-eyebrow);
 }
 
-@media(min-width: 768px) {
-
+@media (min-width: 768px) {
   .hero .hero-inner .hero-eyebrow h1,
   .hero .hero-inner .hero-eyebrow h2,
   .hero .hero-inner .hero-eyebrow h3,
@@ -111,8 +99,7 @@
   }
 }
 
-@media(min-width: 1200px) {
-
+@media (min-width: 1200px) {
   .hero .hero-inner .hero-eyebrow h1,
   .hero .hero-inner .hero-eyebrow h2,
   .hero .hero-inner .hero-eyebrow h3,
@@ -124,8 +111,7 @@
   }
 }
 
-@media(min-width: 768px) {
-
+@media (min-width: 768px) {
   .hero .hero-inner .hero-eyebrow h1,
   .hero .hero-inner .hero-eyebrow h2,
   .hero .hero-inner .hero-eyebrow h3,
@@ -137,8 +123,7 @@
   }
 }
 
-@media(min-width: 1200px) {
-
+@media (min-width: 1200px) {
   .hero .hero-inner .hero-eyebrow h1,
   .hero .hero-inner .hero-eyebrow h2,
   .hero .hero-inner .hero-eyebrow h3,
@@ -150,25 +135,27 @@
   }
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .hero .hero-inner .hero-eyebrow {
-    padding: var(--space-y-medium-breakpoint-hero-eyebrow) var(--space-x-medium-breakpoint-hero-eyebrow);
+    padding: var(--space-y-medium-breakpoint-hero-eyebrow)
+      var(--space-x-medium-breakpoint-hero-eyebrow);
   }
 }
 
-@media(min-width: 1200px) {
+@media (min-width: 1200px) {
   .hero .hero-inner .hero-eyebrow {
-    padding: var(--space-y-large-breakpoint-hero-eyebrow) var(--space-x-large-breakpoint-hero-eyebrow);
+    padding: var(--space-y-large-breakpoint-hero-eyebrow)
+      var(--space-x-large-breakpoint-hero-eyebrow);
   }
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .hero .hero-inner .hero-eyebrow {
     margin-bottom: var(--space-y-block-medium-breakpoint-hero-eyebrow);
   }
 }
 
-@media(min-width: 1200px) {
+@media (min-width: 1200px) {
   .hero .hero-inner .hero-eyebrow {
     margin-bottom: var(--space-y-block-large-breakpoint-hero-eyebrow);
   }
@@ -193,8 +180,7 @@
   line-height: var(--line-height-small-breakpoint-hero-headline);
 }
 
-@media(min-width: 768px) {
-
+@media (min-width: 768px) {
   .hero .hero-inner .hero-headline h1,
   .hero .hero-inner .hero-headline h2,
   .hero .hero-inner .hero-headline h3,
@@ -206,8 +192,7 @@
   }
 }
 
-@media(min-width: 1200px) {
-
+@media (min-width: 1200px) {
   .hero .hero-inner .hero-headline h1,
   .hero .hero-inner .hero-headline h2,
   .hero .hero-inner .hero-headline h3,
@@ -219,8 +204,7 @@
   }
 }
 
-@media(min-width: 768px) {
-
+@media (min-width: 768px) {
   .hero .hero-inner .hero-headline h1,
   .hero .hero-inner .hero-headline h2,
   .hero .hero-inner .hero-headline h3,
@@ -232,8 +216,7 @@
   }
 }
 
-@media(min-width: 1200px) {
-
+@media (min-width: 1200px) {
   .hero .hero-inner .hero-headline h1,
   .hero .hero-inner .hero-headline h2,
   .hero .hero-inner .hero-headline h3,
@@ -258,8 +241,7 @@
   line-height: var(--line-height-small-breakpoint-hero-text);
 }
 
-@media(min-width: 768px) {
-
+@media (min-width: 768px) {
   .hero .hero-inner .hero-text p,
   .hero .hero-inner .hero-text li,
   .hero .hero-inner .hero-text a {
@@ -267,8 +249,7 @@
   }
 }
 
-@media(min-width: 1200px) {
-
+@media (min-width: 1200px) {
   .hero .hero-inner .hero-text p,
   .hero .hero-inner .hero-text li,
   .hero .hero-inner .hero-text a {
@@ -276,8 +257,7 @@
   }
 }
 
-@media(min-width: 768px) {
-
+@media (min-width: 768px) {
   .hero .hero-inner .hero-text p,
   .hero .hero-inner .hero-text li,
   .hero .hero-inner .hero-text a {
@@ -285,8 +265,7 @@
   }
 }
 
-@media(min-width: 1200px) {
-
+@media (min-width: 1200px) {
   .hero .hero-inner .hero-text p,
   .hero .hero-inner .hero-text li,
   .hero .hero-inner .hero-text a {
@@ -294,8 +273,7 @@
   }
 }
 
-@media(min-width: 1200px) {
-
+@media (min-width: 1200px) {
   .hero .hero-inner .hero-text p a::before,
   .hero .hero-inner .hero-text li a::before,
   .hero .hero-inner .hero-text a a::before {
@@ -303,34 +281,34 @@
   }
 }
 
-.hero .hero-inner .hero-headline+.hero-text {
+.hero .hero-inner .hero-headline + .hero-text {
   margin-top: var(--space-y-block-small-breakpoint-hero-text);
 }
 
-@media(min-width: 768px) {
-  .hero .hero-inner .hero-headline+.hero-text {
+@media (min-width: 768px) {
+  .hero .hero-inner .hero-headline + .hero-text {
     margin-top: var(--space-y-block-medium-breakpoint-hero-text);
   }
 }
 
-@media(min-width: 1200px) {
-  .hero .hero-inner .hero-headline+.hero-text {
+@media (min-width: 1200px) {
+  .hero .hero-inner .hero-headline + .hero-text {
     margin-top: var(--space-y-block-large-breakpoint-hero-text);
   }
 }
 
-.hero .hero-inner .hero-text+.hero-button {
+.hero .hero-inner .hero-text + .hero-button {
   margin-top: var(--space-y-block-small-breakpoint-hero-button);
 }
 
-@media(min-width: 768px) {
-  .hero .hero-inner .hero-text+.hero-button {
+@media (min-width: 768px) {
+  .hero .hero-inner .hero-text + .hero-button {
     margin-top: var(--space-y-block-medium-breakpoint-hero-button);
   }
 }
 
-@media(min-width: 1200px) {
-  .hero .hero-inner .hero-text+.hero-button {
+@media (min-width: 1200px) {
+  .hero .hero-inner .hero-text + .hero-button {
     margin-top: var(--space-y-block-large-breakpoint-hero-button);
   }
 }
