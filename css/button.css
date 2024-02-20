@@ -54,113 +54,103 @@
   opacity: var(--opacity-button-secondary-disabled);
 }
 
+.button.button--block {
+  width: 100%;
+}
+
 .button--large {
+  column-gap: var(--gap-button);
   font-size: var(--size-small-breakpoint-button-lg);
   line-height: var(--line-height-button-lg);
   padding: var(--space-y-small-breakpoint-button-lg) var(--space-x-small-breakpoint-button-lg);
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .button--large {
     font-size: var(--size-medium-breakpoint-button-lg);
     padding: var(--space-y-medium-breakpoint-button-lg) var(--space-x-medium-breakpoint-button-lg);
   }
 }
 
-@media(min-width: 1200px) {
+@media (min-width: 1200px) {
   .button--large {
     font-size: var(--size-large-breakpoint-button-lg);
     padding: var(--space-y-large-breakpoint-button-lg) var(--space-x-large-breakpoint-button-lg);
   }
 }
 
-.button--large i {
-  height: var(--size-button-lg-icon);
-  margin-right: var(--space-right-block-button-lg-icon);
-  width: var(--size-button-lg-icon);
-}
-
-.button--large i::after {
+.button--large svg {
   height: var(--size-button-lg-icon);
   width: var(--size-button-lg-icon);
 }
 
 .button--medium {
+  column-gap: var(--gap-button);
   font-size: var(--size-small-breakpoint-button-md);
   line-height: var(--line-height-button-md);
   padding: var(--space-y-small-breakpoint-button-md) var(--space-x-small-breakpoint-button-md);
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .button--medium {
     font-size: var(--size-medium-breakpoint-button-md);
     padding: var(--space-y-medium-breakpoint-button-md) var(--space-x-medium-breakpoint-button-md);
   }
 }
 
-@media(min-width: 1200px) {
+@media (min-width: 1200px) {
   .button--medium {
     font-size: var(--size-large-breakpoint-button-md);
     padding: var(--space-y-large-breakpoint-button-md) var(--space-x-large-breakpoint-button-md);
   }
 }
 
-.button--medium i {
-  height: var(--size-button-md-icon);
-  margin-right: var(--space-right-block-button-md-icon);
-  width: var(--size-button-md-icon);
-}
-
-.button--medium i::after {
+.button--medium svg {
   height: var(--size-button-md-icon);
   width: var(--size-button-md-icon);
 }
 
 .button--small {
+  column-gap: var(--gap-button);
   font-size: var(--size-small-breakpoint-button-sm);
   line-height: var(--line-height-button-sm);
   padding: var(--space-y-small-breakpoint-button-sm) var(--space-x-small-breakpoint-button-sm);
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .button--small {
     font-size: var(--size-medium-breakpoint-button-sm);
     padding: var(--space-y-medium-breakpoint-button-sm) var(--space-x-medium-breakpoint-button-sm);
   }
 }
 
-@media(min-width: 1200px) {
+@media (min-width: 1200px) {
   .button--small {
     font-size: var(--size-large-breakpoint-button-sm);
     padding: var(--space-y-large-breakpoint-button-sm) var(--space-x-large-breakpoint-button-sm);
   }
 }
 
-.button--small i {
-  height: var(--size-button-sm-icon);
-  margin-right: var(--space-right-block-button-sm-icon);
-  width: var(--size-button-sm-icon);
-}
-
-.button--small i::after {
+.button--small svg {
   height: var(--size-button-sm-icon);
   width: var(--size-button-sm-icon);
 }
 
 .button-group {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   gap: 15px;
   width: 100%;
 }
 
-@media(min-width: 1200px) {
+@media (min-width: 1200px) {
   .button-group {
     flex-direction: row;
   }
 }
 
-@media(max-width: 1199.98px) {
+@media (max-width: 1199.98px) {
   .button-group .button {
     flex: 0 0 100%;
     min-width: 100%;

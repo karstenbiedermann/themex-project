@@ -12,13 +12,26 @@
   margin-left: var(--space-small-breakpoint-container);
   margin-right: var(--space-small-breakpoint-container);
   min-height: var(--min-height-small-breakpoint-hero);
+  overflow: hidden;
   position: relative;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  .hero {
+    min-height: var(--min-height-medium-breakpoint-hero);
+  }
+}
+
+@media (min-width: 1200px) {
+  .hero {
+    min-height: var(--min-height-large-breakpoint-hero);
+  }
 }
 
 @media (width >=768px) {
   .hero {
     margin: 0 var(--space-medium-breakpoint-container) 0 var(--space-medium-breakpoint-container);
-    min-height: var(--min-height-medium-breakpoint-hero);
   }
 }
 
@@ -27,7 +40,6 @@
     margin-left: var(--space-large-breakpoint-container);
     margin-right: var(--space-large-breakpoint-container);
     max-width: var(--max-width-container-large);
-    min-height: var(--min-height-large-breakpoint-hero);
   }
 }
 
@@ -44,6 +56,7 @@
   flex-wrap: wrap;
   justify-content: center;
   padding: var(--space-y-small-breakpoint-hero) var(--space-x-small-breakpoint-hero);
+  z-index: 2;
 }
 
 @media (min-width: 768px) {
@@ -298,7 +311,10 @@
 }
 
 .hero .hero-inner .hero-text + .hero-button {
+  display: flex;
+  justify-content: var(--horizontal-alignment-hero);
   margin-top: var(--space-y-block-small-breakpoint-hero-button);
+  width: 100%;
 }
 
 @media (min-width: 768px) {
@@ -311,4 +327,22 @@
   .hero .hero-inner .hero-text + .hero-button {
     margin-top: var(--space-y-block-large-breakpoint-hero-button);
   }
+}
+
+.hero .hero-image {
+  -webkit-filter: blur(50px);
+  filter: blur(50px);
+  height: 100%;
+  left: 0;
+  opacity: 0.2;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.hero .hero-image img,
+.hero .hero-image svg {
+  height: 100%;
+  width: 100%;
 }

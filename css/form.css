@@ -90,9 +90,9 @@
   --width-small-breakpoint-datepicker: 300px;
   --color-datepicker-prev-next: var(--neutral-500);
   --size-datepicker-prev-next: 12px;
-  --background-hover-datepicker-prev-next: var(--neutral-100);
-  --border-color-datepicker-prev-next: var(--neutral-500);
-  --size-datepicker-month-dropdown: 12px;
+  --background-hover-datepicker-prev-next: 1px solid var(--neutral-200);
+  --border-color-datepicker-prev-next: var(--neutral-300);
+  --size-datepicker-month: 12px;
   --border-bottom-datepicker-calendar-header: 1px solid var(--neutral-300);
   --space-y-block-datepicker-calendar-header: 0.625rem;
   --space-y-datepicker-calendar-header: 0.9375rem;
@@ -118,28 +118,25 @@
   --space-y-submit: 1.25rem;
 
   container-type: inline-size;
-  margin-left: var(--space-small-breakpoint-container);
-  margin-right: var(--space-small-breakpoint-container);
-  position: relative;
 }
 
-@container (width >=768px) {
+@media (width >=768px) {
   .form {
     margin: 0 var(--space-medium-breakpoint-container) 0 var(--space-medium-breakpoint-container);
   }
 }
 
-@container (width >=1200px) {
+@media (width >=1200px) {
   .form {
     margin-left: var(--space-large-breakpoint-container);
     margin-right: var(--space-large-breakpoint-container);
-    max-width: var(--max-width-container-large);
+    max-width: var(--max-width-container-small);
   }
 }
 
-@container (width >=1400px) {
+@media (width >=1400px) {
   .form {
-    max-width: var(--max-width-container-extralarge);
+    max-width: var(--max-width-container-small);
   }
 }
 
@@ -175,27 +172,25 @@ fieldset legend {
   }
 }
 
-.form-grid .form-row {
+.form-grid {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
 }
 
 @media (min-width: 768px) {
-  .form-grid .form-row {
+  .form-grid {
     column-gap: var(--column-gap-form-grid);
   }
 }
 
-.form-grid .form-row .form-element {
+.form-grid .form-element {
   width: 100%;
 }
 
 @media (min-width: 768px) {
-  .form-grid .form-row .form-element {
-    flex: 1 0 calc(50% - var(--gap));
-    max-width: calc(50% - var(--gap) / 2 * 1);
-    width: auto;
+  .form-grid .form-element {
+    flex: 1;
   }
 }
 
@@ -296,44 +291,22 @@ fieldset legend {
   }
 }
 
-.form-element .form-element-icon i {
+.form-element .form-element-icon svg {
+  color: var(--color-form-element-icon);
   height: var(--size-small-breakpoint-form-element-icon);
   width: var(--size-small-breakpoint-form-element-icon);
 }
 
 @media (min-width: 768px) {
-  .form-element .form-element-icon i {
+  .form-element .form-element-icon svg {
     height: var(--size-medium-breakpoint-form-element-icon);
     width: var(--size-medium-breakpoint-form-element-icon);
   }
 }
 
 @media (min-width: 1200px) {
-  .form-element .form-element-icon i {
+  .form-element .form-element-icon svg {
     height: var(--size-large-breakpoint-form-element-icon);
-    width: var(--size-large-breakpoint-form-element-icon);
-  }
-}
-
-.form-element .form-element-icon i::after {
-  background: var(--color-form-element-icon);
-  height: var(--size-small-breakpoint-form-element-icon);
-  min-width: var(--size-small-breakpoint-form-element-icon);
-  width: var(--size-small-breakpoint-form-element-icon);
-}
-
-@media (min-width: 768px) {
-  .form-element .form-element-icon i::after {
-    height: var(--size-medium-breakpoint-form-element-icon);
-    min-width: var(--size-medium-breakpoint-form-element-icon);
-    width: var(--size-medium-breakpoint-form-element-icon);
-  }
-}
-
-@media (min-width: 1200px) {
-  .form-element .form-element-icon i::after {
-    height: var(--size-large-breakpoint-form-element-icon);
-    min-width: var(--size-large-breakpoint-form-element-icon);
     width: var(--size-large-breakpoint-form-element-icon);
   }
 }
@@ -493,7 +466,7 @@ fieldset legend {
 
 .checkbox label {
   align-items: center;
-  column-gap: 5px;
+  column-gap: 10px;
   cursor: pointer;
   display: flex;
 }
@@ -631,7 +604,7 @@ fieldset legend {
   align-items: center;
   cursor: pointer;
   display: flex;
-  gap: 5px;
+  gap: 10px;
 }
 
 .radio .radio-label {
@@ -739,7 +712,6 @@ fieldset legend {
 }
 
 .select {
-  height: 48.5px;
   position: relative;
   width: auto;
 }
@@ -759,7 +731,6 @@ fieldset legend {
   cursor: pointer;
   display: flex;
   font-size: var(--size-small-breakpoint-select-trigger);
-  height: 100%;
   padding: var(--space-y-small-breakpoint-select) var(--space-x-small-breakpoint-select);
   position: relative;
   transition: all var(--transition-duration) ease-in-out;
@@ -836,7 +807,7 @@ fieldset legend {
   padding: var(--space-y-small-breakpoint-select-options)
     var(--space-x-small-breakpoint-select-options);
   position: absolute;
-  top: 55.5px;
+  top: 45.5px;
   transition: all var(--transition-duration) ease-in-out;
   width: 100%;
   z-index: 1;
@@ -906,6 +877,10 @@ fieldset legend {
   visibility: hidden;
 }
 
+.form-element-message .form-element-message-icon {
+  height: 0;
+}
+
 .form-element-message.visible {
   font-size: var(--size-message);
   margin-top: var(--space-y-block-bottom-message);
@@ -916,33 +891,25 @@ fieldset legend {
   color: var(--color-message-error);
 }
 
-.form-element-message.form-element-message--error .form-element-message-icon::before {
-  background-color: var(--color-message-error);
-  content: '';
-  display: block;
-  height: var(--size-small-breakpoint-message-error-icon);
-  -webkit-mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 7.00008V11.0001M10 15.0001H10.01M1 6.94153V15.0586C1 15.4013 1 15.5726 1.05048 15.7254C1.09515 15.8606 1.16816 15.9847 1.26463 16.0893C1.37369 16.2077 1.52345 16.2909 1.82297 16.4573L9.22297 20.5684C9.50658 20.726 9.64838 20.8047 9.79855 20.8356C9.93146 20.863 10.0685 20.863 10.2015 20.8356C10.3516 20.8047 10.4934 20.726 10.777 20.5684L18.177 16.4573C18.4766 16.2909 18.6263 16.2077 18.7354 16.0893C18.8318 15.9847 18.9049 15.8606 18.9495 15.7254C19 15.5726 19 15.4013 19 15.0586V6.94153C19 6.59889 19 6.42756 18.9495 6.27477C18.9049 6.13959 18.8318 6.01551 18.7354 5.91082C18.6263 5.79248 18.4766 5.70928 18.177 5.54288L10.777 1.43177C10.4934 1.27421 10.3516 1.19543 10.2015 1.16454C10.0685 1.13721 9.93146 1.13721 9.79855 1.16454C9.64838 1.19543 9.50658 1.27421 9.22297 1.43177L1.82297 5.54288C1.52345 5.70928 1.37369 5.79248 1.26463 5.91082C1.16816 6.01551 1.09515 6.13959 1.05048 6.27477C1 6.42756 1 6.59889 1 6.94153Z' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
-  mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 7.00008V11.0001M10 15.0001H10.01M1 6.94153V15.0586C1 15.4013 1 15.5726 1.05048 15.7254C1.09515 15.8606 1.16816 15.9847 1.26463 16.0893C1.37369 16.2077 1.52345 16.2909 1.82297 16.4573L9.22297 20.5684C9.50658 20.726 9.64838 20.8047 9.79855 20.8356C9.93146 20.863 10.0685 20.863 10.2015 20.8356C10.3516 20.8047 10.4934 20.726 10.777 20.5684L18.177 16.4573C18.4766 16.2909 18.6263 16.2077 18.7354 16.0893C18.8318 15.9847 18.9049 15.8606 18.9495 15.7254C19 15.5726 19 15.4013 19 15.0586V6.94153C19 6.59889 19 6.42756 18.9495 6.27477C18.9049 6.13959 18.8318 6.01551 18.7354 5.91082C18.6263 5.79248 18.4766 5.70928 18.177 5.54288L10.777 1.43177C10.4934 1.27421 10.3516 1.19543 10.2015 1.16454C10.0685 1.13721 9.93146 1.13721 9.79855 1.16454C9.64838 1.19543 9.50658 1.27421 9.22297 1.43177L1.82297 5.54288C1.52345 5.70928 1.37369 5.79248 1.26463 5.91082C1.16816 6.01551 1.09515 6.13959 1.05048 6.27477C1 6.42756 1 6.59889 1 6.94153Z' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  -webkit-mask-size: 100%;
-  mask-size: 100%;
-  min-width: var(--size-small-breakpoint-message-error-icon);
-  width: var(--size-small-breakpoint-message-error-icon);
+.form-element-message.form-element-message--error .form-element-message-icon {
+  height: auto;
+}
+
+.form-element-message.form-element-message--error .form-element-message-icon svg {
+  color: var(--color-message-error);
+  height: var(--size-medium-breakpoint-message-error-icon);
+  width: var(--size-medium-breakpoint-message-error-icon);
 }
 
 @media (min-width: 768px) {
-  .form-element-message.form-element-message--error .form-element-message-icon::before {
-    height: var(--size-medium-breakpoint-message-error-icon);
+  .form-element-message.form-element-message--error .form-element-message-icon svg {
     min-width: var(--size-medium-breakpoint-message-error-icon);
-    width: var(--size-medium-breakpoint-message-error-icon);
   }
 }
 
 @media (min-width: 1200px) {
-  .form-element-message.form-element-message--error .form-element-message-icon::before {
+  .form-element-message.form-element-message--error .form-element-message-icon svg {
     height: var(--size-large-breakpoint-message-error-icon);
-    min-width: var(--size-large-breakpoint-message-error-icon);
     width: var(--size-large-breakpoint-message-error-icon);
   }
 }
@@ -1008,33 +975,11 @@ fieldset legend {
 
 .datepicker .datepicker-calendar .datepicker-calendar-navigation .datepicker-month {
   align-items: center;
+  color: var(--color-datepicker-month);
   display: flex;
+  font-weight: 700;
   gap: 10px;
   margin-right: auto;
-}
-
-.datepicker
-  .datepicker-calendar
-  .datepicker-calendar-navigation
-  .datepicker-month
-  .datepicker-month-dropdown {
-  color: var(--color-datepicker-month-dropdown);
-  font-weight: 700;
-}
-
-.datepicker .datepicker-calendar .datepicker-calendar-navigation .datepicker-month::after {
-  background-color: var(--color-datepicker-month-dropdown);
-  content: '';
-  display: block;
-  height: var(--size-datepicker-month-dropdown);
-  -webkit-mask-image: url("data:image/svg+xml,%3Csvg viewBox='-1.5 -4.5 16.5 16.5' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m7 8c-.26 0-.51-.1-.71-.29l-6-6c-.39-.39-.39-1.03 0-1.42s1.03-.39 1.42 0l5.29 5.3 5.29-5.3c.39-.39 1.02-.39 1.41 0s.39 1.02 0 1.41l-5.99 6.01c-.2.2-.45.29-.71.29z' fill='%236c737f'/%3E%3C/svg%3E");
-  mask-image: url("data:image/svg+xml,%3Csvg viewBox='-1.5 -4.5 16.5 16.5' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m7 8c-.26 0-.51-.1-.71-.29l-6-6c-.39-.39-.39-1.03 0-1.42s1.03-.39 1.42 0l5.29 5.3 5.29-5.3c.39-.39 1.02-.39 1.41 0s.39 1.02 0 1.41l-5.99 6.01c-.2.2-.45.29-.71.29z' fill='%236c737f'/%3E%3C/svg%3E");
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  -webkit-mask-size: 100%;
-  mask-size: 100%;
-  min-width: var(--size-datepicker-month-dropdown);
-  width: var(--size-datepicker-month-dropdown);
 }
 
 .datepicker .datepicker-calendar .datepicker-calendar-navigation .datepicker-button--prev {
@@ -1080,7 +1025,10 @@ fieldset legend {
 .datepicker .datepicker-calendar .datepicker-calendar-navigation .datepicker-button {
   align-items: center;
   background: none;
+  background: var(--background-hover-datepicker-prev-next);
   border: 0;
+  border: 1px solid var(--border-color-datepicker-prev-next);
+  border-radius: 8px;
   cursor: pointer;
   display: flex;
   height: 32px;
@@ -1092,26 +1040,6 @@ fieldset legend {
 .datepicker .datepicker-calendar .datepicker-calendar-navigation .datepicker-button:focus,
 .datepicker .datepicker-calendar .datepicker-calendar-navigation .datepicker-button:active {
   background: none;
-}
-
-.datepicker
-  .datepicker-calendar
-  .datepicker-calendar-navigation
-  .datepicker-button:not(.deactivated):hover,
-.datepicker
-  .datepicker-calendar
-  .datepicker-calendar-navigation
-  .datepicker-button:not(.deactivated):focus {
-  background: var(--background-hover-datepicker-prev-next);
-  border: 1px solid var(--background-hover-datepicker-prev-next);
-  border-radius: 20px;
-}
-
-.datepicker
-  .datepicker-calendar
-  .datepicker-calendar-navigation
-  .datepicker-button:not(.deactivated):focus {
-  border: 1px solid var(--border-color-datepicker-prev-next);
 }
 
 .datepicker .datepicker-calendar .datepicker-calendar-header {
@@ -1182,7 +1110,12 @@ fieldset legend {
 
 .datepicker
   .datepicker-calendar
-  .datepicker-calendar-day:not(.datepicker-calendar-day-29, .datepicker-calendar-day-30, .datepicker-calendar-day-31, .datepicker-calendar-day-28:last-child) {
+  .datepicker-calendar-day:not(
+    .datepicker-calendar-day-29,
+    .datepicker-calendar-day-30,
+    .datepicker-calendar-day-31,
+    .datepicker-calendar-day-28:last-child
+  ) {
   border-bottom: var(--border-datepicker-calendar-day);
 }
 

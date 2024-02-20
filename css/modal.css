@@ -13,7 +13,7 @@
   z-index: 20;
 }
 
-@media(max-width: 767.98px) {
+@media (max-width: 767.98px) {
   .modal {
     align-items: flex-start;
     bottom: inherit;
@@ -30,13 +30,13 @@
   margin-bottom: var(--space-y-block-small-breakpoint-modal-header);
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .modal .modal-header {
     margin-bottom: var(--space-y-block-medium-breakpoint-modal-header);
   }
 }
 
-@media(min-width: 1200px) {
+@media (min-width: 1200px) {
   .modal .modal-header {
     margin-bottom: var(--space-y-block-large-breakpoint-modal-header);
   }
@@ -50,13 +50,13 @@
   font-weight: var(--weight-modal-title);
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .modal .modal-header .modal-title {
     font-size: var(--size-medium-breakpoint-modal-title);
   }
 }
 
-@media(min-width: 1200px) {
+@media (min-width: 1200px) {
   .modal .modal-header .modal-title {
     font-size: var(--size-large-breakpoint-modal-title);
   }
@@ -69,18 +69,9 @@
   width: var(--size-modal-close);
 }
 
-.modal .modal-header .modal-close::after {
-  background-color: var(--color-modal-close);
-  content: "";
-  display: block;
+.modal .modal-header .modal-close svg {
+  color: var(--color-modal-close);
   height: var(--size-modal-close);
-  -webkit-mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 -0.5 18.5 18.5' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m17 18c-.26 0-.51-.1-.71-.29l-7.29-7.29-7.29 7.29c-.39.39-1.02.39-1.41 0s-.39-1.02 0-1.41l7.29-7.29-7.3-7.3c-.39-.39-.39-1.03 0-1.42s1.03-.39 1.42 0l7.29 7.29 7.29-7.29c.39-.39 1.02-.39 1.41 0s.39 1.02 0 1.41l-7.29 7.29 7.29 7.29c.39.39.39 1.02 0 1.41-.2.2-.45.29-.71.29z' fill='%236c737f'/%3E%3C/svg%3E");
-  mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 -0.5 18.5 18.5' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='m17 18c-.26 0-.51-.1-.71-.29l-7.29-7.29-7.29 7.29c-.39.39-1.02.39-1.41 0s-.39-1.02 0-1.41l7.29-7.29-7.3-7.3c-.39-.39-.39-1.03 0-1.42s1.03-.39 1.42 0l7.29 7.29 7.29-7.29c.39-.39 1.02-.39 1.41 0s.39 1.02 0 1.41l-7.29 7.29 7.29 7.29c.39.39.39 1.02 0 1.41-.2.2-.45.29-.71.29z' fill='%236c737f'/%3E%3C/svg%3E");
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-  -webkit-mask-size: 100%;
-  mask-size: 100%;
-  min-width: var(--size-modal-close);
   width: var(--size-modal-close);
 }
 
@@ -105,61 +96,61 @@
   line-height: var(--line-height-small-breakpoint-modal-body);
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .modal .modal-body p {
     font-size: var(--size-medium-breakpoint-modal-body);
   }
 }
 
-@media(min-width: 1200px) {
+@media (min-width: 1200px) {
   .modal .modal-body p {
     font-size: var(--size-large-breakpoint-modal-body);
   }
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .modal .modal-body p {
     line-height: var(--line-height-medium-breakpoint-modal-body);
   }
 }
 
-@media(min-width: 1200px) {
+@media (min-width: 1200px) {
   .modal .modal-body p {
     line-height: var(--line-height-large-breakpoint-modal-body);
   }
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .modal .modal-body {
     border-width: var(--border-width-medium-breakpoint-modal-body);
   }
 }
 
-@media(min-width: 1200px) {
+@media (min-width: 1200px) {
   .modal .modal-body {
     border-width: var(--border-width-large-breakpoint-modal-body);
   }
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .modal .modal-body {
     max-width: var(--max-width-medium-breakpoint-modal-body);
   }
 }
 
-@media(min-width: 1200px) {
+@media (min-width: 1200px) {
   .modal .modal-body {
     max-width: var(--max-width-large-breakpoint-modal-body);
   }
 }
 
-@media(min-width: 768px) {
+@media (min-width: 768px) {
   .modal .modal-body {
     padding: var(--space-y-medium-breakpoint-modal) var(--space-x-medium-breakpoint-modal);
   }
 }
 
-@media(min-width: 1200px) {
+@media (min-width: 1200px) {
   .modal .modal-body {
     padding: var(--space-y-large-breakpoint-modal) var(--space-x-large-breakpoint-modal);
   }
@@ -169,7 +160,7 @@
   display: none;
 }
 
-@media(max-width: 767.98px) {
+@media (max-width: 767.98px) {
   .modal .modal-body {
     border-radius: 0;
     height: 100dvh;
@@ -183,7 +174,7 @@
 
 .modal-backdrop {
   background: var(--background-modal-backdrop);
-  content: "";
+  content: '';
   display: block;
   height: 100%;
   left: 0;
