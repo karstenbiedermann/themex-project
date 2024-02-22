@@ -10,7 +10,7 @@
   }
 }
 
-@media (width >=1200px) {
+@media (width >=992px) {
   .team-section {
     margin-left: var(--space-large-breakpoint-container);
     margin-right: var(--space-large-breakpoint-container);
@@ -18,7 +18,7 @@
   }
 }
 
-@media (width >=1400px) {
+@media (width >=1200px) {
   .team-section {
     max-width: var(--max-width-container-extralarge);
   }
@@ -55,7 +55,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .team-section .team-section-item {
     padding: var(--space-y-large-breakpoint-team-section-item)
       var(--space-x-large-breakpoint-team-section-item);
@@ -96,7 +96,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .team-section .team-section-item .team-section-text .team-section-name h1,
   .team-section .team-section-item .team-section-text .team-section-name h2,
   .team-section .team-section-item .team-section-text .team-section-name h3,
@@ -120,7 +120,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .team-section .team-section-item .team-section-text .team-section-name h1,
   .team-section .team-section-item .team-section-text .team-section-name h2,
   .team-section .team-section-item .team-section-text .team-section-name h3,
@@ -144,7 +144,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .team-section .team-section-item .team-section-text .team-section-name h1,
   .team-section .team-section-item .team-section-text .team-section-name h2,
   .team-section .team-section-item .team-section-text .team-section-name h3,
@@ -173,7 +173,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .team-section .team-section-item .team-section-text .team-section-function p {
     line-height: var(--line-height-large-breakpoint-team-section-function);
   }
@@ -185,7 +185,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .team-section .team-section-item .team-section-text .team-section-function p {
     font-size: var(--size-large-breakpoint-team-section-function);
   }
@@ -203,7 +203,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .team-section .team-section-item .team-section-image {
     width: var(--size-large-breakpoint-team-section-image);
   }
@@ -215,7 +215,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .team-section .team-section-item .team-section-image {
     margin-bottom: var(--space-y-block-large-breakpoint-team-section-image);
   }
@@ -260,7 +260,7 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .team-section-grid .team-section-item:not(:last-child) {
     margin-bottom: var(--space-y-block-large-breakpoint-team-section-item);
   }

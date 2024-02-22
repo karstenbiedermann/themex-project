@@ -126,7 +126,7 @@
   }
 }
 
-@media (width >=1200px) {
+@media (width >=992px) {
   .form {
     margin-left: var(--space-large-breakpoint-container);
     margin-right: var(--space-large-breakpoint-container);
@@ -134,7 +134,7 @@
   }
 }
 
-@media (width >=1400px) {
+@media (width >=1200px) {
   .form {
     max-width: var(--max-width-container-small);
   }
@@ -154,7 +154,7 @@ fieldset legend {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   fieldset legend {
     font-size: var(--size-large-breakpoint-legend);
   }
@@ -166,7 +166,7 @@ fieldset legend {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   fieldset legend {
     margin-bottom: var(--space-y-block-large-breakpoint-legend);
   }
@@ -205,7 +205,7 @@ fieldset legend {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .form-element {
     margin-bottom: var(--space-y-block-large-breakpoint-form-element);
   }
@@ -229,7 +229,7 @@ fieldset legend {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .form-element .form-element-label .form-element-label-addon {
     font-size: var(--size-large-breakpoint-form-element-label-addon);
   }
@@ -249,7 +249,7 @@ fieldset legend {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .form-element .form-element-label label {
     font-size: var(--size-large-breakpoint-form-element-label);
   }
@@ -261,7 +261,7 @@ fieldset legend {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .form-element .form-element-label label {
     margin-bottom: var(--space-y-block-large-breakpoint-form-element-label);
   }
@@ -285,7 +285,7 @@ fieldset legend {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .form-element .form-element-icon {
     width: var(--width-large-breakpoint-form-element-icon);
   }
@@ -304,7 +304,7 @@ fieldset legend {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .form-element .form-element-icon svg {
     height: var(--size-large-breakpoint-form-element-icon);
     width: var(--size-large-breakpoint-form-element-icon);
@@ -321,7 +321,7 @@ fieldset legend {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .form-element .form-element-icon + .input {
     padding-left: var(--space-x-large-breakpoint-form-element-icon);
   }
@@ -353,7 +353,7 @@ fieldset legend {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .form-element .input {
     font-size: var(--size-large-breakpoint-input);
   }
@@ -365,7 +365,7 @@ fieldset legend {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .form-element .input {
     padding: var(--space-y-large-breakpoint-input) var(--space-x-large-breakpoint-input);
   }
@@ -412,7 +412,7 @@ fieldset legend {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .textarea {
     min-height: var(--min-height-large-breakpoint-textarea);
   }
@@ -424,7 +424,7 @@ fieldset legend {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .textarea {
     font-size: var(--size-large-breakpoint-input);
   }
@@ -436,7 +436,7 @@ fieldset legend {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .textarea {
     padding: var(--space-y-large-breakpoint-textarea) var(--space-x-large-breakpoint-textarea);
   }
@@ -484,7 +484,7 @@ fieldset legend {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .checkbox .checkbox-label {
     font-size: var(--size-large-breakpoint-checkbox-label);
   }
@@ -496,7 +496,7 @@ fieldset legend {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .checkbox .checkbox-label {
     padding: var(--space-y-large-breakpoint-checkbox) var(--space-x-large-breakpoint-checkbox);
   }
@@ -531,7 +531,7 @@ fieldset legend {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .checkbox .checkbox-icon::after {
     height: var(--size-large-breakpoint-checkbox-icon);
     min-width: var(--size-large-breakpoint-checkbox-icon);
@@ -570,7 +570,7 @@ fieldset legend {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .checkbox input[type='checkbox']:checked + .checkbox-icon::after {
     height: var(--size-large-breakpoint-checkbox-icon);
     min-width: var(--size-large-breakpoint-checkbox-icon);
@@ -588,7 +588,7 @@ fieldset legend {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .checkbox:not(:last-child) {
     margin-bottom: var(--space-y-block-large-breakpoint-checkbox);
   }
@@ -619,7 +619,7 @@ fieldset legend {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .radio .radio-label {
     font-size: var(--size-large-breakpoint-radio-label);
   }
@@ -631,7 +631,7 @@ fieldset legend {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .radio .radio-label {
     padding: var(--space-y-large-breakpoint-radio) var(--space-x-large-breakpoint-radio);
   }
@@ -664,7 +664,7 @@ fieldset legend {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .radio .radio-icon::after {
     height: var(--size-large-breakpoint-radio-icon);
     min-width: var(--size-large-breakpoint-radio-icon);
@@ -705,7 +705,7 @@ fieldset legend {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .radio:not(:last-child) {
     margin-bottom: var(--space-y-block-large-breakpoint-radio);
   }
@@ -743,7 +743,7 @@ fieldset legend {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .select .select-trigger {
     font-size: var(--size-large-breakpoint-select-trigger);
   }
@@ -755,7 +755,7 @@ fieldset legend {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .select .select-trigger {
     padding: var(--space-y-large-breakpoint-select) var(--space-x-large-breakpoint-select);
   }
@@ -820,7 +820,7 @@ fieldset legend {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .select .select-options {
     padding: var(--space-y-large-breakpoint-select-options)
       var(--space-x-large-breakpoint-select-options);
@@ -848,7 +848,7 @@ fieldset legend {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .select .select-options .select-option {
     padding: var(--space-y-large-breakpoint-select-option)
       var(--space-x-large-breakpoint-select-option);
@@ -907,7 +907,7 @@ fieldset legend {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .form-element-message.form-element-message--error .form-element-message-icon svg {
     height: var(--size-large-breakpoint-message-error-icon);
     width: var(--size-large-breakpoint-message-error-icon);
@@ -931,7 +931,7 @@ fieldset legend {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .form-element-error .form-element-items {
     padding: var(--space-y-large-breakpoint-message-items)
       var(--space-x-large-breakpoint-message-items);
@@ -962,7 +962,7 @@ fieldset legend {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .datepicker .datepicker-calendar {
     width: var(--width-large-breakpoint-datepicker);
   }
@@ -1156,7 +1156,7 @@ fieldset legend {
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .select-multiselect {
     padding: var(--space-y-large-breakpoint-multiselect) var(--space-x-large-breakpoint-multiselect);
   }
