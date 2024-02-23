@@ -3,27 +3,23 @@
   margin-right: var(--space-small-breakpoint-container);
   position: relative;
 }
-
-@media (width >=768px) {
+@media (width >= 768px) {
   .accordion {
     margin: 0 var(--space-medium-breakpoint-container) 0 var(--space-medium-breakpoint-container);
   }
 }
-
-@media (width >=992px) {
+@media (width >= 992px) {
   .accordion {
     margin-left: var(--space-large-breakpoint-container);
     margin-right: var(--space-large-breakpoint-container);
     max-width: var(--max-width-container-small);
   }
 }
-
-@media (width >=1200px) {
+@media (width >= 1200px) {
   .accordion {
     max-width: var(--max-width-container-small);
   }
 }
-
 .accordion .accordion-inner .accordion-item {
   background: var(--background-accordion-item);
   border-bottom-style: solid;
@@ -32,11 +28,9 @@
   border-radius: var(--border-radius-accordion-item);
   transition: all 0.4s ease;
 }
-
 .accordion .accordion-inner .accordion-item:last-child {
   border-bottom: none;
 }
-
 .accordion .accordion-inner .accordion-item .accordion-header {
   align-items: center;
   cursor: pointer;
@@ -44,21 +38,18 @@
   padding: var(--space-y-small-breakpoint-accordion-header)
     var(--space-x-small-breakpoint-accordion-header);
 }
-
 @media (min-width: 768px) {
   .accordion .accordion-inner .accordion-item .accordion-header {
     padding: var(--space-y-medium-breakpoint-accordion-header)
       var(--space-x-medium-breakpoint-accordion-header);
   }
 }
-
 @media (min-width: 992px) {
   .accordion .accordion-inner .accordion-item .accordion-header {
     padding: var(--space-y-large-breakpoint-accordion-header)
       var(--space-x-large-breakpoint-accordion-header);
   }
 }
-
 .accordion .accordion-inner .accordion-item .accordion-header .accordion-title {
   color: var(--color-accordion-title);
   flex: 1;
@@ -66,19 +57,16 @@
   font-weight: var(--weight-accordion-title);
   padding-right: 1.25rem;
 }
-
 @media (min-width: 768px) {
   .accordion .accordion-inner .accordion-item .accordion-header .accordion-title {
     font-size: var(--size-medium-breakpoint-accordion-title);
   }
 }
-
 @media (min-width: 992px) {
   .accordion .accordion-inner .accordion-item .accordion-header .accordion-title {
     font-size: var(--size-large-breakpoint-accordion-title);
   }
 }
-
 .accordion .accordion-inner .accordion-item .accordion-header::after {
   background-color: var(--color-accordion-title-icon);
   content: '';
@@ -95,7 +83,6 @@
   transition: all var(--transition-duration);
   width: var(--size-small-breakpoint-accordion-icon);
 }
-
 @media (min-width: 768px) {
   .accordion .accordion-inner .accordion-item .accordion-header::after {
     height: var(--size-medium-breakpoint-accordion-icon);
@@ -103,7 +90,6 @@
     width: var(--size-medium-breakpoint-accordion-icon);
   }
 }
-
 @media (min-width: 992px) {
   .accordion .accordion-inner .accordion-item .accordion-header::after {
     height: var(--size-large-breakpoint-accordion-icon);
@@ -111,7 +97,6 @@
     width: var(--size-large-breakpoint-accordion-icon);
   }
 }
-
 .accordion .accordion-inner .accordion-item .accordion-body {
   display: grid;
   font-size: var(--size-small-breakpoint-accordion-body);
@@ -121,52 +106,44 @@
   margin-top: 0;
   transition: grid-template-rows 0.2s ease-out;
 }
-
 @media (min-width: 768px) {
   .accordion .accordion-inner .accordion-item .accordion-body {
     font-size: var(--size-medium-breakpoint-accordion-body);
   }
 }
-
 @media (min-width: 992px) {
   .accordion .accordion-inner .accordion-item .accordion-body {
     font-size: var(--size-large-breakpoint-accordion-body);
   }
 }
-
 @media (min-width: 768px) {
   .accordion .accordion-inner .accordion-item .accordion-body {
     line-height: var(--line-height-medium-breakpoint-accordion-body);
   }
 }
-
 @media (min-width: 992px) {
   .accordion .accordion-inner .accordion-item .accordion-body {
     line-height: var(--line-height-large-breakpoint-accordion-body);
   }
 }
-
 .accordion .accordion-inner .accordion-item .accordion-body .accordion-body-inner {
   display: grid;
   max-width: calc(100% - var(--size-small-breakpoint-accordion-icon));
   overflow: hidden;
   padding: 0 var(--space-x-small-breakpoint-accordion-body-inner);
 }
-
 @media (min-width: 768px) {
   .accordion .accordion-inner .accordion-item .accordion-body .accordion-body-inner {
     max-width: calc(100% - var(--size-medium-breakpoint-accordion-icon));
     padding: 0 var(--space-x-medium-breakpoint-accordion-body-inner);
   }
 }
-
 @media (min-width: 992px) {
   .accordion .accordion-inner .accordion-item .accordion-body .accordion-body-inner {
     max-width: calc(100% - var(--size-large-breakpoint-accordion-icon));
     padding: 0 var(--space-x-large-breakpoint-accordion-body-inner);
   }
 }
-
 .accordion .accordion-inner .accordion-item.visible .accordion-header::after {
   background-color: var(--color-accordion-title-icon);
   content: '';
@@ -181,7 +158,6 @@
   min-width: var(--size-small-breakpoint-accordion-icon);
   width: var(--size-small-breakpoint-accordion-icon);
 }
-
 @media (min-width: 768px) {
   .accordion .accordion-inner .accordion-item.visible .accordion-header::after {
     height: var(--size-medium-breakpoint-accordion-icon);
@@ -189,7 +165,6 @@
     width: var(--size-medium-breakpoint-accordion-icon);
   }
 }
-
 @media (min-width: 992px) {
   .accordion .accordion-inner .accordion-item.visible .accordion-header::after {
     height: var(--size-large-breakpoint-accordion-icon);
@@ -197,20 +172,17 @@
     width: var(--size-large-breakpoint-accordion-icon);
   }
 }
-
 .accordion .accordion-inner .accordion-item.visible .accordion-body {
   border-color: var(--border-color-accordion-body);
   color: var(--color-accordion-body);
   grid-template-rows: 1fr;
   margin-bottom: var(--space-y-block-small-breakpoint-accordion-body);
 }
-
 @media (min-width: 768px) {
   .accordion .accordion-inner .accordion-item.visible .accordion-body {
     margin-bottom: var(--space-y-block-medium-breakpoint-accordion-body);
   }
 }
-
 @media (min-width: 992px) {
   .accordion .accordion-inner .accordion-item.visible .accordion-body {
     margin-bottom: var(--space-y-block-large-breakpoint-accordion-body);

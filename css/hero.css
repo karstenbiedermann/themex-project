@@ -9,8 +9,8 @@
   flex-wrap: wrap;
   height: 100%;
   justify-content: center;
-  margin-left: var(--space-small-breakpoint-container);
-  margin-right: var(--space-small-breakpoint-container);
+  margin-left: var(--space-x-small-breakpoint-container);
+  margin-right: var(--space-x-small-breakpoint-container);
   min-height: var(--min-height-small-breakpoint-hero);
   overflow: hidden;
   position: relative;
@@ -28,13 +28,14 @@
 }
 @media (width >= 768px) {
   .hero {
-    margin: 0 var(--space-medium-breakpoint-container) 0 var(--space-medium-breakpoint-container);
+    margin: 0 var(--space-x-medium-breakpoint-container) 0
+      var(--space-x-medium-breakpoint-container);
   }
 }
 @media (width >= 992px) {
   .hero {
-    margin-left: var(--space-large-breakpoint-container);
-    margin-right: var(--space-large-breakpoint-container);
+    margin-left: var(--space-x-large-breakpoint-container);
+    margin-right: var(--space-x-large-breakpoint-container);
     max-width: var(--max-width-container-large);
   }
 }

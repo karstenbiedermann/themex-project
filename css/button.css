@@ -14,18 +14,15 @@
   text-decoration: none;
   transition: all var(--transition-duration);
 }
-
 .button.button--primary:hover {
   background-color: var(--background-button-primary-hover);
   border-color: var(--border-color-button-primary-hover);
   color: var(--color-button-primary-hover);
 }
-
 .button.button--primary[disabled] {
   background: var(--background-button-primary-disabled);
   opacity: var(--opacity-button-primary-disabled);
 }
-
 .button.button--secondary {
   align-items: center;
   background-color: var(--background-button-secondary);
@@ -42,100 +39,84 @@
   text-decoration: none;
   transition: all var(--transition-duration);
 }
-
 .button.button--secondary:hover {
   background-color: var(--background-button-secondary-hover);
   border-color: var(--border-color-button-secondary-hover);
   color: var(--color-button-secondary-hover);
 }
-
 .button.button--secondary[disabled] {
   background: var(--background-button-secondary-disabled);
   opacity: var(--opacity-button-secondary-disabled);
 }
-
 .button.button--block {
   width: 100%;
 }
-
 .button--large {
   column-gap: var(--gap-button);
   font-size: var(--size-small-breakpoint-button-lg);
   line-height: var(--line-height-button-lg);
   padding: var(--space-y-small-breakpoint-button-lg) var(--space-x-small-breakpoint-button-lg);
 }
-
 @media (min-width: 768px) {
   .button--large {
     font-size: var(--size-medium-breakpoint-button-lg);
     padding: var(--space-y-medium-breakpoint-button-lg) var(--space-x-medium-breakpoint-button-lg);
   }
 }
-
 @media (min-width: 992px) {
   .button--large {
     font-size: var(--size-large-breakpoint-button-lg);
     padding: var(--space-y-large-breakpoint-button-lg) var(--space-x-large-breakpoint-button-lg);
   }
 }
-
 .button--large svg {
   height: var(--size-button-lg-icon);
   width: var(--size-button-lg-icon);
 }
-
 .button--medium {
   column-gap: var(--gap-button);
   font-size: var(--size-small-breakpoint-button-md);
   line-height: var(--line-height-button-md);
   padding: var(--space-y-small-breakpoint-button-md) var(--space-x-small-breakpoint-button-md);
 }
-
 @media (min-width: 768px) {
   .button--medium {
     font-size: var(--size-medium-breakpoint-button-md);
     padding: var(--space-y-medium-breakpoint-button-md) var(--space-x-medium-breakpoint-button-md);
   }
 }
-
 @media (min-width: 992px) {
   .button--medium {
     font-size: var(--size-large-breakpoint-button-md);
     padding: var(--space-y-large-breakpoint-button-md) var(--space-x-large-breakpoint-button-md);
   }
 }
-
 .button--medium svg {
   height: var(--size-button-md-icon);
   width: var(--size-button-md-icon);
 }
-
 .button--small {
   column-gap: var(--gap-button);
   font-size: var(--size-small-breakpoint-button-sm);
   line-height: var(--line-height-button-sm);
   padding: var(--space-y-small-breakpoint-button-sm) var(--space-x-small-breakpoint-button-sm);
 }
-
 @media (min-width: 768px) {
   .button--small {
     font-size: var(--size-medium-breakpoint-button-sm);
     padding: var(--space-y-medium-breakpoint-button-sm) var(--space-x-medium-breakpoint-button-sm);
   }
 }
-
 @media (min-width: 992px) {
   .button--small {
     font-size: var(--size-large-breakpoint-button-sm);
     padding: var(--space-y-large-breakpoint-button-sm) var(--space-x-large-breakpoint-button-sm);
   }
 }
-
 .button--small svg {
   height: var(--size-button-sm-icon);
   width: var(--size-button-sm-icon);
 }
-
 .button-group {
   display: flex;
   flex-direction: row;
@@ -143,13 +124,11 @@
   gap: 15px;
   width: 100%;
 }
-
 @media (min-width: 992px) {
   .button-group {
     flex-direction: row;
   }
 }
-
 @media (max-width: 991.98px) {
   .button-group .button {
     flex: 0 0 100%;
