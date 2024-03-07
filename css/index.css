@@ -1,1 +1,72 @@
-*:where(:not(html,iframe,canvas,img,svg,video,audio):not(svg *,symbol *)){all:unset;display:revert}*,*::before,*::after{box-sizing:border-box}a,button{cursor:revert}ol,ul,menu{list-style:none}img{max-block-size:100%;max-inline-size:100%}table{border-collapse:collapse}input,textarea{-webkit-user-select:auto}textarea{white-space:revert}meter{-webkit-appearance:revert;appearance:revert}pre{all:revert}::placeholder{color:unset}::marker{content:""}:where([hidden]){display:none}:where([contenteditable]:not([contenteditable=false])){-webkit-line-break:after-white-space;overflow-wrap:break-word;-moz-user-modify:read-write;-webkit-user-modify:read-write;-webkit-user-select:auto}:where([draggable=true]){-webkit-user-drag:element}:root{--transition-duration: 0.2s}html{font-family:var(--font-text);font-size:var(--root-size);-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}b,strong{color:var(--color-text);font-weight:var(--weight-bold)}
+*:where(:not(html, iframe, canvas, img, svg, video, audio):not(svg *, symbol *)) {
+  all: unset;
+  display: revert;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+a,
+button {
+  cursor: revert;
+}
+ol,
+ul,
+menu {
+  list-style: none;
+}
+img {
+  max-block-size: 100%;
+  max-inline-size: 100%;
+}
+table {
+  border-collapse: collapse;
+}
+input,
+textarea {
+  -webkit-user-select: auto;
+}
+textarea {
+  white-space: revert;
+}
+meter {
+  -webkit-appearance: revert;
+  appearance: revert;
+}
+pre {
+  all: revert;
+}
+::placeholder {
+  color: unset;
+}
+::marker {
+  content: '';
+}
+:where([hidden]) {
+  display: none;
+}
+:where([contenteditable]:not([contenteditable='false'])) {
+  -webkit-line-break: after-white-space;
+  overflow-wrap: break-word;
+  -moz-user-modify: read-write;
+  -webkit-user-modify: read-write;
+  -webkit-user-select: auto;
+}
+:where([draggable='true']) {
+  -webkit-user-drag: element;
+}
+:root {
+  --transition-duration: 0.2s;
+}
+html {
+  font-family: var(--font-text);
+  font-size: var(--root-size);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+b,
+strong {
+  color: var(--color-text);
+  font-weight: var(--weight-bold);
+}

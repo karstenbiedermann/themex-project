@@ -2,348 +2,267 @@
   margin-left: var(--space-x-small-breakpoint-container);
   margin-right: var(--space-x-small-breakpoint-container);
   position: relative;
-}
-@media (width >= 768px) {
-  .pricing {
-    margin: 0 var(--space-x-medium-breakpoint-container) 0
-      var(--space-x-medium-breakpoint-container);
+
+  .pricing-inner .pricing-item {
+    background: var(--background-pricing);
+    border-color: var(--border-color-pricing);
+    border-radius: var(--border-radius-pricing);
+    border-style: solid;
+    border-width: var(--border-width-pricing);
+    box-shadow: 0 0 var(--size-pricing-item-shadow) -4px var(--color-pricing-item-shadow);
+    display: flex;
+    flex-direction: column;
+    padding: var(--space-y-small-breakpoint-pricing) var(--space-x-small-breakpoint-pricing);
+    position: relative;
+
+    .pricing-title {
+      align-items: var(--horizontal-alignment-pricing-item);
+      text-align: var(--horizontal-alignment-pricing-item);
+
+      & h1,
+      & h2,
+      & h3,
+      & h4,
+      & h5,
+      & h6,
+      & span {
+        color: var(--color-pricing-title);
+        display: block;
+        font-family: var(--font-text);
+        font-size: var(--size-small-breakpoint-pricing-title);
+        font-weight: var(--weight-pricing-title);
+        line-height: var(--line-height-small-breakpoint-pricing-title);
+        margin-bottom: var(--space-y-block-small-breakpoint-pricing-title);
+        transition: all 0.4s ease;
+      }
+    }
+
+    .pricing-description {
+      color: var(--color-pricing-description);
+      font-size: var(--size-small-breakpoint-pricing-description);
+      font-weight: var(--weight-pricing-description);
+      line-height: var(--line-height-small-breakpoint-pricing-description);
+      margin-bottom: var(--space-y-block-small-breakpoint-pricing-description);
+      align-items: var(--horizontal-alignment-pricing-item);
+      display: block;
+      font-family: var(--font-text);
+      text-align: var(--horizontal-alignment-pricing-item);
+      transition: all 0.4s ease;
+    }
+
+    .pricing-price {
+      align-items: var(--horizontal-alignment-pricing-item);
+      display: block;
+      font-family: var(--font-text);
+      text-align: var(--horizontal-alignment-pricing-item);
+      transition: all 0.4s ease;
+      color: var(--color-pricing-price);
+      font-size: var(--size-small-breakpoint-pricing-price);
+      font-weight: var(--weight-pricing-price);
+      line-height: var(--line-height-small-breakpoint-pricing-price);
+      margin-bottom: var(--space-y-block-small-breakpoint-pricing-price);
+    }
+
+    .pricing-features {
+      display: block;
+      font-family: var(--font-text);
+      transition: all 0.4s ease;
+
+      & ul {
+        & li {
+          align-items: center;
+          color: var(--color-pricing-features);
+          column-gap: var(--gap-pricing-features);
+          display: flex;
+          font-size: var(--size-small-breakpoint-pricing-features);
+          font-weight: var(--weight-pricing-features);
+          line-height: var(--line-height-small-breakpoint-pricing-features);
+          margin-bottom: var(--space-y-block-small-breakpoint-pricing-features);
+        }
+      }
+
+      .pricing-features-icon {
+        align-items: center;
+        background: var(--background-pricing-features-icon-background);
+        border-radius: var(--border-radius-pricing-features-icon-background);
+        display: flex;
+        height: var(--size-pricing-features-icon-background);
+        justify-content: center;
+        width: var(--size-pricing-features-icon-background);
+
+        & svg {
+          color: var(--color-pricing-features-icon);
+          height: auto;
+          width: var(--size-small-breakpoint-pricing-features-icon);
+        }
+      }
+    }
+
+    .pricing-button {
+      margin-top: var(--space-y-block-small-breakpoint-pricing-button);
+    }
   }
 }
-@media (width >= 992px) {
-  .pricing {
-    margin-left: var(--space-x-large-breakpoint-container);
-    margin-right: var(--space-x-large-breakpoint-container);
-    max-width: var(--max-width-container-large);
-  }
-}
-@media (width >= 1200px) {
-  .pricing {
-    max-width: var(--max-width-container-extralarge);
-  }
-}
-.pricing .pricing-inner .pricing-item {
-  background: var(--background-pricing);
-  border-color: var(--border-color-pricing);
-  border-radius: var(--border-radius-pricing);
-  border-style: solid;
-  border-width: var(--border-width-pricing);
-  box-shadow: 0px 0px var(--size-pricing-item-shadow) -4px var(--color-pricing-item-shadow);
-  display: flex;
-  flex-direction: column;
-  padding: var(--space-y-small-breakpoint-pricing) var(--space-x-small-breakpoint-pricing);
-  position: relative;
-}
-@media (min-width: 768px) {
-  .pricing .pricing-inner .pricing-item {
-    padding: var(--space-y-medium-breakpoint-pricing) var(--space-x-medium-breakpoint-pricing);
-  }
-}
-@media (min-width: 992px) {
-  .pricing .pricing-inner .pricing-item {
-    padding: var(--space-y-large-breakpoint-pricing) var(--space-x-large-breakpoint-pricing);
-  }
-}
-.pricing .pricing-inner .pricing-item .pricing-title {
-  align-items: var(--horizontal-alignment-pricing-item);
-  text-align: var(--horizontal-alignment-pricing-item);
-}
-.pricing .pricing-inner .pricing-item .pricing-title h1,
-.pricing .pricing-inner .pricing-item .pricing-title h2,
-.pricing .pricing-inner .pricing-item .pricing-title h3,
-.pricing .pricing-inner .pricing-item .pricing-title h4,
-.pricing .pricing-inner .pricing-item .pricing-title h5,
-.pricing .pricing-inner .pricing-item .pricing-title h6,
-.pricing .pricing-inner .pricing-item .pricing-title span {
-  color: var(--color-pricing-title);
-  display: block;
-  font-family: var(--font-text);
-  font-size: var(--size-small-breakpoint-pricing-title);
-  font-weight: var(--weight-pricing-title);
-  line-height: var(--line-height-small-breakpoint-pricing-title);
-  margin-bottom: var(--space-y-block-small-breakpoint-pricing-title);
-  transition: all 0.4s ease;
-}
-@media (min-width: 768px) {
-  .pricing .pricing-inner .pricing-item .pricing-title h1,
-  .pricing .pricing-inner .pricing-item .pricing-title h2,
-  .pricing .pricing-inner .pricing-item .pricing-title h3,
-  .pricing .pricing-inner .pricing-item .pricing-title h4,
-  .pricing .pricing-inner .pricing-item .pricing-title h5,
-  .pricing .pricing-inner .pricing-item .pricing-title h6,
-  .pricing .pricing-inner .pricing-item .pricing-title span {
-    line-height: var(--line-height-medium-breakpoint-pricing-title);
-  }
-}
-@media (min-width: 992px) {
-  .pricing .pricing-inner .pricing-item .pricing-title h1,
-  .pricing .pricing-inner .pricing-item .pricing-title h2,
-  .pricing .pricing-inner .pricing-item .pricing-title h3,
-  .pricing .pricing-inner .pricing-item .pricing-title h4,
-  .pricing .pricing-inner .pricing-item .pricing-title h5,
-  .pricing .pricing-inner .pricing-item .pricing-title h6,
-  .pricing .pricing-inner .pricing-item .pricing-title span {
-    line-height: var(--line-height-large-breakpoint-pricing-title);
-  }
-}
-@media (min-width: 768px) {
-  .pricing .pricing-inner .pricing-item .pricing-title h1,
-  .pricing .pricing-inner .pricing-item .pricing-title h2,
-  .pricing .pricing-inner .pricing-item .pricing-title h3,
-  .pricing .pricing-inner .pricing-item .pricing-title h4,
-  .pricing .pricing-inner .pricing-item .pricing-title h5,
-  .pricing .pricing-inner .pricing-item .pricing-title h6,
-  .pricing .pricing-inner .pricing-item .pricing-title span {
-    font-size: var(--size-medium-breakpoint-pricing-title);
-  }
-}
-@media (min-width: 992px) {
-  .pricing .pricing-inner .pricing-item .pricing-title h1,
-  .pricing .pricing-inner .pricing-item .pricing-title h2,
-  .pricing .pricing-inner .pricing-item .pricing-title h3,
-  .pricing .pricing-inner .pricing-item .pricing-title h4,
-  .pricing .pricing-inner .pricing-item .pricing-title h5,
-  .pricing .pricing-inner .pricing-item .pricing-title h6,
-  .pricing .pricing-inner .pricing-item .pricing-title span {
-    font-size: var(--size-large-breakpoint-pricing-title);
-  }
-}
-@media (min-width: 768px) {
-  .pricing .pricing-inner .pricing-item .pricing-title h1,
-  .pricing .pricing-inner .pricing-item .pricing-title h2,
-  .pricing .pricing-inner .pricing-item .pricing-title h3,
-  .pricing .pricing-inner .pricing-item .pricing-title h4,
-  .pricing .pricing-inner .pricing-item .pricing-title h5,
-  .pricing .pricing-inner .pricing-item .pricing-title h6,
-  .pricing .pricing-inner .pricing-item .pricing-title span {
-    margin-bottom: var(--space-y-block-medium-breakpoint-pricing-title);
-  }
-}
-@media (min-width: 992px) {
-  .pricing .pricing-inner .pricing-item .pricing-title h1,
-  .pricing .pricing-inner .pricing-item .pricing-title h2,
-  .pricing .pricing-inner .pricing-item .pricing-title h3,
-  .pricing .pricing-inner .pricing-item .pricing-title h4,
-  .pricing .pricing-inner .pricing-item .pricing-title h5,
-  .pricing .pricing-inner .pricing-item .pricing-title h6,
-  .pricing .pricing-inner .pricing-item .pricing-title span {
-    margin-bottom: var(--space-y-block-large-breakpoint-pricing-title);
-  }
-}
-.pricing .pricing-inner .pricing-item .pricing-description {
-  align-items: var(--horizontal-alignment-pricing-item);
-  color: var(--color-pricing-description);
-  display: block;
-  font-family: var(--font-text);
-  font-size: var(--size-small-breakpoint-pricing-description);
-  font-weight: var(--weight-pricing-description);
-  line-height: var(--line-height-small-breakpoint-pricing-description);
-  margin-bottom: var(--space-y-block-small-breakpoint-pricing-description);
-  text-align: var(--horizontal-alignment-pricing-item);
-  transition: all 0.4s ease;
-}
-@media (min-width: 768px) {
-  .pricing .pricing-inner .pricing-item .pricing-description {
-    line-height: var(--line-height-medium-breakpoint-pricing-description);
-  }
-}
-@media (min-width: 992px) {
-  .pricing .pricing-inner .pricing-item .pricing-description {
-    line-height: var(--line-height-large-breakpoint-pricing-description);
-  }
-}
-@media (min-width: 768px) {
-  .pricing .pricing-inner .pricing-item .pricing-description {
-    font-size: var(--size-medium-breakpoint-pricing-description);
-  }
-}
-@media (min-width: 992px) {
-  .pricing .pricing-inner .pricing-item .pricing-description {
-    font-size: var(--size-large-breakpoint-pricing-description);
-  }
-}
-@media (min-width: 768px) {
-  .pricing .pricing-inner .pricing-item .pricing-description {
-    margin-bottom: var(--space-y-block-medium-breakpoint-pricing-description);
-  }
-}
-@media (min-width: 992px) {
-  .pricing .pricing-inner .pricing-item .pricing-description {
-    margin-bottom: var(--space-y-block-large-breakpoint-pricing-description);
-  }
-}
-.pricing .pricing-inner .pricing-item .pricing-price {
-  align-items: var(--horizontal-alignment-pricing-item);
-  color: var(--color-pricing-price);
-  display: block;
-  font-family: var(--font-text);
-  font-size: var(--size-small-breakpoint-pricing-price);
-  font-weight: var(--weight-pricing-price);
-  line-height: var(--line-height-small-breakpoint-pricing-price);
-  margin-bottom: var(--space-y-block-small-breakpoint-pricing-price);
-  text-align: var(--horizontal-alignment-pricing-item);
-  transition: all 0.4s ease;
-}
-@media (min-width: 768px) {
-  .pricing .pricing-inner .pricing-item .pricing-price {
-    line-height: var(--line-height-medium-breakpoint-pricing-price);
-  }
-}
-@media (min-width: 992px) {
-  .pricing .pricing-inner .pricing-item .pricing-price {
-    line-height: var(--line-height-large-breakpoint-pricing-price);
-  }
-}
-@media (min-width: 768px) {
-  .pricing .pricing-inner .pricing-item .pricing-price {
-    font-size: var(--size-medium-breakpoint-pricing-price);
-  }
-}
-@media (min-width: 992px) {
-  .pricing .pricing-inner .pricing-item .pricing-price {
-    font-size: var(--size-large-breakpoint-pricing-price);
-  }
-}
-@media (min-width: 768px) {
-  .pricing .pricing-inner .pricing-item .pricing-price {
-    margin-bottom: var(--space-y-block-medium-breakpoint-pricing-price);
-  }
-}
-@media (min-width: 992px) {
-  .pricing .pricing-inner .pricing-item .pricing-price {
-    margin-bottom: var(--space-y-block-large-breakpoint-pricing-price);
-  }
-}
-.pricing .pricing-inner .pricing-item .pricing-features {
-  display: block;
-  font-family: var(--font-text);
-  transition: all 0.4s ease;
-}
-.pricing .pricing-inner .pricing-item .pricing-features ul li {
-  align-items: center;
-  color: var(--color-pricing-features);
-  column-gap: var(--gap-pricing-features);
-  display: flex;
-  font-size: var(--size-small-breakpoint-pricing-features);
-  font-weight: var(--weight-pricing-features);
-  line-height: var(--line-height-small-breakpoint-pricing-features);
-  margin-bottom: var(--space-y-block-small-breakpoint-pricing-features);
-}
-@media (min-width: 768px) {
-  .pricing .pricing-inner .pricing-item .pricing-features ul li {
-    line-height: var(--line-height-medium-breakpoint-pricing-features);
-  }
-}
-@media (min-width: 992px) {
-  .pricing .pricing-inner .pricing-item .pricing-features ul li {
-    line-height: var(--line-height-large-breakpoint-pricing-features);
-  }
-}
-@media (min-width: 768px) {
-  .pricing .pricing-inner .pricing-item .pricing-features ul li {
-    font-size: var(--size-medium-breakpoint-pricing-features);
-  }
-}
-@media (min-width: 992px) {
-  .pricing .pricing-inner .pricing-item .pricing-features ul li {
-    font-size: var(--size-large-breakpoint-pricing-features);
-  }
-}
-@media (min-width: 768px) {
-  .pricing .pricing-inner .pricing-item .pricing-features ul li {
-    margin-bottom: var(--space-y-block-medium-breakpoint-pricing-features);
-  }
-}
-@media (min-width: 992px) {
-  .pricing .pricing-inner .pricing-item .pricing-features ul li {
-    margin-bottom: var(--space-y-block-large-breakpoint-pricing-features);
-  }
-}
-.pricing .pricing-inner .pricing-item .pricing-features .pricing-features-icon {
-  align-items: center;
-  background: var(--background-pricing-features-icon-background);
-  border-radius: var(--border-radius-pricing-features-icon-background);
-  display: flex;
-  height: var(--size-pricing-features-icon-background);
-  justify-content: center;
-  width: var(--size-pricing-features-icon-background);
-}
-.pricing .pricing-inner .pricing-item .pricing-features .pricing-features-icon svg {
-  color: var(--color-pricing-features-icon);
-  height: auto;
-  width: var(--size-small-breakpoint-pricing-features-icon);
-}
-@media (min-width: 768px) {
-  .pricing .pricing-inner .pricing-item .pricing-features .pricing-features-icon svg {
-    width: var(--size-medium-breakpoint-pricing-features-icon);
-  }
-}
-@media (min-width: 992px) {
-  .pricing .pricing-inner .pricing-item .pricing-features .pricing-features-icon svg {
-    width: var(--size-large-breakpoint-pricing-features-icon);
-  }
-}
-.pricing .pricing-inner .pricing-item .pricing-button {
-  margin-top: var(--space-y-block-small-breakpoint-pricing-button);
-}
-@media (min-width: 768px) {
-  .pricing .pricing-inner .pricing-item .pricing-button {
-    margin-top: var(--space-y-block-medium-breakpoint-pricing-button);
-  }
-}
-@media (min-width: 992px) {
-  .pricing .pricing-inner .pricing-item .pricing-button {
-    margin-top: var(--space-y-block-large-breakpoint-pricing-button);
-  }
-}
+
 .pricing-grid {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   position: relative;
   z-index: 2;
-}
-@media (min-width: 992px) {
-  .pricing-grid {
-    flex-direction: row;
-    gap: var(--gap-pricing-grid);
+
+  .pricing-item {
+    margin-bottom: var(--space-y-block-small-breakpoint-pricing-item);
   }
 }
-.pricing-grid .pricing-item {
-  margin-bottom: var(--space-y-block-small-breakpoint-pricing-item);
-}
-@media (min-width: 992px) {
-  .pricing-grid .pricing-item {
-    flex: 1 0 calc(33.3333333333% - var(--gap-pricing-grid));
-    max-width: calc(33.3333333333% - var(--gap-pricing-grid) / 3 * 2);
-    width: auto;
+
+@media (width >= 768px) {
+  .pricing {
+    margin: 0 var(--space-x-medium-breakpoint-container) 0
+      var(--space-x-medium-breakpoint-container);
+
+    .pricing-inner .pricing-item {
+      padding: var(--space-y-medium-breakpoint-pricing) var(--space-x-medium-breakpoint-pricing);
+
+      .pricing-title {
+        & h1,
+        & h2,
+        & h3,
+        & h4,
+        & h5,
+        & h6,
+        & span {
+          font-size: var(--size-medium-breakpoint-pricing-title);
+          line-height: var(--line-height-medium-breakpoint-pricing-title);
+          margin-bottom: var(--space-y-block-medium-breakpoint-pricing-title);
+        }
+      }
+
+      .pricing-description {
+        font-size: var(--size-medium-breakpoint-pricing-description);
+        line-height: var(--line-height-medium-breakpoint-pricing-description);
+        margin-bottom: var(--space-y-block-medium-breakpoint-pricing-description);
+      }
+
+      .pricing-price {
+        font-size: var(--size-medium-breakpoint-pricing-price);
+        line-height: var(--line-height-medium-breakpoint-pricing-price);
+        margin-bottom: var(--space-y-block-medium-breakpoint-pricing-price);
+      }
+
+      .pricing-features {
+        & ul {
+          & li {
+            font-size: var(--size-medium-breakpoint-pricing-features);
+            line-height: var(--line-height-medium-breakpoint-pricing-features);
+            margin-bottom: var(--space-y-block-medium-breakpoint-pricing-features);
+          }
+        }
+
+        .pricing-features-icon svg {
+          width: var(--size-medium-breakpoint-pricing-features-icon);
+        }
+      }
+
+      .pricing-button {
+        margin-top: var(--space-y-block-medium-breakpoint-pricing-button);
+      }
+    }
   }
-}
-@media (min-width: 768px) {
+
   .pricing-grid .pricing-item {
     margin-bottom: var(--space-y-block-medium-breakpoint-pricing-item);
   }
 }
-@media (min-width: 992px) {
-  .pricing-grid .pricing-item {
-    margin-bottom: var(--space-y-block-large-breakpoint-pricing-item);
+
+@media (width >= 992px) {
+  .pricing {
+    margin-left: var(--space-x-large-breakpoint-container);
+    margin-right: var(--space-x-large-breakpoint-container);
+    max-width: var(--max-width-container-large);
+
+    .pricing-inner .pricing-item {
+      padding: var(--space-y-large-breakpoint-pricing) var(--space-x-large-breakpoint-pricing);
+
+      .pricing-title {
+        & h1,
+        & h2,
+        & h3,
+        & h4,
+        & h5,
+        & h6,
+        & span {
+          font-size: var(--size-large-breakpoint-pricing-title);
+          line-height: var(--line-height-large-breakpoint-pricing-title);
+          margin-bottom: var(--space-y-block-large-breakpoint-pricing-title);
+        }
+      }
+
+      .pricing-description {
+        font-size: var(--size-large-breakpoint-pricing-description);
+        line-height: var(--line-height-large-breakpoint-pricing-description);
+        margin-bottom: var(--space-y-block-large-breakpoint-pricing-description);
+      }
+
+      .pricing-price {
+        font-size: var(--size-large-breakpoint-pricing-price);
+        line-height: var(--line-height-large-breakpoint-pricing-price);
+        margin-bottom: var(--space-y-block-large-breakpoint-pricing-price);
+      }
+
+      .pricing-features {
+        & ul {
+          & li {
+            font-size: var(--size-large-breakpoint-pricing-features);
+            line-height: var(--line-height-large-breakpoint-pricing-features);
+            margin-bottom: var(--space-y-block-large-breakpoint-pricing-features);
+          }
+        }
+
+        .pricing-features-icon svg {
+          width: var(--size-large-breakpoint-pricing-features-icon);
+        }
+      }
+
+      .pricing-button {
+        margin-top: var(--space-y-block-large-breakpoint-pricing-button);
+      }
+    }
+  }
+
+  .pricing-grid {
+    flex-direction: row;
+    gap: var(--gap-pricing-grid);
+
+    .pricing-item {
+      flex: 1 0 calc(33.33333% - var(--gap-pricing-grid));
+      margin-bottom: var(--space-y-block-large-breakpoint-pricing-item);
+      max-width: calc(33.33333% - var(--gap-pricing-grid) / 3 * 2);
+      width: auto;
+    }
+
+    &.pricing-grid--2 .pricing-item {
+      flex: 1 0 calc(50% - var(--gap-pricing-grid));
+      max-width: calc(50% - var(--gap-pricing-grid) / 2 * 1);
+      width: auto;
+    }
+
+    &.pricing-grid--3 .pricing-item {
+      flex: 1 0 calc(33.33333% - var(--gap-pricing-grid));
+      max-width: calc(33.33333% - var(--gap-pricing-grid) / 3 * 2);
+      width: auto;
+    }
   }
 }
-@media (max-width: 991.98px) {
+
+@media (width >= 1200px) {
+  .pricing {
+    max-width: var(--max-width-container-extralarge);
+  }
+}
+
+@media (width <= 991.98px) {
   .pricing-grid .pricing-item:last-child {
     margin-bottom: 0;
-  }
-}
-@media (min-width: 992px) {
-  .pricing-grid.pricing-grid--2 .pricing-item {
-    flex: 1 0 calc(50% - var(--gap-pricing-grid));
-    max-width: calc(50% - var(--gap-pricing-grid) / 2 * 1);
-    width: auto;
-  }
-}
-@media (min-width: 992px) {
-  .pricing-grid.pricing-grid--3 .pricing-item {
-    flex: 1 0 calc(33.3333333333% - var(--gap-pricing-grid));
-    max-width: calc(33.3333333333% - var(--gap-pricing-grid) / 3 * 2);
-    width: auto;
   }
 }

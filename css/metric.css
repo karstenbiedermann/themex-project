@@ -1,0 +1,191 @@
+.metric {
+  background: var(--background-metric);
+  border-color: var(--border-color-metric);
+  border-radius: var(--border-radius-metric);
+  border-style: solid;
+  border-width: var(--border-width-metric);
+  margin-left: var(--space-x-small-breakpoint-container);
+  margin-right: var(--space-x-small-breakpoint-container);
+  overflow: hidden;
+  position: relative;
+  transform: translateZ(0);
+
+  .metric-inner {
+    padding: var(--space-y-small-breakpoint-metric) var(--space-x-small-breakpoint-metric);
+
+    .metric-item {
+      align-items: var(--horizontal-alignment-metric-item);
+      -webkit-backdrop-filter: blur(var(--blur-metric-item));
+      backdrop-filter: blur(var(--blur-metric-item));
+      background: var(--background-metric-item);
+      border-color: var(--border-color-metric-item);
+      border-radius: var(--border-radius-metric-item);
+      border-style: solid;
+      border-width: var(--border-width-metric-item);
+      padding: var(--space-y-small-breakpoint-metric-item)
+        var(--space-x-small-breakpoint-metric-item);
+      text-align: var(--horizontal-alignment-metric-item);
+
+      .metric-number {
+        color: var(--color-metric-number);
+        font-size: var(--size-small-breakpoint-metric-number);
+        font-weight: var(--weight-metric-number);
+        line-height: var(--line-height-small-breakpoint-metric-number);
+        margin-bottom: var(--space-y-block-small-breakpoint-metric-number);
+      }
+
+      .metric-text {
+        color: var(--color-metric-text);
+        font-size: var(--size-small-breakpoint-metric-text);
+        font-weight: var(--weight-metric-text);
+        line-height: var(--line-height-small-breakpoint-metric-text);
+        margin-bottom: var(--space-y-block-small-breakpoint-metric-text);
+      }
+
+      .metric-supporting-text {
+        color: var(--color-metric-supporting-text);
+        font-size: var(--size-small-breakpoint-metric-supporting-text);
+        font-weight: var(--weight-metric-supporting-text);
+        line-height: var(--line-height-small-breakpoint-metric-supporting-text);
+      }
+    }
+  }
+
+  .metric-image {
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+
+    img,
+    svg {
+      height: 100%;
+      object-fit: cover;
+      width: 100%;
+    }
+  }
+}
+
+.metric-grid {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: 2;
+
+  .metric-item:not(:last-child) {
+    margin-bottom: var(--space-y-block-small-breakpoint-metric-item);
+  }
+}
+
+@media (width >= 768px) {
+  .metric {
+    margin: 0 var(--space-x-medium-breakpoint-container) 0
+      var(--space-x-medium-breakpoint-container);
+
+    .metric-inner {
+      padding: var(--space-y-medium-breakpoint-metric) var(--space-x-medium-breakpoint-metric);
+
+      .metric-item {
+        padding: var(--space-y-medium-breakpoint-metric-item)
+          var(--space-x-medium-breakpoint-metric-item);
+
+        .metric-number {
+          font-size: var(--size-medium-breakpoint-metric-number);
+          line-height: var(--line-height-medium-breakpoint-metric-number);
+          margin-bottom: var(--space-y-block-medium-breakpoint-metric-number);
+        }
+
+        .metric-text {
+          font-size: var(--size-medium-breakpoint-metric-text);
+          line-height: var(--line-height-medium-breakpoint-metric-text);
+          margin-bottom: var(--space-y-block-medium-breakpoint-metric-text);
+        }
+
+        .metric-supporting-text {
+          font-size: var(--size-medium-breakpoint-metric-supporting-text);
+          line-height: var(--line-height-medium-breakpoint-metric-supporting-text);
+        }
+      }
+    }
+  }
+
+  .metric-grid .metric-item:not(:last-child) {
+    margin-bottom: var(--space-y-block-medium-breakpoint-metric-item);
+  }
+}
+
+@media (width >= 992px) {
+  .metric {
+    margin-left: var(--space-x-large-breakpoint-container);
+    margin-right: var(--space-x-large-breakpoint-container);
+    max-width: var(--max-width-container-large);
+
+    .metric-inner {
+      padding: var(--space-y-large-breakpoint-metric) var(--space-x-large-breakpoint-metric);
+
+      .metric-item {
+        padding: var(--space-y-large-breakpoint-metric-item)
+          var(--space-x-large-breakpoint-metric-item);
+
+        .metric-number {
+          font-size: var(--size-large-breakpoint-metric-number);
+          line-height: var(--line-height-large-breakpoint-metric-number);
+          margin-bottom: var(--space-y-block-large-breakpoint-metric-number);
+        }
+
+        .metric-text {
+          font-size: var(--size-large-breakpoint-metric-text);
+          line-height: var(--line-height-large-breakpoint-metric-text);
+          margin-bottom: var(--space-y-block-large-breakpoint-metric-text);
+        }
+
+        .metric-supporting-text {
+          font-size: var(--size-large-breakpoint-metric-supporting-text);
+          line-height: var(--line-height-large-breakpoint-metric-supporting-text);
+        }
+      }
+    }
+  }
+
+  .metric-grid {
+    flex-direction: row;
+    gap: var(--gap-metric-grid);
+
+    .metric-item {
+      flex: 1 0 calc(33.3333% - var(--gap-metric-grid));
+      max-width: calc(33.3333% - var(--gap-metric-grid) / 3 * 2);
+      width: auto;
+
+      &:not(:last-child) {
+        margin-bottom: var(--space-y-block-large-breakpoint-metric-item);
+      }
+    }
+
+    &.metric-grid--2 .metric-item {
+      flex: 1 0 calc(50% - var(--gap-metric-grid));
+      max-width: calc(50% - var(--gap-metric-grid) / 2 * 1);
+      width: auto;
+    }
+
+    &.metric-grid--3 .metric-item {
+      flex: 1 0 calc(33.3333% - var(--gap-metric-grid));
+      max-width: calc(33.3333% - var(--gap-metric-grid) / 3 * 2);
+      width: auto;
+    }
+
+    &.metric-grid--4 .metric-item {
+      flex: 1 0 calc(25% - var(--gap-metric-grid));
+      max-width: calc(25% - var(--gap-metric-grid) / 4 * 3);
+      width: auto;
+    }
+  }
+}
+
+@media (width >= 1200px) {
+  .metric {
+    max-width: var(--max-width-container-extralarge);
+  }
+}
