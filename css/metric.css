@@ -8,7 +8,6 @@
   margin-right: var(--space-x-small-breakpoint-container);
   overflow: hidden;
   position: relative;
-  transform: translateZ(0);
 
   .metric-inner {
     padding: var(--space-y-small-breakpoint-metric) var(--space-x-small-breakpoint-metric);

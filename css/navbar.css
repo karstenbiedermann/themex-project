@@ -19,6 +19,7 @@
     align-items: center;
     display: flex;
     justify-content: space-between;
+    flex-grow: 1;
 
     & img,
     & svg {
@@ -26,11 +27,26 @@
       width: var(--size-small-breakpoint-navbar-brand);
     }
   }
+  .navbar-aside {
+    padding-top: var(--space-y-small-breakpoint-navbar-aside);
+    .button {
+      font-size: var(--size-small-breakpoint-navbar-link);
+      gap: var(--gap-button);
+      &.button--link {
+        color: var(--color-navbar-link);
+      }
+      &:not(.button--link) {
+        padding: var(--space-y-small-breakpoint-navbar-aside-button)
+          var(--space-x-small-breakpoint-navbar-aside-button);
+      }
+    }
+  }
 
   .navbar-nav {
     column-gap: var(--column-gap-navbar-nav);
     display: none;
     flex-direction: column;
+    flex-grow: 1;
 
     &.visible {
       display: flex;
@@ -192,6 +208,17 @@
       padding: var(--space-y-medium-breakpoint-navbar) var(--space-x-medium-breakpoint-navbar);
     }
 
+    .navbar-aside {
+      padding-top: var(--space-y-medium-breakpoint-navbar-aside);
+      .button {
+        font-size: var(--size-medium-breakpoint-navbar-link);
+        &:not(.button--link) {
+          padding: var(--space-y-medium-breakpoint-navbar-aside-button)
+            var(--space-x-medium-breakpoint-navbar-aside-button);
+        }
+      }
+    }
+
     .navbar-brand {
       & img,
       & svg {
@@ -251,6 +278,18 @@
       column-gap: var(--column-gap-navbar);
       flex-direction: row;
       padding: var(--space-y-large-breakpoint-navbar) var(--space-x-large-breakpoint-navbar);
+    }
+
+    .navbar-aside {
+      padding-top: var(--space-y-large-breakpoint-navbar-aside);
+
+      .button {
+        font-size: var(--size-large-breakpoint-navbar-link);
+        &:not(.button--link) {
+          padding: var(--space-y-large-breakpoint-navbar-aside-button)
+            var(--space-x-large-breakpoint-navbar-aside-button);
+        }
+      }
     }
 
     .navbar-brand {
@@ -325,6 +364,9 @@
       display: none;
     }
   }
+  .navbar-aside {
+    margin-left: auto;
+  }
 }
 
 @media (width >= 1200px) {
@@ -353,6 +395,14 @@
 
     .navbar-nav .nav-item {
       margin-bottom: var(--space-y-block-medium-breakpoint-navbar-nav-item);
+    }
+    .navbar-aside {
+      border-top-style: solid;
+      border-top-width: var(--border-width-navbar-aside);
+      border-color: var(--border-color-navbar-aside);
+      .button--link {
+        margin-bottom: 0.5rem;
+      }
     }
   }
 }
