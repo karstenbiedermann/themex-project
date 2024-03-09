@@ -92,25 +92,6 @@
       width: 100%;
     }
   }
-
-  .testimonial-background-image {
-    -webkit-filter: blur(50px);
-    filter: blur(50px);
-    height: 100%;
-    left: 0;
-    opacity: 0.2;
-    position: absolute;
-    top: 0;
-    transform: translateZ(0);
-    width: 100%;
-    z-index: 1;
-
-    & img,
-    & svg {
-      height: 100%;
-      width: 100%;
-    }
-  }
 }
 
 @media (width >= 768px) {
