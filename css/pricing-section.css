@@ -118,8 +118,8 @@
 
 @media (width >= 768px) {
   .pricing {
-    margin: 0 var(--space-x-medium-breakpoint-container) 0
-      var(--space-x-medium-breakpoint-container);
+    margin-left: var(--space-x-medium-breakpoint-container);
+    margin-right: var(--space-x-medium-breakpoint-container);
 
     .pricing-inner .pricing-item {
       padding: var(--space-y-medium-breakpoint-pricing) var(--space-x-medium-breakpoint-pricing);
@@ -258,6 +258,13 @@
 @media (width >= 1200px) {
   .pricing {
     max-width: var(--max-width-container-extralarge);
+  }
+}
+
+@media (width >= 1300px) {
+  .pricing {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 

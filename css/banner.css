@@ -53,8 +53,8 @@
 
 @media (width >= 768px) {
   .banner {
-    margin: 0 var(--space-x-medium-breakpoint-container) 0
-      var(--space-x-medium-breakpoint-container);
+    margin-left: var(--space-x-medium-breakpoint-container);
+    margin-right: var(--space-x-medium-breakpoint-container);
 
     .banner-inner {
       padding: var(--space-y-medium-breakpoint-banner) var(--space-x-medium-breakpoint-banner);
@@ -93,6 +93,13 @@
 @media (width >= 1200px) {
   .banner {
     max-width: var(--max-width-container-extralarge);
+  }
+}
+
+@media (width >= 1200px) {
+  .banner {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 

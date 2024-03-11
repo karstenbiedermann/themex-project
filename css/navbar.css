@@ -201,8 +201,8 @@
 
 @media (width >= 768px) {
   .navbar {
-    margin: 0 var(--space-x-medium-breakpoint-container) 0
-      var(--space-x-medium-breakpoint-container);
+    margin-left: var(--space-x-medium-breakpoint-container);
+    margin-right: var(--space-x-medium-breakpoint-container);
 
     .navbar-inner {
       padding: var(--space-y-medium-breakpoint-navbar) var(--space-x-medium-breakpoint-navbar);
@@ -375,6 +375,13 @@
   }
 }
 
+@media (width >= 1300px) {
+  .navbar {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 @media (width <= 767.98px) {
   .navbar {
     .navbar-brand {
@@ -393,8 +400,13 @@
       margin-bottom: var(--space-y-block-medium-breakpoint-navbar-brand);
     }
 
-    .navbar-nav .nav-item {
-      margin-bottom: var(--space-y-block-medium-breakpoint-navbar-nav-item);
+    .navbar-nav {
+      &.visible {
+        height: 100dvh;
+      }
+      .nav-item {
+        margin-bottom: var(--space-y-block-medium-breakpoint-navbar-nav-item);
+      }
     }
     .navbar-aside {
       border-top-style: solid;

@@ -38,6 +38,18 @@
 
       & a {
         color: var(--color-hero-eyebrow-link);
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        background: var(--background-hero-eyebrow-link);
+        padding: var(--space-y-small-breakpoint-hero-eyebrow-link)
+          var(--space-x-small-breakpoint-hero-eyebrow-link);
+        border-radius: var(--border-radius-hero-eyebrow);
+
+        & svg {
+          width: calc(var(--size-small-breakpoint-hero-eyebrow) * 0.75);
+          height: calc(var(--size-small-breakpoint-hero-eyebrow) * 0.75);
+        }
       }
 
       & h1,
@@ -99,8 +111,8 @@
 
 @media (width >= 768px) {
   .hero {
-    margin: 0 var(--space-x-medium-breakpoint-container) 0
-      var(--space-x-medium-breakpoint-container);
+    margin-left: var(--space-x-medium-breakpoint-container);
+    margin-right: var(--space-x-medium-breakpoint-container);
     min-height: var(--min-height-medium-breakpoint-hero);
 
     .hero-inner {
@@ -116,6 +128,16 @@
         & span {
           font-size: var(--size-medium-breakpoint-hero-eyebrow);
           line-height: var(--line-height-medium-breakpoint-hero-eyebrow);
+        }
+
+        & a {
+          padding: var(--space-y-medium-breakpoint-hero-eyebrow-link)
+            var(--space-x-medium-breakpoint-hero-eyebrow-link);
+
+          & svg {
+            width: calc(var(--size-medium-breakpoint-hero-eyebrow) * 0.75);
+            height: calc(var(--size-medium-breakpoint-hero-eyebrow) * 0.75);
+          }
         }
 
         margin-bottom: var(--space-y-block-medium-breakpoint-hero-eyebrow);
@@ -174,6 +196,16 @@
           line-height: var(--line-height-large-breakpoint-hero-eyebrow);
         }
 
+        & a {
+          padding: var(--space-y-large-breakpoint-hero-eyebrow-link)
+            var(--space-x-large-breakpoint-hero-eyebrow-link);
+
+          & svg {
+            width: calc(var(--size-large-breakpoint-hero-eyebrow) * 0.75);
+            height: calc(var(--size-large-breakpoint-hero-eyebrow) * 0.75);
+          }
+        }
+
         margin-bottom: var(--space-y-block-large-breakpoint-hero-eyebrow);
         padding: var(--space-y-large-breakpoint-hero-eyebrow)
           var(--space-x-large-breakpoint-hero-eyebrow);
@@ -211,5 +243,12 @@
 @media (width >= 1200px) {
   .hero {
     max-width: var(--max-width-container-extralarge);
+  }
+}
+
+@media (width >= 1300px) {
+  .hero {
+    margin-left: auto;
+    margin-right: auto;
   }
 }

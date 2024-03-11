@@ -1,8 +1,4 @@
 .form {
-  container-type: inline-size;
-}
-
-fieldset legend {
   --color-legend: var(--color-form-label);
   --weight-legend: var(--weight-form-label);
   --size-large-breakpoint-legend: var(--size-large-breakpoint-form-element-label);
@@ -13,6 +9,119 @@ fieldset legend {
     --space-y-block-medium-breakpoint-form-element-label
   );
   --space-y-block-small-breakpoint-legend: var(--space-y-block-small-breakpoint-form-element-label);
+  --column-gap-form-grid: var(--gap);
+  --space-y-block-legend-label-addon: var(--space-y-block-form-label);
+  --color-form-element-label: var(--color-form-label);
+  --size-large-breakpoint-form-element-label: var(--size-large-breakpoint-form-label);
+  --size-medium-breakpoint-form-element-label: var(--size-medium-breakpoint-form-label);
+  --size-small-breakpoint-form-element-label: var(--size-small-breakpoint-form-label);
+  --weight-form-element-label: var(--weight-form-label);
+  --width-large-breakpoint-form-element-icon: 50px;
+  --width-medium-breakpoint-form-element-icon: 50px;
+  --width-small-breakpoint-form-element-icon: 50px;
+  --height-form-element-icon: calc(100% - 2px);
+  --space-x-large-breakpoint-form-element-icon: 3.125rem;
+  --space-x-medium-breakpoint-form-element-icon: 3.125rem;
+  --space-x-small-breakpoint-form-element-icon: 3.125rem;
+  --background-input: var(--background-form);
+  --border-width-input: var(--border-width-form);
+  --border-color-input: var(--border-color-form);
+  --border-radius-input: var(--border-radius-form);
+  --color-input: var(--color-form);
+  --size-large-breakpoint-input: var(--size-large-breakpoint-form);
+  --size-medium-breakpoint-input: var(--size-medium-breakpoint-form);
+  --size-small-breakpoint-input: var(--size-small-breakpoint-form);
+  --space-x-large-breakpoint-input: var(--space-x-large-breakpoint-form);
+  --space-x-medium-breakpoint-input: var(--space-x-medium-breakpoint-form);
+  --space-x-small-breakpoint-input: var(--space-x-small-breakpoint-form);
+  --space-y-large-breakpoint-input: var(--space-y-large-breakpoint-form);
+  --space-y-medium-breakpoint-input: var(--space-y-medium-breakpoint-form);
+  --space-y-small-breakpoint-input: var(--space-y-small-breakpoint-form);
+  --color-input-placeholder: var(--color-form-placeholder);
+  --border-color-input-focus: var(--border-color-form-focus);
+  --color-input-error: var(--color-form-error);
+  --border-color-input-error: var(--border-color-form-error);
+  --background-textarea: var(--background-form);
+  --border-width-textarea: var(--border-width-form);
+  --border-color-textarea: var(--border-color-form);
+  --border-radius-textarea: var(--border-radius-form);
+  --color-textarea: var(--color-form);
+  --space-x-large-breakpoint-textarea: var(--space-x-large-breakpoint-form);
+  --space-x-medium-breakpoint-textarea: var(--space-x-medium-breakpoint-form);
+  --space-x-small-breakpoint-textarea: var(--space-x-small-breakpoint-form);
+  --space-y-large-breakpoint-textarea: var(--space-y-large-breakpoint-form);
+  --space-y-medium-breakpoint-textarea: var(--space-y-medium-breakpoint-form);
+  --space-y-small-breakpoint-textarea: var(--space-y-small-breakpoint-form);
+  --color-textarea-placeholder: var(--color-form-placeholder);
+  --border-color-textarea-focus: var(--border-color-form-focus);
+  --border-color-textarea-error: var(--border-color-form-error);
+  --size-large-breakpoint-checkbox-label: var(--size-large-breakpoint-form);
+  --size-medium-breakpoint-checkbox-label: var(--size-medium-breakpoint-form);
+  --size-small-breakpoint-checkbox-label: var(--size-small-breakpoint-form);
+  --size-large-breakpoint-radio-label: var(--size-large-breakpoint-form);
+  --size-medium-breakpoint-radio-label: var(--size-medium-breakpoint-form);
+  --size-small-breakpoint-radio-label: var(--size-small-breakpoint-form);
+  --border-radius-select-trigger: var(--border-radius-form);
+  --size-large-breakpoint-select-trigger: var(--size-large-breakpoint-form);
+  --size-medium-breakpoint-select-trigger: var(--size-medium-breakpoint-form);
+  --size-small-breakpoint-select-trigger: var(--size-small-breakpoint-form);
+  --border-radius-select-trigger-visible: var(--border-radius-form);
+  --color-select-trigger-icon: var(--neutral-500);
+  --size-select-trigger-icon: 15px;
+  --background-select-options: var(--background-form);
+  --border-radius-select-options: var(--border-radius-form);
+  --space-x-large-breakpoint-select-options: 0;
+  --space-x-medium-breakpoint-select-options: 0;
+  --space-x-small-breakpoint-select-options: 0;
+  --space-y-large-breakpoint-select-options: 0.3125rem;
+  --space-y-medium-breakpoint-select-options: 0.3125rem;
+  --space-y-small-breakpoint-select-options: 0.3125rem;
+  --size-message: 0.75rem;
+  --space-y-block-bottom-message: 0.5rem;
+  --border-width-message-error-items: var(--border-width-form);
+  --border-color-message-error-items: var(--border-color-form-error);
+  --border-radius-message-error-items: var(--border-radius-form);
+  --background-datepicker: #fff;
+  --border-width-datepicker: 1px;
+  --border-color-datepicker: var(--border-color-input);
+  --border-radius-datepicker: var(--border-radius-form);
+  --width-large-breakpoint-datepicker: 360px;
+  --width-medium-breakpoint-datepicker: 360px;
+  --width-small-breakpoint-datepicker: 300px;
+  --color-datepicker-prev-next: var(--neutral-500);
+  --size-datepicker-prev-next: 12px;
+  --background-hover-datepicker-prev-next: 1px solid var(--neutral-200);
+  --border-color-datepicker-prev-next: var(--neutral-300);
+  --size-datepicker-month: 12px;
+  --border-bottom-datepicker-calendar-header: 1px solid var(--neutral-300);
+  --space-y-block-datepicker-calendar-header: 0.625rem;
+  --space-y-datepicker-calendar-header: 0.9375rem;
+  --weight-datepicker-calendar-header-days: 700;
+  --size-datepicker-calendar-header-days: 0.75rem;
+  --size-datepicker-calendar-day: 0.75rem;
+  --weight-datepicker-calendar-day: 700;
+  --space-y-datepicker-calendar-day: 0.9375rem 0;
+  --border-datepicker-calendar-day: 1px solid var(--neutral-100);
+  --space-x-multiselect-count: 0.4375rem;
+  --space-y-multiselect-count: 0.1875rem;
+  --background-multiselect: var(--neutral-600);
+  --border-radius-multiselect: 4px;
+  --color-multiselect: #fff;
+  --size-multiselect: 0.75rem;
+  --space-x-block-multiselect: 0.5rem;
+  --space-x-large-breakpoint-multiselect: 1.25rem;
+  --space-x-medium-breakpoint-multiselect: 1.25rem;
+  --space-x-small-breakpoint-multiselect: 1.25rem;
+  --space-y-large-breakpoint-multiselect: 0.625rem;
+  --space-y-medium-breakpoint-multiselect: 0.625rem;
+  --space-y-small-breakpoint-multiselect: 0.625rem;
+  --space-y-submit: 1.25rem;
+  container-type: inline-size;
+  margin-left: var(--space-x-small-breakpoint-container);
+  margin-right: var(--space-x-small-breakpoint-container);
+}
+
+fieldset legend {
   color: var(--color-legend);
   display: block;
   font-size: var(--size-small-breakpoint-legend);
@@ -38,7 +147,6 @@ fieldset legend {
     display: flex;
 
     .form-element-label-addon {
-      --space-y-block-legend-label-addon: var(--space-y-block-form-label);
       color: var(--color-form-element-label-addon);
       display: block;
       font-size: var(--size-small-breakpoint-form-element-label-addon);
@@ -46,12 +154,7 @@ fieldset legend {
       margin-left: auto;
     }
 
-    label {
-      --color-form-element-label: var(--color-form-label);
-      --size-large-breakpoint-form-element-label: var(--size-large-breakpoint-form-label);
-      --size-medium-breakpoint-form-element-label: var(--size-medium-breakpoint-form-label);
-      --size-small-breakpoint-form-element-label: var(--size-small-breakpoint-form-label);
-      --weight-form-element-label: var(--weight-form-label);
+    & label {
       color: var(--color-form-element-label);
       display: block;
       font-size: var(--size-small-breakpoint-form-element-label);
@@ -61,10 +164,6 @@ fieldset legend {
   }
 
   .form-element-icon {
-    --width-large-breakpoint-form-element-icon: 50px;
-    --width-medium-breakpoint-form-element-icon: 50px;
-    --width-small-breakpoint-form-element-icon: 50px;
-    --height-form-element-icon: calc(100% - 2px);
     align-items: center;
     border-bottom-left-radius: var(--border-radius-form);
     border-top-left-radius: var(--border-radius-form);
@@ -82,9 +181,6 @@ fieldset legend {
     }
 
     + .input {
-      --space-x-large-breakpoint-form-element-icon: 3.125rem;
-      --space-x-medium-breakpoint-form-element-icon: 3.125rem;
-      --space-x-small-breakpoint-form-element-icon: 3.125rem;
       padding-left: var(--space-x-small-breakpoint-form-element-icon);
     }
   }
@@ -94,20 +190,6 @@ fieldset legend {
   }
 
   .input {
-    --background-input: var(--background-form);
-    --border-width-input: var(--border-width-form);
-    --border-color-input: var(--border-color-form);
-    --border-radius-input: var(--border-radius-form);
-    --color-input: var(--color-form);
-    --size-large-breakpoint-input: var(--size-large-breakpoint-form);
-    --size-medium-breakpoint-input: var(--size-medium-breakpoint-form);
-    --size-small-breakpoint-input: var(--size-small-breakpoint-form);
-    --space-x-large-breakpoint-input: var(--space-x-large-breakpoint-form);
-    --space-x-medium-breakpoint-input: var(--space-x-medium-breakpoint-form);
-    --space-x-small-breakpoint-input: var(--space-x-small-breakpoint-form);
-    --space-y-large-breakpoint-input: var(--space-y-large-breakpoint-form);
-    --space-y-medium-breakpoint-input: var(--space-y-medium-breakpoint-form);
-    --space-y-small-breakpoint-input: var(--space-y-small-breakpoint-form);
     appearance: none;
     background: var(--background-input);
     border-color: var(--border-color-input);
@@ -121,23 +203,20 @@ fieldset legend {
     padding: var(--space-y-small-breakpoint-input) var(--space-x-small-breakpoint-input);
     transition: all 0.3s;
     width: 100%;
+    box-shadow: 0 1px 2px 0 #1018280d;
 
     &::placeholder {
-      --color-input-placeholder: var(--color-form-placeholder);
       color: var(--color-input-placeholder);
       opacity: 1;
     }
 
     &:focus {
-      --border-color-input-focus: var(--border-color-form-focus);
       border-color: var(--border-color-input-focus);
       box-shadow: 0 0 0 var(--size-form-outline) var(--color-form-outline);
       outline: 0;
     }
 
     &.input--error {
-      --color-input-error: var(--color-form-error);
-      --border-color-input-error: var(--border-color-form-error);
       border-color: var(--border-color-input-error);
       box-shadow: 0 0 0 var(--size-form-outline) var(--color-form-outline-error);
       color: var(--color-input-error);
@@ -146,20 +225,6 @@ fieldset legend {
 }
 
 .textarea {
-  --background-textarea: var(--background-form);
-  --border-width-textarea: var(--border-width-form);
-  --border-color-textarea: var(--border-color-form);
-  --border-radius-textarea: var(--border-radius-form);
-  --color-textarea: var(--color-form);
-  --size-large-breakpoint-input: var(--size-large-breakpoint-form);
-  --size-medium-breakpoint-input: var(--size-medium-breakpoint-form);
-  --size-small-breakpoint-input: var(--size-small-breakpoint-form);
-  --space-x-large-breakpoint-textarea: var(--space-x-large-breakpoint-form);
-  --space-x-medium-breakpoint-textarea: var(--space-x-medium-breakpoint-form);
-  --space-x-small-breakpoint-textarea: var(--space-x-small-breakpoint-form);
-  --space-y-large-breakpoint-textarea: var(--space-y-large-breakpoint-form);
-  --space-y-medium-breakpoint-textarea: var(--space-y-medium-breakpoint-form);
-  --space-y-small-breakpoint-textarea: var(--space-y-small-breakpoint-form);
   appearance: none;
   background: var(--background-textarea);
   background-clip: padding-box;
@@ -175,22 +240,20 @@ fieldset legend {
   padding: var(--space-y-small-breakpoint-textarea) var(--space-x-small-breakpoint-textarea);
   transition: all 0.3s;
   width: 100%;
+  box-shadow: 0 1px 2px 0 #1018280d;
 
   &::placeholder {
-    --color-textarea-placeholder: var(--color-form-placeholder);
     color: var(--color-textarea-placeholder);
     opacity: 1;
   }
 
   &:focus {
-    --border-color-textarea-focus: var(--border-color-form-focus);
     border-color: var(--border-color-textarea-focus);
     box-shadow: 0 0 0 var(--size-form-outline) var(--color-form-outline);
     outline: 0;
   }
 
   &.textarea--error {
-    --border-color-textarea-error: var(--border-color-form-error);
     border-color: var(--border-color-textarea-error);
     box-shadow: 0 0 0 var(--size-form-outline) var(--color-form-outline-error);
   }
@@ -209,9 +272,6 @@ fieldset legend {
   }
 
   .checkbox-label {
-    --size-large-breakpoint-checkbox-label: var(--size-large-breakpoint-form);
-    --size-medium-breakpoint-checkbox-label: var(--size-medium-breakpoint-form);
-    --size-small-breakpoint-checkbox-label: var(--size-small-breakpoint-form);
     color: var(--color-checkbox-label);
     display: flex;
     font-size: var(--size-small-breakpoint-checkbox-label);
@@ -280,9 +340,6 @@ fieldset legend {
   }
 
   .radio-label {
-    --size-large-breakpoint-radio-label: var(--size-large-breakpoint-form);
-    --size-medium-breakpoint-radio-label: var(--size-medium-breakpoint-form);
-    --size-small-breakpoint-radio-label: var(--size-small-breakpoint-form);
     color: var(--color-radio-label);
     font-size: var(--size-small-breakpoint-radio-label);
     padding: var(--space-y-small-breakpoint-radio) var(--space-x-small-breakpoint-radio);
@@ -339,15 +396,11 @@ fieldset legend {
   position: relative;
   width: auto;
 
-  select {
+  & select {
     display: none;
   }
 
   .select-trigger {
-    --border-radius-select-trigger: var(--border-radius-form);
-    --size-large-breakpoint-select-trigger: var(--size-large-breakpoint-form);
-    --size-medium-breakpoint-select-trigger: var(--size-medium-breakpoint-form);
-    --size-small-breakpoint-select-trigger: var(--size-small-breakpoint-form);
     align-items: center;
     background: var(--background-select-trigger);
     border-color: var(--border-color-select-trigger);
@@ -362,9 +415,9 @@ fieldset legend {
     position: relative;
     transition: all var(--transition-duration) ease-in-out;
     width: 100%;
+    box-shadow: 0 1px 2px 0 #1018280d;
 
     &.visible {
-      --border-radius-select-trigger-visible: var(--border-radius-form);
       border-color: var(--border-color-select-trigger-visible);
       border-radius: var(--border-radius-select-trigger-visible);
       box-shadow: 0 0 0 var(--size-form-outline) var(--color-form-outline);
@@ -379,8 +432,6 @@ fieldset legend {
     }
 
     &::after {
-      --color-select-trigger-icon: var(--neutral-500);
-      --size-select-trigger-icon: 15px;
       background-color: var(--color-select-trigger-icon);
       content: '';
       display: block;
@@ -402,14 +453,6 @@ fieldset legend {
   }
 
   .select-options {
-    --background-select-options: var(--background-form);
-    --border-radius-select-options: var(--border-radius-form);
-    --space-x-large-breakpoint-select-options: 0;
-    --space-x-medium-breakpoint-select-options: 0;
-    --space-x-small-breakpoint-select-options: 0;
-    --space-y-large-breakpoint-select-options: 0.3125rem;
-    --space-y-medium-breakpoint-select-options: 0.3125rem;
-    --space-y-small-breakpoint-select-options: 0.3125rem;
     background: var(--background-select-options);
     border-color: var(--border-color-select-options);
     border-radius: var(--border-radius-select-options);
@@ -421,7 +464,7 @@ fieldset legend {
     padding: var(--space-y-small-breakpoint-select-options)
       var(--space-x-small-breakpoint-select-options);
     position: absolute;
-    top: 45.5px;
+    top: auto;
     transition: all var(--transition-duration) ease-in-out;
     width: 100%;
     z-index: 1;
@@ -455,8 +498,6 @@ fieldset legend {
 }
 
 .form-element-message {
-  --size-message: 0.75rem;
-  --space-y-block-bottom-message: 0.5rem;
   align-items: center;
   display: flex;
   font-size: 0;
@@ -491,9 +532,6 @@ fieldset legend {
 }
 
 .form-element-error .form-element-items {
-  --border-width-message-error-items: var(--border-width-form);
-  --border-color-message-error-items: var(--border-color-form-error);
-  --border-radius-message-error-items: var(--border-radius-form);
   border-color: var(--border-color-message-error-items);
   border-radius: var(--border-radius-message-error-items);
   border-style: solid;
@@ -507,13 +545,6 @@ fieldset legend {
   position: relative;
 
   .datepicker-calendar {
-    --background-datepicker: #fff;
-    --border-width-datepicker: 1px;
-    --border-color-datepicker: var(--neutral-200);
-    --border-radius-datepicker: var(--border-radius-form);
-    --width-large-breakpoint-datepicker: 360px;
-    --width-medium-breakpoint-datepicker: 360px;
-    --width-small-breakpoint-datepicker: 300px;
     background: var(--background-datepicker);
     border-color: var(--border-color-datepicker);
     border-radius: var(--border-radius-datepicker);
@@ -525,21 +556,17 @@ fieldset legend {
     top: calc(100% + 10px);
     width: var(--width-small-breakpoint-datepicker);
     z-index: 3;
+    box-shadow: 0 1px 2px 0 #1018280d;
 
     .datepicker-calendar-navigation {
-      --color-datepicker-prev-next: var(--neutral-500);
-      --size-datepicker-prev-next: 12px;
-      --background-hover-datepicker-prev-next: 1px solid var(--neutral-200);
-      --border-color-datepicker-prev-next: var(--neutral-300);
       display: flex;
       padding: 1.25rem;
 
       .datepicker-month {
-        --size-datepicker-month: 12px;
         align-items: center;
         color: var(--color-datepicker-month);
         display: flex;
-        font-weight: 700;
+        font-weight: var(--weight-form-element-label);
         gap: 10px;
         margin-right: auto;
       }
@@ -606,16 +633,11 @@ fieldset legend {
     }
 
     .datepicker-calendar-header {
-      --border-bottom-datepicker-calendar-header: 1px solid var(--neutral-300);
-      --space-y-block-datepicker-calendar-header: 0.625rem;
-      --space-y-datepicker-calendar-header: 0.9375rem;
       border-bottom: var(--border-bottom-datepicker-calendar-header);
       margin-top: var(--space-y-block-datepicker-calendar-header);
       padding-bottom: var(--space-y-datepicker-calendar-header);
 
       .datepicker-calendar-header-days {
-        --weight-datepicker-calendar-header-days: 700;
-        --size-datepicker-calendar-header-days: 0.75rem;
         color: var(--color-datepicker-calendar-header-days);
         display: flex;
         font-size: var(--size-datepicker-calendar-header-days);
@@ -625,9 +647,6 @@ fieldset legend {
     }
 
     .datepicker-calendar-day {
-      --size-datepicker-calendar-day: 0.75rem;
-      --weight-datepicker-calendar-day: 700;
-      --space-y-datepicker-calendar-day: 0.9375rem 0;
       align-items: center;
       background: none;
       color: var(--color-datepicker-calendar-day);
@@ -681,7 +700,6 @@ fieldset legend {
       }
 
       &:not(.datepicker-calendar-day-29, .datepicker-calendar-day-30, .datepicker-calendar-day-31, .datepicker-calendar-day-28:last-child) {
-        --border-datepicker-calendar-day: 1px solid var(--neutral-100);
         border-bottom: var(--border-datepicker-calendar-day);
       }
     }
@@ -701,13 +719,6 @@ fieldset legend {
 }
 
 .select-multiselect-count {
-  --space-x-multiselect-count: 0.4375rem;
-  --space-y-multiselect-count: 0.1875rem;
-  --background-multiselect: var(--neutral-600);
-  --border-radius-multiselect: 4px;
-  --color-multiselect: #fff;
-  --size-multiselect: 0.75rem;
-  --space-x-block-multiselect: 0.5rem;
   background: var(--background-multiselect);
   border-radius: var(--border-radius-multiselect);
   color: var(--color-multiselect);
@@ -722,24 +733,17 @@ fieldset legend {
 }
 
 .select-multiselect {
-  --space-x-large-breakpoint-multiselect: 1.25rem;
-  --space-x-medium-breakpoint-multiselect: 1.25rem;
-  --space-x-small-breakpoint-multiselect: 1.25rem;
-  --space-y-large-breakpoint-multiselect: 0.625rem;
-  --space-y-medium-breakpoint-multiselect: 0.625rem;
-  --space-y-small-breakpoint-multiselect: 0.625rem;
   padding: var(--space-y-small-breakpoint-multiselect) var(--space-x-small-breakpoint-multiselect);
 }
 
 .form-submit {
-  --space-y-submit: 1.25rem;
   margin-top: var(--space-y-submit);
 }
 
 @media (width >= 768px) {
   .form {
-    margin: 0 var(--space-x-medium-breakpoint-container) 0
-      var(--space-x-medium-breakpoint-container);
+    margin-left: var(--space-x-medium-breakpoint-container);
+    margin-right: var(--space-x-medium-breakpoint-container);
   }
 
   fieldset legend {
@@ -990,5 +994,12 @@ fieldset legend {
 @media (width >= 1200px) {
   .form {
     max-width: var(--max-width-container-small);
+  }
+}
+
+@media (width >= 1300px) {
+  .form {
+    margin-left: auto;
+    margin-right: auto;
   }
 }

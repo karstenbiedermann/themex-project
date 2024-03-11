@@ -85,8 +85,8 @@
 
 @media (width >= 768px) {
   .feature {
-    margin: 0 var(--space-x-medium-breakpoint-container) 0
-      var(--space-x-medium-breakpoint-container);
+    margin-left: var(--space-x-medium-breakpoint-container);
+    margin-right: var(--space-x-medium-breakpoint-container);
 
     .feature-inner .feature-item {
       padding: var(--space-y-medium-breakpoint-feature) var(--space-x-medium-breakpoint-feature);
@@ -194,5 +194,12 @@
 @media (width >= 1200px) {
   .feature {
     max-width: var(--max-width-container-extralarge);
+  }
+}
+
+@media (width >= 1300px) {
+  .feature {
+    margin-left: auto;
+    margin-right: auto;
   }
 }

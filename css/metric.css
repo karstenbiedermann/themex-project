@@ -58,11 +58,12 @@
     width: 100%;
     z-index: 1;
 
-    img,
-    svg {
+    & img,
+    & svg {
       height: 100%;
       object-fit: cover;
       width: 100%;
+      border-radius: var(--border-radius-metric);
     }
   }
 }
@@ -81,8 +82,8 @@
 
 @media (width >= 768px) {
   .metric {
-    margin: 0 var(--space-x-medium-breakpoint-container) 0
-      var(--space-x-medium-breakpoint-container);
+    margin-left: var(--space-x-medium-breakpoint-container);
+    margin-right: var(--space-x-medium-breakpoint-container);
 
     .metric-inner {
       padding: var(--space-y-medium-breakpoint-metric) var(--space-x-medium-breakpoint-metric);
@@ -186,5 +187,12 @@
 @media (width >= 1200px) {
   .metric {
     max-width: var(--max-width-container-extralarge);
+  }
+}
+
+@media (width >= 1300px) {
+  .metric {
+    margin-left: auto;
+    margin-right: auto;
   }
 }

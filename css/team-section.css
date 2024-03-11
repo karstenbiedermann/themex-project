@@ -88,8 +88,8 @@
 
 @media (width >= 768px) {
   .team-section {
-    margin: 0 var(--space-x-medium-breakpoint-container) 0
-      var(--space-x-medium-breakpoint-container);
+    margin-left: var(--space-x-medium-breakpoint-container);
+    margin-right: var(--space-x-medium-breakpoint-container);
 
     .team-section-item {
       padding: var(--space-y-medium-breakpoint-team-section-item)
@@ -215,5 +215,12 @@
 @media (width >= 1200px) {
   .team-section {
     max-width: var(--max-width-container-extralarge);
+  }
+}
+
+@media (width >= 1300px) {
+  .team-section {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
