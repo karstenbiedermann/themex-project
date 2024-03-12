@@ -120,8 +120,18 @@
     }
   }
 
-  .feature-grid .feature-item:not(:last-child) {
-    margin-bottom: var(--space-y-block-medium-breakpoint-feature-grid-item);
+  .feature-grid {
+    flex-direction: row;
+    gap: var(--gap-feature-grid);
+
+    .feature-item {
+      flex: 1 0 calc(50% - var(--gap-feature-grid));
+      max-width: calc(50% - var(--gap-feature-grid) / 2 * 1);
+      width: auto;
+      &:not(:last-child) {
+        margin-bottom: var(--space-y-block-medium-breakpoint-feature-grid-item);
+      }
+    }
   }
 }
 
