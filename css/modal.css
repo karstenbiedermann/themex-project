@@ -54,7 +54,6 @@
     max-width: var(--max-width-small-breakpoint-modal-body);
     overflow-y: scroll;
     padding: var(--space-y-small-breakpoint-modal) var(--space-x-small-breakpoint-modal);
-    scrollbar-width: none;
 
     & p {
       color: var(--color-modal-body);
@@ -112,6 +111,7 @@
     }
 
     .modal-body {
+      max-height: calc(100dvh - 60px);
       & p {
         font-size: var(--size-medium-breakpoint-modal-body);
         line-height: var(--line-height-medium-breakpoint-modal-body);
