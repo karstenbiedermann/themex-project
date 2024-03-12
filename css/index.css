@@ -70,3 +70,10 @@ strong {
   color: var(--color-text);
   font-weight: var(--weight-bold);
 }
+.image {
+  & img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: attr(width) / attr(height);
+  }
+}

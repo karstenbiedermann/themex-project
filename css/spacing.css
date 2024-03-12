@@ -1,0 +1,41 @@
+/* fallback devices under 992px */
+[style*='--space-top'] {
+  margin-top: calc(var(--space-top) / 2);
+}
+
+[style*='--space-bottom'] {
+  margin-bottom: calc(var(--space-bottom) / 2);
+}
+
+/* small devices */
+[style*='--space-top-sm'] {
+  margin-top: var(--space-top-sm);
+}
+
+[style*='--space-bottom-sm'] {
+  margin-bottom: var(--space-bottom-sm);
+}
+
+/* medium devices */
+[style*='--space-top-md'] {
+  margin-top: var(--space-top-md);
+}
+
+[style*='--space-bottom-md'] {
+  margin-bottom: var(--space-bottom-md);
+}
+
+/* large devices */
+@media (min-width: 992px) {
+  [style*='--space-bottom'] {
+    margin-bottom: var(--space-bottom);
+  }
+  [style*='--space-top'] {
+    margin-top: var(--space-top);
+  }
+
+  /* max-width paragraphs */
+  [style*='--max-width-paragraph'] {
+    max-width: var(--max-width-paragraph);
+  }
+}

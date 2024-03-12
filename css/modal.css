@@ -19,6 +19,7 @@
   .modal-header {
     display: flex;
     margin-bottom: var(--space-y-block-small-breakpoint-modal-header);
+    column-gap: 40px;
 
     .modal-title {
       color: var(--color-modal-title);

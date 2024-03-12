@@ -65,8 +65,8 @@
 
 @media (width >= 768px) {
   .footer {
-    margin: 0 var(--space-x-medium-breakpoint-container) 0
-      var(--space-x-medium-breakpoint-container);
+    margin-left: var(--space-x-medium-breakpoint-container);
+    margin-right: var(--space-x-medium-breakpoint-container);
 
     .footer-inner {
       padding: var(--space-y-medium-breakpoint-footer) var(--space-x-medium-breakpoint-footer);

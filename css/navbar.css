@@ -150,6 +150,8 @@
             color: var(--color-navbar-flyout-title);
             font-size: var(--size-small-breakpoint-navbar-flyout-title);
             font-weight: var(--weight-navbar-flyout-title);
+            margin-bottom: var(--space-y-block-small-breakpoint-navbar-flyout-title);
+            display: block;
           }
 
           & p {
@@ -252,6 +254,7 @@
 
           .nav-flyout-title {
             font-size: var(--size-medium-breakpoint-navbar-flyout-title);
+            margin-bottom: var(--space-y-block-medium-breakpoint-navbar-flyout-title);
           }
 
           & p {
@@ -339,6 +342,7 @@
 
             .nav-flyout-title {
               font-size: var(--size-large-breakpoint-navbar-flyout-title);
+              margin-bottom: var(--space-y-block-large-breakpoint-navbar-flyout-title);
             }
 
             & p {
