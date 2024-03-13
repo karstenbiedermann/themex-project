@@ -400,13 +400,24 @@
 
 @media (width <= 991.98px) {
   .navbar {
+    padding-top: 0.75rem;
+    margin-top: 0;
     .navbar-brand {
       margin-bottom: var(--space-y-block-medium-breakpoint-navbar-brand);
     }
 
     .navbar-nav {
       &.visible {
+        max-height: calc(100dvh - 3.75rem);
+        position: relative;
+        padding-bottom: 3.75rem;
         height: 100dvh;
+        overflow-y: scroll;
+        scrollbar-width: none;
+        scroll-behavior: smooth;
+        &::-webkit-scrollbar {
+          display: none;
+        }
       }
       .nav-item {
         margin-bottom: var(--space-y-block-medium-breakpoint-navbar-nav-item);
