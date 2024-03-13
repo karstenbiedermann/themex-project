@@ -421,6 +421,9 @@
       }
       .nav-item {
         margin-bottom: var(--space-y-block-medium-breakpoint-navbar-nav-item);
+        .navbar-flyout {
+          box-shadow: 0 5px var(--size-navbar-flyout-shadow) -14px var(--color-navbar-flyout-shadow);
+        }
       }
     }
     .navbar-aside {
