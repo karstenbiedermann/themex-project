@@ -408,6 +408,7 @@
 
     .navbar-nav {
       &.visible {
+        --new: calc(var(--size-navbar-flyout-shadow) / 4);
         max-height: calc(100dvh - 3.75rem);
         position: relative;
         padding-bottom: 3.75rem;
@@ -415,15 +416,17 @@
         overflow-y: scroll;
         scrollbar-width: none;
         scroll-behavior: smooth;
+        /* these make sure that box-shadow not cut off */
+        padding-left: var(--size-navbar-flyout-shadow);
+        padding-right: var(--size-navbar-flyout-shadow);
+        margin-left: calc(var(--size-navbar-flyout-shadow) * -1);
+        margin-right: calc(var(--size-navbar-flyout-shadow) * -1);
         &::-webkit-scrollbar {
           display: none;
         }
       }
       .nav-item {
         margin-bottom: var(--space-y-block-medium-breakpoint-navbar-nav-item);
-        .navbar-flyout {
-          box-shadow: 0 5px var(--size-navbar-flyout-shadow) -14px var(--color-navbar-flyout-shadow);
-        }
       }
     }
     .navbar-aside {
