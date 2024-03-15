@@ -17,12 +17,14 @@
 }
 
 /* medium devices */
-[style*='--space-top-md'] {
-  margin-top: var(--space-top-md);
-}
+@media (min-width: 768px) {
+  [style*='--space-top-md'] {
+    margin-top: var(--space-top-md);
+  }
 
-[style*='--space-bottom-md'] {
-  margin-bottom: var(--space-bottom-md);
+  [style*='--space-bottom-md'] {
+    margin-bottom: var(--space-bottom-md);
+  }
 }
 
 /* large devices */
