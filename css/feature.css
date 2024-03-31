@@ -25,7 +25,7 @@
         var(--space-x-small-breakpoint-feature-icon);
       width: fit-content;
 
-      svg {
+      & svg {
         color: var(--color-feature-icon);
         height: var(--size-feature-icon);
         width: var(--size-feature-icon);
