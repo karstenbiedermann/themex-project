@@ -6,7 +6,7 @@
   justify-content: center;
   left: 0;
   margin: auto;
-  position: absolute;
+  position: fixed;
   right: 0;
   top: 0;
   width: 100%;
@@ -75,7 +75,7 @@
   height: 100%;
   left: 0;
   opacity: var(--opacity-modal-backdrop);
-  position: absolute;
+  position: fixed;
   right: 0;
   top: 0;
   width: 100%;
