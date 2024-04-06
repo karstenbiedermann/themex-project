@@ -1,20 +1,36 @@
 .form {
   --color-legend: var(--color-form-label);
   --weight-legend: var(--weight-form-label);
-  --size-large-breakpoint-legend: var(--size-large-breakpoint-form-element-label);
-  --size-medium-breakpoint-legend: var(--size-medium-breakpoint-form-element-label);
-  --size-small-breakpoint-legend: var(--size-small-breakpoint-form-element-label);
-  --space-y-block-large-breakpoint-legend: var(--space-y-block-large-breakpoint-form-element-label);
+  --size-large-breakpoint-legend: var(
+    --size-large-breakpoint-form-element-label
+  );
+  --size-medium-breakpoint-legend: var(
+    --size-medium-breakpoint-form-element-label
+  );
+  --size-small-breakpoint-legend: var(
+    --size-small-breakpoint-form-element-label
+  );
+  --space-y-block-large-breakpoint-legend: var(
+    --space-y-block-large-breakpoint-form-element-label
+  );
   --space-y-block-medium-breakpoint-legend: var(
     --space-y-block-medium-breakpoint-form-element-label
   );
-  --space-y-block-small-breakpoint-legend: var(--space-y-block-small-breakpoint-form-element-label);
+  --space-y-block-small-breakpoint-legend: var(
+    --space-y-block-small-breakpoint-form-element-label
+  );
   --column-gap-form-grid: var(--gap);
   --space-y-block-legend-label-addon: var(--space-y-block-form-label);
   --color-form-element-label: var(--color-form-label);
-  --size-large-breakpoint-form-element-label: var(--size-large-breakpoint-form-label);
-  --size-medium-breakpoint-form-element-label: var(--size-medium-breakpoint-form-label);
-  --size-small-breakpoint-form-element-label: var(--size-small-breakpoint-form-label);
+  --size-large-breakpoint-form-element-label: var(
+    --size-large-breakpoint-form-label
+  );
+  --size-medium-breakpoint-form-element-label: var(
+    --size-medium-breakpoint-form-label
+  );
+  --size-small-breakpoint-form-element-label: var(
+    --size-small-breakpoint-form-label
+  );
   --weight-form-element-label: var(--weight-form-label);
   --width-large-breakpoint-form-element-icon: 50px;
   --width-medium-breakpoint-form-element-icon: 50px;
@@ -200,7 +216,8 @@ fieldset legend {
     display: block;
     font-size: var(--size-small-breakpoint-input);
     margin-bottom: 0;
-    padding: var(--space-y-small-breakpoint-input) var(--space-x-small-breakpoint-input);
+    padding: var(--space-y-small-breakpoint-input)
+      var(--space-x-small-breakpoint-input);
     transition: all 0.3s;
     width: 100%;
     box-shadow: 0 1px 2px 0 #1018280d;
@@ -237,7 +254,8 @@ fieldset legend {
   font-size: var(--size-small-breakpoint-input);
   margin-bottom: 0;
   min-height: var(--min-height-small-breakpoint-textarea);
-  padding: var(--space-y-small-breakpoint-textarea) var(--space-x-small-breakpoint-textarea);
+  padding: var(--space-y-small-breakpoint-textarea)
+    var(--space-x-small-breakpoint-textarea);
   transition: all 0.3s;
   width: 100%;
   box-shadow: 0 1px 2px 0 #1018280d;
@@ -275,7 +293,8 @@ fieldset legend {
     color: var(--color-checkbox-label);
     display: flex;
     font-size: var(--size-small-breakpoint-checkbox-label);
-    padding: var(--space-y-small-breakpoint-checkbox) var(--space-x-small-breakpoint-checkbox);
+    padding: var(--space-y-small-breakpoint-checkbox)
+      var(--space-x-small-breakpoint-checkbox);
   }
 
   .checkbox-icon {
@@ -342,7 +361,8 @@ fieldset legend {
   .radio-label {
     color: var(--color-radio-label);
     font-size: var(--size-small-breakpoint-radio-label);
-    padding: var(--space-y-small-breakpoint-radio) var(--space-x-small-breakpoint-radio);
+    padding: var(--space-y-small-breakpoint-radio)
+      var(--space-x-small-breakpoint-radio);
   }
 
   .radio-icon {
@@ -411,7 +431,8 @@ fieldset legend {
     cursor: pointer;
     display: flex;
     font-size: var(--size-small-breakpoint-select-trigger);
-    padding: var(--space-y-small-breakpoint-select) var(--space-x-small-breakpoint-select);
+    padding: var(--space-y-small-breakpoint-select)
+      var(--space-x-small-breakpoint-select);
     position: relative;
     transition: all var(--transition-duration) ease-in-out;
     width: 100%;
@@ -733,7 +754,8 @@ fieldset legend {
 }
 
 .select-multiselect {
-  padding: var(--space-y-small-breakpoint-multiselect) var(--space-x-small-breakpoint-multiselect);
+  padding: var(--space-y-small-breakpoint-multiselect)
+    var(--space-x-small-breakpoint-multiselect);
 }
 
 .form-submit {
@@ -769,7 +791,9 @@ fieldset legend {
 
       & label {
         font-size: var(--size-medium-breakpoint-form-element-label);
-        margin-bottom: var(--space-y-block-medium-breakpoint-form-element-label);
+        margin-bottom: var(
+          --space-y-block-medium-breakpoint-form-element-label
+        );
       }
     }
 
@@ -788,20 +812,23 @@ fieldset legend {
 
     .input {
       font-size: var(--size-medium-breakpoint-input);
-      padding: var(--space-y-medium-breakpoint-input) var(--space-x-medium-breakpoint-input);
+      padding: var(--space-y-medium-breakpoint-input)
+        var(--space-x-medium-breakpoint-input);
     }
   }
 
   .textarea {
     font-size: var(--size-medium-breakpoint-input);
     min-height: var(--min-height-medium-breakpoint-textarea);
-    padding: var(--space-y-medium-breakpoint-textarea) var(--space-x-medium-breakpoint-textarea);
+    padding: var(--space-y-medium-breakpoint-textarea)
+      var(--space-x-medium-breakpoint-textarea);
   }
 
   .checkbox {
     .checkbox-label {
       font-size: var(--size-medium-breakpoint-checkbox-label);
-      padding: var(--space-y-medium-breakpoint-checkbox) var(--space-x-medium-breakpoint-checkbox);
+      padding: var(--space-y-medium-breakpoint-checkbox)
+        var(--space-x-medium-breakpoint-checkbox);
     }
 
     .checkbox-icon::after,
@@ -819,7 +846,8 @@ fieldset legend {
   .radio {
     .radio-label {
       font-size: var(--size-medium-breakpoint-radio-label);
-      padding: var(--space-y-medium-breakpoint-radio) var(--space-x-medium-breakpoint-radio);
+      padding: var(--space-y-medium-breakpoint-radio)
+        var(--space-x-medium-breakpoint-radio);
     }
 
     .radio-icon::after {
@@ -836,7 +864,8 @@ fieldset legend {
   .select {
     .select-trigger {
       font-size: var(--size-medium-breakpoint-select-trigger);
-      padding: var(--space-y-medium-breakpoint-select) var(--space-x-medium-breakpoint-select);
+      padding: var(--space-y-medium-breakpoint-select)
+        var(--space-x-medium-breakpoint-select);
     }
 
     .select-options {
@@ -850,7 +879,9 @@ fieldset legend {
     }
   }
 
-  .form-element-message.form-element-message--error .form-element-message-icon svg {
+  .form-element-message.form-element-message--error
+    .form-element-message-icon
+    svg {
     min-width: var(--size-medium-breakpoint-message-error-icon);
   }
 
@@ -873,7 +904,7 @@ fieldset legend {
   .form {
     margin-left: var(--space-x-large-breakpoint-container);
     margin-right: var(--space-x-large-breakpoint-container);
-    max-width: var(--max-width-container-small);
+    max-width: var(--max-width-container-large);
   }
 
   fieldset legend {
@@ -910,20 +941,23 @@ fieldset legend {
 
     .input {
       font-size: var(--size-large-breakpoint-input);
-      padding: var(--space-y-large-breakpoint-input) var(--space-x-large-breakpoint-input);
+      padding: var(--space-y-large-breakpoint-input)
+        var(--space-x-large-breakpoint-input);
     }
   }
 
   .textarea {
     font-size: var(--size-large-breakpoint-input);
     min-height: var(--min-height-large-breakpoint-textarea);
-    padding: var(--space-y-large-breakpoint-textarea) var(--space-x-large-breakpoint-textarea);
+    padding: var(--space-y-large-breakpoint-textarea)
+      var(--space-x-large-breakpoint-textarea);
   }
 
   .checkbox {
     .checkbox-label {
       font-size: var(--size-large-breakpoint-checkbox-label);
-      padding: var(--space-y-large-breakpoint-checkbox) var(--space-x-large-breakpoint-checkbox);
+      padding: var(--space-y-large-breakpoint-checkbox)
+        var(--space-x-large-breakpoint-checkbox);
     }
 
     .checkbox-icon::after,
@@ -941,7 +975,8 @@ fieldset legend {
   .radio {
     .radio-label {
       font-size: var(--size-large-breakpoint-radio-label);
-      padding: var(--space-y-large-breakpoint-radio) var(--space-x-large-breakpoint-radio);
+      padding: var(--space-y-large-breakpoint-radio)
+        var(--space-x-large-breakpoint-radio);
     }
 
     .radio-icon::after {
@@ -958,7 +993,8 @@ fieldset legend {
   .select {
     .select-trigger {
       font-size: var(--size-large-breakpoint-select-trigger);
-      padding: var(--space-y-large-breakpoint-select) var(--space-x-large-breakpoint-select);
+      padding: var(--space-y-large-breakpoint-select)
+        var(--space-x-large-breakpoint-select);
     }
 
     .select-options {
@@ -972,7 +1008,9 @@ fieldset legend {
     }
   }
 
-  .form-element-message.form-element-message--error .form-element-message-icon svg {
+  .form-element-message.form-element-message--error
+    .form-element-message-icon
+    svg {
     height: var(--size-large-breakpoint-message-error-icon);
     width: var(--size-large-breakpoint-message-error-icon);
   }
@@ -987,18 +1025,14 @@ fieldset legend {
   }
 
   .select-multiselect {
-    padding: var(--space-y-large-breakpoint-multiselect) var(--space-x-large-breakpoint-multiselect);
+    padding: var(--space-y-large-breakpoint-multiselect)
+      var(--space-x-large-breakpoint-multiselect);
   }
 }
 
 @media (width >= 1200px) {
   .form {
     max-width: var(--max-width-container-small);
-  }
-}
-
-@media (width >= 1300px) {
-  .form {
     margin-left: auto;
     margin-right: auto;
   }
