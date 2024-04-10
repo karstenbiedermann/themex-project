@@ -1,5 +1,7 @@
-<p align="center"><a href="https://themexproject.com/"><img src="https://github.com/karstenbiedermann/themex-project/assets/114942316/97322e88-7ba0-4af8-883b-dacb8e5b288a">
+<p align="center"><a href="https://themexproject.com/"><img src="https://github.com/karstenbiedermann/themex-project/assets/114942316/6a8d88cf-3a55-4c67-9b14-ee6f4d7dcd27">
  </a></p>
+
+
 
 ## Getting started with Themex
 
