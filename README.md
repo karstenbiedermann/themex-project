@@ -20,10 +20,6 @@ In Themex, CSS variables serve as powerful helpers, enabling a more nuanced and 
 </style>
 ```
 
-```shell
-npm i the-themex-project
-```
-
 # Variables
 
 There are several categories of CSS variables in each component that allow you to customize the appearance, including: color, background, border (encompassing border and border-radius), typography (covering font-size, line-height, and weight), and spacing. These variables allow for detailed control over a component's visual presentation, while facilitating easy adjustments for different variants of a component.
