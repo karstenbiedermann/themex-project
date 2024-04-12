@@ -7,7 +7,7 @@
 
 In Themex, CSS variables serve as powerful helpers, enabling a more nuanced and flexible approach to styling. By leveraging these variables, developers can create a system of modular and component-specific classes that offer the same level of reusability as global modifiers but with much greater adaptability. This approach allows for individual properties to be adjusted without the need for cumbersome overrides or the risk of cascading style conflicts.
 
-[Check out the website]([https://link-url-here.org](https://themexproject.com))
+[Check out the website](https://themexproject.com)
 
 Themex is NOT a component library! It involves components that suggest a structure you can use for your project.
 
