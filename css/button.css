@@ -1,8 +1,10 @@
 .button {
   cursor: pointer;
+
   &:not(.button--link) {
     box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
   }
+
   &.button--primary {
     align-items: center;
     background-color: var(--background-button-primary);
@@ -60,9 +62,9 @@
   }
 
   &.button--link {
+    align-items: center;
     display: flex;
     font-weight: var(--weight-button);
-    align-items: center;
   }
 
   &.button--block {
@@ -74,6 +76,16 @@
     font-size: var(--size-small-breakpoint-button-lg);
     line-height: var(--line-height-button-lg);
     padding: var(--space-y-small-breakpoint-button-lg) var(--space-x-small-breakpoint-button-lg);
+
+    @media (width >= 768px) {
+      font-size: var(--size-medium-breakpoint-button-lg);
+      padding: var(--space-y-medium-breakpoint-button-lg) var(--space-x-medium-breakpoint-button-lg);
+    }
+
+    @media (width >= 992px) {
+      font-size: var(--size-large-breakpoint-button-lg);
+      padding: var(--space-y-large-breakpoint-button-lg) var(--space-x-large-breakpoint-button-lg);
+    }
 
     & svg {
       height: var(--size-button-lg-icon);
@@ -87,6 +99,16 @@
     line-height: var(--line-height-button-md);
     padding: var(--space-y-small-breakpoint-button-md) var(--space-x-small-breakpoint-button-md);
 
+    @media (width >= 768px) {
+      font-size: var(--size-medium-breakpoint-button-md);
+      padding: var(--space-y-medium-breakpoint-button-md) var(--space-x-medium-breakpoint-button-md);
+    }
+
+    @media (width >= 992px) {
+      font-size: var(--size-large-breakpoint-button-md);
+      padding: var(--space-y-large-breakpoint-button-md) var(--space-x-large-breakpoint-button-md);
+    }
+
     & svg {
       height: var(--size-button-md-icon);
       width: var(--size-button-md-icon);
@@ -99,9 +121,19 @@
     line-height: var(--line-height-button-sm);
     padding: var(--space-y-small-breakpoint-button-sm) var(--space-x-small-breakpoint-button-sm);
 
+    @media (width >= 768px) {
+      font-size: var(--size-medium-breakpoint-button-sm);
+      padding: var(--space-y-medium-breakpoint-button-sm) var(--space-x-medium-breakpoint-button-sm);
+    }
+
+    @media (width >= 992px) {
+      font-size: var(--size-large-breakpoint-button-sm);
+      padding: var(--space-y-large-breakpoint-button-sm) var(--space-x-large-breakpoint-button-sm);
+    }
+
     & svg {
       height: var(--size-button-sm-icon);
-      width: var(--size-button-sm-icon);
+      width: var (--size-button-sm-icon);
     }
   }
 }
@@ -112,58 +144,20 @@
   flex-wrap: wrap;
   gap: 15px;
   width: 100%;
-}
 
-@media (width >= 768px) {
-  .button {
-    &.button--large {
-      font-size: var(--size-medium-breakpoint-button-lg);
-      padding: var(--space-y-medium-breakpoint-button-lg) var(--space-x-medium-breakpoint-button-lg);
-    }
+  @media (width <= 991.98px) {
+    .button {
+      flex: 0 0 100%;
+      min-width: 100%;
 
-    &.button--medium {
-      font-size: var(--size-medium-breakpoint-button-md);
-      padding: var(--space-y-medium-breakpoint-button-md) var(--space-x-medium-breakpoint-button-md);
-    }
-
-    &.button--small {
-      font-size: var(--size-medium-breakpoint-button-sm);
-      padding: var(--space-y-medium-breakpoint-button-sm) var(--space-x-medium-breakpoint-button-sm);
-    }
-  }
-}
-
-@media (width >= 992px) {
-  .button {
-    &.button--large {
-      font-size: var(--size-large-breakpoint-button-lg);
-      padding: var(--space-y-large-breakpoint-button-lg) var(--space-x-large-breakpoint-button-lg);
-    }
-
-    &.button--medium {
-      font-size: var(--size-large-breakpoint-button-md);
-      padding: var(--space-y-large-breakpoint-button-md) var(--space-x-large-breakpoint-button-md);
-    }
-
-    &.button--small {
-      font-size: var(--size-large-breakpoint-button-sm);
-      padding: var(--space-y-large-breakpoint-button-sm) var(--space-x-large-breakpoint-button-sm);
+      &.button--link {
+        padding-left: 0;
+        padding-right: 0;
+      }
     }
   }
 
-  .button-group {
+  @media (width >= 992px) {
     flex-direction: row;
-  }
-}
-
-@media (width <= 991.98px) {
-  .button-group .button {
-    flex: 0 0 100%;
-    min-width: 100%;
-
-    &.button--link {
-      padding-left: 0;
-      padding-right: 0;
-    }
   }
 }

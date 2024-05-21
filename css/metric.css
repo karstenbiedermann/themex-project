@@ -9,8 +9,36 @@
   overflow: hidden;
   position: relative;
 
+  @media (width >= 768px) {
+    margin-left: var(--space-x-medium-breakpoint-container);
+    margin-right: var(--space-x-medium-breakpoint-container);
+  }
+
+  @media (width >= 992px) {
+    margin-left: var(--space-x-large-breakpoint-container);
+    margin-right: var(--space-x-large-breakpoint-container);
+    max-width: var(--max-width-container-large);
+  }
+
+  @media (width >= 1200px) {
+    max-width: var(--max-width-container-extralarge);
+  }
+
+  @media (width >= 1300px) {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .metric-inner {
     padding: var(--space-y-small-breakpoint-metric) var(--space-x-small-breakpoint-metric);
+
+    @media (width >= 768px) {
+      padding: var(--space-y-medium-breakpoint-metric) var(--space-x-medium-breakpoint-metric);
+    }
+
+    @media (width >= 992px) {
+      padding: var(--space-y-large-breakpoint-metric) var(--space-x-large-breakpoint-metric);
+    }
 
     .metric-item {
       align-items: var(--horizontal-alignment-metric-item);
@@ -25,12 +53,34 @@
         var(--space-x-small-breakpoint-metric-item);
       text-align: var(--horizontal-alignment-metric-item);
 
+      @media (width >= 768px) {
+        padding: var(--space-y-medium-breakpoint-metric-item)
+          var(--space-x-medium-breakpoint-metric-item);
+      }
+
+      @media (width >= 992px) {
+        padding: var(--space-y-large-breakpoint-metric-item)
+          var(--space-x-large-breakpoint-metric-item);
+      }
+
       .metric-number {
         color: var(--color-metric-number);
         font-size: var(--size-small-breakpoint-metric-number);
         font-weight: var(--weight-metric-number);
         line-height: var(--line-height-small-breakpoint-metric-number);
         margin-bottom: var(--space-y-block-small-breakpoint-metric-number);
+
+        @media (width >= 768px) {
+          font-size: var(--size-medium-breakpoint-metric-number);
+          line-height: var(--line-height-medium-breakpoint-metric-number);
+          margin-bottom: var(--space-y-block-medium-breakpoint-metric-number);
+        }
+
+        @media (width >= 992px) {
+          font-size: var(--size-large-breakpoint-metric-number);
+          line-height: var(--line-height-large-breakpoint-metric-number);
+          margin-bottom: var(--space-y-block-large-breakpoint-metric-number);
+        }
       }
 
       .metric-text {
@@ -39,6 +89,18 @@
         font-weight: var(--weight-metric-text);
         line-height: var(--line-height-small-breakpoint-metric-text);
         margin-bottom: var(--space-y-block-small-breakpoint-metric-text);
+
+        @media (width >= 768px) {
+          font-size: var(--size-medium-breakpoint-metric-text);
+          line-height: var(--line-height-medium-breakpoint-metric-text);
+          margin-bottom: var(--space-y-block-medium-breakpoint-metric-text);
+        }
+
+        @media (width >= 992px) {
+          font-size: var(--size-large-breakpoint-metric-text);
+          line-height: var(--line-height-large-breakpoint-metric-text);
+          margin-bottom: var(--space-y-block-large-breakpoint-metric-text);
+        }
       }
 
       .metric-supporting-text {
@@ -46,6 +108,16 @@
         font-size: var(--size-small-breakpoint-metric-supporting-text);
         font-weight: var(--weight-metric-supporting-text);
         line-height: var(--line-height-small-breakpoint-metric-supporting-text);
+
+        @media (width >= 768px) {
+          font-size: var(--size-medium-breakpoint-metric-supporting-text);
+          line-height: var(--line-height-medium-breakpoint-metric-supporting-text);
+        }
+
+        @media (width >= 992px) {
+          font-size: var(--size-large-breakpoint-metric-supporting-text);
+          line-height: var(--line-height-large-breakpoint-metric-supporting-text);
+        }
       }
     }
   }
@@ -60,10 +132,10 @@
 
     & img,
     & svg {
+      border-radius: var(--border-radius-metric);
       height: 100%;
       object-fit: cover;
       width: 100%;
-      border-radius: var(--border-radius-metric);
     }
   }
 }
@@ -78,79 +150,14 @@
   .metric-item:not(:last-child) {
     margin-bottom: var(--space-y-block-small-breakpoint-metric-item);
   }
-}
 
-@media (width >= 768px) {
-  .metric {
-    margin-left: var(--space-x-medium-breakpoint-container);
-    margin-right: var(--space-x-medium-breakpoint-container);
-
-    .metric-inner {
-      padding: var(--space-y-medium-breakpoint-metric) var(--space-x-medium-breakpoint-metric);
-
-      .metric-item {
-        padding: var(--space-y-medium-breakpoint-metric-item)
-          var(--space-x-medium-breakpoint-metric-item);
-
-        .metric-number {
-          font-size: var(--size-medium-breakpoint-metric-number);
-          line-height: var(--line-height-medium-breakpoint-metric-number);
-          margin-bottom: var(--space-y-block-medium-breakpoint-metric-number);
-        }
-
-        .metric-text {
-          font-size: var(--size-medium-breakpoint-metric-text);
-          line-height: var(--line-height-medium-breakpoint-metric-text);
-          margin-bottom: var(--space-y-block-medium-breakpoint-metric-text);
-        }
-
-        .metric-supporting-text {
-          font-size: var(--size-medium-breakpoint-metric-supporting-text);
-          line-height: var(--line-height-medium-breakpoint-metric-supporting-text);
-        }
-      }
+  @media (width >= 768px) {
+    .metric-item:not(:last-child) {
+      margin-bottom: var(--space-y-block-medium-breakpoint-metric-item);
     }
   }
 
-  .metric-grid .metric-item:not(:last-child) {
-    margin-bottom: var(--space-y-block-medium-breakpoint-metric-item);
-  }
-}
-
-@media (width >= 992px) {
-  .metric {
-    margin-left: var(--space-x-large-breakpoint-container);
-    margin-right: var(--space-x-large-breakpoint-container);
-    max-width: var(--max-width-container-large);
-
-    .metric-inner {
-      padding: var(--space-y-large-breakpoint-metric) var(--space-x-large-breakpoint-metric);
-
-      .metric-item {
-        padding: var(--space-y-large-breakpoint-metric-item)
-          var(--space-x-large-breakpoint-metric-item);
-
-        .metric-number {
-          font-size: var(--size-large-breakpoint-metric-number);
-          line-height: var(--line-height-large-breakpoint-metric-number);
-          margin-bottom: var(--space-y-block-large-breakpoint-metric-number);
-        }
-
-        .metric-text {
-          font-size: var(--size-large-breakpoint-metric-text);
-          line-height: var(--line-height-large-breakpoint-metric-text);
-          margin-bottom: var(--space-y-block-large-breakpoint-metric-text);
-        }
-
-        .metric-supporting-text {
-          font-size: var(--size-large-breakpoint-metric-supporting-text);
-          line-height: var(--line-height-large-breakpoint-metric-supporting-text);
-        }
-      }
-    }
-  }
-
-  .metric-grid {
+  @media (width >= 992px) {
     flex-direction: row;
     gap: var(--gap-metric-grid);
 
@@ -181,18 +188,5 @@
       max-width: calc(25% - var(--gap-metric-grid) / 4 * 3);
       width: auto;
     }
-  }
-}
-
-@media (width >= 1200px) {
-  .metric {
-    max-width: var(--max-width-container-extralarge);
-  }
-}
-
-@media (width >= 1300px) {
-  .metric {
-    margin-left: auto;
-    margin-right: auto;
   }
 }
