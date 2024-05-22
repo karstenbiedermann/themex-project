@@ -44,6 +44,7 @@
         padding: var(--space-y-large-breakpoint-pricing) var(--space-x-large-breakpoint-pricing);
       }
     }
+
     .pricing-title {
       align-items: var(--horizontal-alignment-pricing-item);
       text-align: var(--horizontal-alignment-pricing-item);
