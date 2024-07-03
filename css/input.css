@@ -1,0 +1,125 @@
+:root {
+  --background-input: var(--background-form);
+  --border-width-input: var(--border-width-form);
+  --border-color-input: var(--border-color-form);
+  --border-radius-input: var(--border-radius-form);
+  --color-input: var(--color-form);
+  --size-large-breakpoint-input: var(--size-large-breakpoint-form);
+  --size-medium-breakpoint-input: var(--size-medium-breakpoint-form);
+  --size-small-breakpoint-input: var(--size-small-breakpoint-form);
+  --space-x-large-breakpoint-input: var(--space-x-large-breakpoint-form);
+  --space-x-medium-breakpoint-input: var(--space-x-medium-breakpoint-form);
+  --space-x-small-breakpoint-input: var(--space-x-small-breakpoint-form);
+  --space-y-large-breakpoint-input: var(--space-y-large-breakpoint-form);
+  --space-y-medium-breakpoint-input: var(--space-y-medium-breakpoint-form);
+  --space-y-small-breakpoint-input: var(--space-y-small-breakpoint-form);
+  --color-input-placeholder: var(--color-form-placeholder);
+  --border-color-input-focus: var(--border-color-form-focus);
+  --color-input-error: var(--color-form-error);
+  --border-color-input-error: var(--border-color-form-error);
+  --background-textarea: var(--background-form);
+  --border-width-textarea: var(--border-width-form);
+  --border-color-textarea: var(--border-color-form);
+  --border-radius-textarea: var(--border-radius-form);
+  --color-textarea: var(--color-form);
+  --space-x-large-breakpoint-textarea: var(--space-x-large-breakpoint-form);
+  --space-x-medium-breakpoint-textarea: var(--space-x-medium-breakpoint-form);
+  --space-x-small-breakpoint-textarea: var(--space-x-small-breakpoint-form);
+  --space-y-large-breakpoint-textarea: var(--space-y-large-breakpoint-form);
+  --space-y-medium-breakpoint-textarea: var(--space-y-medium-breakpoint-form);
+  --space-y-small-breakpoint-textarea: var(--space-y-small-breakpoint-form);
+  --color-textarea-placeholder: var(--color-form-placeholder);
+  --border-color-textarea-focus: var(--border-color-form-focus);
+  --border-color-textarea-error: var(--border-color-form-error);
+}
+
+.input {
+  appearance: none;
+  background: var(--background-input);
+  border-color: var(--border-color-input);
+  border-radius: var(--border-radius-input);
+  border-style: solid;
+  border-width: var(--border-width-input);
+  box-shadow: 0 1px 2px 0 #1018280d;
+  color: var(--color-input);
+  display: block;
+  font-size: var(--size-small-breakpoint-input);
+  margin-bottom: 0;
+  padding: var(--space-y-small-breakpoint-input) var(--space-x-small-breakpoint-input);
+  transition: all 0.3s;
+  width: 100%;
+
+  &::placeholder {
+    color: var(--color-input-placeholder);
+    opacity: 1;
+  }
+
+  &:focus {
+    border-color: var(--border-color-input-focus);
+    box-shadow: 0 0 0 var(--size-form-outline) var(--color-form-outline);
+    outline: 0;
+  }
+
+  &.input--error {
+    border-color: var(--border-color-input-error);
+    box-shadow: 0 0 0 var(--size-form-outline) var(--color-form-outline-error);
+    color: var(--color-input-error);
+  }
+
+  @media (width >= 768px) {
+    font-size: var(--size-medium-breakpoint-input);
+    padding: var(--space-y-medium-breakpoint-input) var(--space-x-medium-breakpoint-input);
+  }
+
+  @media (width >= 992px) {
+    font-size: var(--size-large-breakpoint-input);
+    padding: var(--space-y-large-breakpoint-input) var(--space-x-large-breakpoint-input);
+  }
+}
+
+.textarea {
+  appearance: none;
+  background: var(--background-textarea);
+  background-clip: padding-box;
+  border-color: var(--border-color-textarea);
+  border-radius: var(--border-radius-textarea);
+  border-style: solid;
+  border-width: var(--border-width-textarea);
+  box-shadow: 0 1px 2px 0 #1018280d;
+  color: var(--color-textarea);
+  display: block;
+  font-size: var(--size-small-breakpoint-input);
+  margin-bottom: 0;
+  min-height: var(--min-height-small-breakpoint-textarea);
+  padding: var(--space-y-small-breakpoint-textarea) var(--space-x-small-breakpoint-textarea);
+  transition: all 0.3s;
+  width: 100%;
+
+  &::placeholder {
+    color: var(--color-textarea-placeholder);
+    opacity: 1;
+  }
+
+  &:focus {
+    border-color: var(--border-color-textarea-focus);
+    box-shadow: 0 0 0 var(--size-form-outline) var(--color-form-outline);
+    outline: 0;
+  }
+
+  &.textarea--error {
+    border-color: var(--border-color-textarea-error);
+    box-shadow: 0 0 0 var(--size-form-outline) var(--color-form-outline-error);
+  }
+
+  @media (width >= 768px) {
+    font-size: var(--size-medium-breakpoint-input);
+    min-height: var(--min-height-medium-breakpoint-textarea);
+    padding: var(--space-y-medium-breakpoint-textarea) var(--space-x-medium-breakpoint-textarea);
+  }
+
+  @media (width >= 992px) {
+    font-size: var(--size-large-breakpoint-input);
+    min-height: var(--min-height-large-breakpoint-textarea);
+    padding: var(--space-y-large-breakpoint-textarea) var(--space-x-large-breakpoint-textarea);
+  }
+}

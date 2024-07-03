@@ -1,0 +1,112 @@
+:root {
+  --size-large-breakpoint-radio-label: var(--size-large-breakpoint-form);
+  --size-medium-breakpoint-radio-label: var(--size-medium-breakpoint-form);
+  --size-small-breakpoint-radio-label: var(--size-small-breakpoint-form);
+}
+
+.radio {
+  color: var(--color-radio);
+  position: relative;
+  transition: all 0.3s;
+
+  & label {
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    gap: 10px;
+  }
+
+  .radio-label {
+    color: var(--color-radio-label);
+    font-size: var(--size-small-breakpoint-radio-label);
+    padding: var(--space-y-small-breakpoint-radio) var(--space-x-small-breakpoint-radio);
+
+    @media (width >= 768px) {
+      font-size: var(--size-medium-breakpoint-radio-label);
+      padding: var(--space-y-medium-breakpoint-radio) var(--space-x-medium-breakpoint-radio);
+    }
+
+    @media (width >= 992px) {
+      font-size: var(--size-large-breakpoint-radio-label);
+      padding: var(--space-y-large-breakpoint-radio) var(--space-x-large-breakpoint-radio);
+    }
+  }
+
+  .radio-icon {
+    position: relative;
+
+    &::after {
+      background-color: var(--color-radio-icon);
+      content: '';
+      display: block;
+      height: var(--size-small-breakpoint-radio-icon);
+      -webkit-mask-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 18 18'%3E%3Ccircle cx='9' cy='9' r='8.5' stroke='%236C737F'/%3E%3C/svg%3E");
+      mask-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 18 18'%3E%3Ccircle cx='9' cy='9' r='8.5' stroke='%236C737F'/%3E%3C/svg%3E");
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      -webkit-mask-size: 100%;
+      mask-size: 100%;
+      min-width: var(--size-small-breakpoint-radio-icon);
+      width: var(--size-small-breakpoint-radio-icon);
+
+      @media (width >= 768px) {
+        height: var(--size-medium-breakpoint-radio-icon);
+        min-width: var(--size-medium-breakpoint-radio-icon);
+        width: var(--size-medium-breakpoint-radio-icon);
+      }
+
+      @media (width >= 992px) {
+        height: var(--size-large-breakpoint-radio-icon);
+        min-width: var(--size-large-breakpoint-radio-icon);
+        width: var(--size-large-breakpoint-radio-icon);
+      }
+    }
+  }
+
+  & input[type='radio'] {
+    cursor: pointer;
+    left: 0.3125rem;
+    opacity: 0;
+    position: absolute;
+    top: 0.3125rem;
+
+    &:checked + .radio-icon::after {
+      background-color: var(--color-radio-icon-active);
+      content: '';
+      display: block;
+      height: var(--size-small-breakpoint-radio-icon);
+      -webkit-mask-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 18'%3E%3Cg fill='%234b85c5'%3E%3Cpath d='M9 18c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9M9 1C4.59 1 1 4.59 1 9s3.59 8 8 8 8-3.59 8-8-3.59-8-8-8'/%3E%3Ccircle cx='9' cy='9' r='4'/%3E%3C/g%3E%3C/svg%3E");
+      mask-image: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 18 18'%3E%3Cg fill='%234b85c5'%3E%3Cpath d='M9 18c-4.96 0-9-4.04-9-9s4.04-9 9-9 9 4.04 9 9-4.04 9-9 9M9 1C4.59 1 1 4.59 1 9s3.59 8 8 8 8-3.59 8-8-3.59-8-8-8'/%3E%3Ccircle cx='9' cy='9' r='4'/%3E%3C/g%3E%3C/svg%3E");
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      -webkit-mask-size: 100%;
+      mask-size: 100%;
+      min-width: var(--size-small-breakpoint-radio-icon);
+      width: var(--size-small-breakpoint-radio-icon);
+
+      @media (width >= 768px) {
+        height: var(--size-medium-breakpoint-radio-icon);
+        min-width: var(--size-medium-breakpoint-radio-icon);
+        width: var(--size-medium-breakpoint-radio-icon);
+      }
+
+      @media (width >= 992px) {
+        height: var(--size-large-breakpoint-radio-icon);
+        min-width: var(--size-large-breakpoint-radio-icon);
+        width: var (--size-large-breakpoint-radio-icon);
+      }
+    }
+  }
+
+  &:not(:last-child) {
+    margin-bottom: var(--space-y-block-small-breakpoint-radio);
+
+    @media (width >= 768px) {
+      margin-bottom: var(--space-y-block-medium-breakpoint-radio);
+    }
+
+    @media (width >= 992px) {
+      margin-bottom: var(--space-y-block-large-breakpoint-radio);
+    }
+  }
+}
